@@ -1,0 +1,94 @@
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block content %}
+{% include 'header.html' %}
+
+    <main class="container col-lg-9 py-5">
+        <div class="pb-2 mb-3">
+          <a class="ps-3  text-dark text-decoration-none fs-5" href="{% url 'Author_Dashboard' %}">Dashboard</a>
+          <div class="container pt-4">
+            <div class="card py-2 px-5 bg-success">
+              <h5 class="text-white text-center">ADD NEW PAPER</h5>
+            </div>
+            <div class="card">
+              <form class="text-start p-5" action="" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="container">
+                  {% if messages %}
+                  <div class="messages text-center text-success pb-2">
+                      {% for message in messages %}
+                      <span {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{message}}</span>
+                      {% endfor %}
+                  </div> 
+                  {% endif %}                
+                  <div class="col-auto mb-4">
+                    <label class="form-label text-start text-success fw-bold" for="title">Paper title <span class="text-danger fw-normal">(required)</span></label>
+                    <input class="form-control px-4" type="text" name="title" id="title" style="height: 50px !important;" maxlength="300" placeholder="Enter paper title here" required>
+                  </div>
+                  <div class="col-auto mb-4">
+                    <label class="form-label text-start text-success fw-bold" for="authors_name">Paper Author's <span class="text-danger fw-normal">(required)</span> <span class="text-dark fw-normal">use comma (,) to separate authors name</span></label>
+                    <input class="form-control px-4" type="text" name="authors_name" id="authors_name" style="height: 50px !important;" maxlength="300" placeholder="Enter paper author's name here" required>
+                  </div>
+                  <div class="col-auto mb-4">
+                    <label class="form-label text-start text-success fw-bold" for="keywords">Paper Keywords <span class="text-danger fw-normal">(required)</span> <span class="text-dark fw-normal">use comma (,) to separate keywords</span></label>
+                    <input class="form-control px-4" type="text" name="keywords" id="keywords" style="height: 50px !important;" maxlength="300" placeholder="Enter paper keywords here" required>
+                  </div>
+                  <div class="col-auto mb-4">
+                    <label class="form-label text-start text-success fw-bold" for="corres_emails">Correspondant Email <span class="text-danger fw-normal">(required)</span></label>
+                    <input class="form-control px-4" type="email" name="corres_emails" id="corres_emails" style="height: 50px !important;" maxlength="300" placeholder="Enter correspondant email here" required>
+                  </div>
+                  <div class="col-auto mb-4">
+                    <label class="form-label text-start text-success fw-bold" for="abstract">Paper abstract <span class="text-danger fw-normal">(required)</span></label>
+                    <textarea class="form-control px-4" type="text" name="abstract" id="abstract" rows="3" maxlength="5000" required></textarea>
+                  </div>
+                  <div class="row d-flex justify-content-between">
+                    <div class="col-6 mb-4">
+                      <label class="form-label text-start text-success fw-bold" for="paper_type">Paper type <span class="text-danger fw-normal">(required)</span></label>
+                      <select class="form-select form-select-lg"  name="paper_type" id="paper_type" aria-label="Default select">
+                        <option value="0" selected>Select</option>
+                        <option value="1">Research</option>
+                        <option value="2">Review</option>
+                      </select>
+                    </div>
+                    <div class="col-6 mb-4">
+                      <label class="form-label text-start text-success fw-bold" for="domain">Paper Domain <span class="text-danger fw-normal">(required)</span></label>
+                      <select class="form-select form-select-lg"  name="domain" id="domain" aria-label="Default select">
+                        <option value="SELECT" selected>Select</option>
+                        <option value="Physical sciences and engineering">Physical sciences and engineering</option>
+                        <option value="Life sciences">Life sciences</option>
+                        <option value="Health sciences">Health sciences</option>
+                        <option value="Social sciences and humanities">Social sciences and humanities</option>
+                        <option value="Unknown">Unknown</option>                
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-auto mb-4">
+                    <label class="form-label text-start text-success fw-bold" for="subdomain">Paper Subdomain <span class="text-danger fw-normal">(required)</span> <span class="text-dark fw-normal">e.g mathematics,physics,computer science, etc.</span></label>
+                    <input class="form-control px-4" type="text" name="subdomain" id="subdomain" style="height: 50px !important;" maxlength="100" placeholder="Enter paper subdomain">
+                  </div>
+                  <div class="row d-flex justify-content-between">
+                    <div class="col-auto mb-4">
+                      <label class="form-label text-start text-success fw-bold" for="manuscript_pdf">Paper Manuscript <span class="text-danger fw-normal">(required pdf)</span></label>
+                      <input class="form-control form-control-lg" type="file" accept="application/pdf" name="manuscript_pdf" id="manuscript_pdf" required>
+                    </div>
+                    <div class="col-auto mb-5">
+                      <label class="form-label text-start text-success fw-bold" for="supplimentary_file">Paper File <span class="text-danger fw-normal">(required doc)</span></label>
+                      <input class="form-control form-control-lg" type="file" name="supplimentary_file" id="supplimentary_file" required>
+                    </div>
+                    <div class="text-center">
+                      <button type="submit" class="btn btn-success me-4">Submit</button>
+                      <button type="reset" class="btn btn-outline-success">Clear</button>
+                    </div>
+                  </div>  
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>    
+    </main>
+
+    {% include 'footer.html' %}    
+
+    {% endblock %}
