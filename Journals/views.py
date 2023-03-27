@@ -1,4 +1,4 @@
-from django.shortcuts import render,HttpResponseRedirect
+from django.shortcuts import render,HttpResponseRedirect,redirect
 from django.views import View
 from .models import Publish_Papers_Info,Articles_Papers_Info
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
@@ -61,6 +61,7 @@ class Search(View):
             else:
                 year = '';
         else:
+            return redirect('JournalHome')
             papers,keyword,by,count,year = "","","","",""
         page = request.GET.get('page')
         if request.GET.get('display'):

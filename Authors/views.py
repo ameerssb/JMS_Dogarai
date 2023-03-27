@@ -10,8 +10,9 @@ from django.utils.decorators import method_decorator
 from django.contrib.auth.decorators import login_required
 from Main.decorators import email_verification_required,active_verification_required,is_author_accepted_required,user_sigin
 from paystackapi.paystack import Paystack
+import os
 
-paystack_secret_key = "sk_test_afb5899f3131f1b6aaa3bdcbf698550cc478de5c"
+paystack_secret_key = str(os.getenv("PAYSTACK"))
 paystack = Paystack(secret_key=paystack_secret_key)
 
 # Create your views here.
@@ -145,7 +146,7 @@ class New(View):
                 return render(request, 'Authors/new.html')
             else:
                 New.reference_number = payment['data']['reference']
-                New.reference_url = payment['data']['authoratization_url']
+                New.reference_url = payment['data']['authorization_url']
                 New.version += 1
                 History = Historyform.save(commit=False)
                 History.version = New.version
