@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 30, 2023 at 03:58 PM
+-- Generation Time: May 30, 2023 at 09:44 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.29
 
@@ -131,110 +131,78 @@ CREATE TABLE `auth_permission` (
 --
 
 INSERT INTO `auth_permission` (`id`, `name`, `content_type_id`, `codename`) VALUES
-(1, 'Can add Theme', 1, 'add_theme'),
-(2, 'Can change Theme', 1, 'change_theme'),
-(3, 'Can delete Theme', 1, 'delete_theme'),
-(4, 'Can view Theme', 1, 'view_theme'),
-(5, 'Can add log entry', 2, 'add_logentry'),
-(6, 'Can change log entry', 2, 'change_logentry'),
-(7, 'Can delete log entry', 2, 'delete_logentry'),
-(8, 'Can view log entry', 2, 'view_logentry'),
-(9, 'Can add permission', 3, 'add_permission'),
-(10, 'Can change permission', 3, 'change_permission'),
-(11, 'Can delete permission', 3, 'delete_permission'),
-(12, 'Can view permission', 3, 'view_permission'),
-(13, 'Can add group', 4, 'add_group'),
-(14, 'Can change group', 4, 'change_group'),
-(15, 'Can delete group', 4, 'delete_group'),
-(16, 'Can view group', 4, 'view_group'),
-(17, 'Can add content type', 5, 'add_contenttype'),
-(18, 'Can change content type', 5, 'change_contenttype'),
-(19, 'Can delete content type', 5, 'delete_contenttype'),
-(20, 'Can view content type', 5, 'view_contenttype'),
-(21, 'Can add session', 6, 'add_session'),
-(22, 'Can change session', 6, 'change_session'),
-(23, 'Can delete session', 6, 'delete_session'),
-(24, 'Can view session', 6, 'view_session'),
-(25, 'Can add user', 7, 'add_user'),
-(26, 'Can change user', 7, 'change_user'),
-(27, 'Can delete user', 7, 'delete_user'),
-(28, 'Can view user', 7, 'view_user'),
-(29, 'Can add articles_papers_info', 8, 'add_articles_papers_info'),
-(30, 'Can change articles_papers_info', 8, 'change_articles_papers_info'),
-(31, 'Can delete articles_papers_info', 8, 'delete_articles_papers_info'),
-(32, 'Can view articles_papers_info', 8, 'view_articles_papers_info'),
-(33, 'Can add papers_info', 9, 'add_papers_info'),
-(34, 'Can change papers_info', 9, 'change_papers_info'),
-(35, 'Can delete papers_info', 9, 'delete_papers_info'),
-(36, 'Can view papers_info', 9, 'view_papers_info'),
-(37, 'Can add relate', 10, 'add_relate'),
-(38, 'Can change relate', 10, 'change_relate'),
-(39, 'Can delete relate', 10, 'delete_relate'),
-(40, 'Can view relate', 10, 'view_relate'),
-(41, 'Can add associate editor', 11, 'add_associateeditor'),
-(42, 'Can change associate editor', 11, 'change_associateeditor'),
-(43, 'Can delete associate editor', 11, 'delete_associateeditor'),
-(44, 'Can view associate editor', 11, 'view_associateeditor'),
-(45, 'Can add author', 12, 'add_author'),
-(46, 'Can change author', 12, 'change_author'),
-(47, 'Can delete author', 12, 'delete_author'),
-(48, 'Can view author', 12, 'view_author'),
-(49, 'Can add main editor', 13, 'add_maineditor'),
-(50, 'Can change main editor', 13, 'change_maineditor'),
-(51, 'Can delete main editor', 13, 'delete_maineditor'),
-(52, 'Can view main editor', 13, 'view_maineditor'),
-(53, 'Can add reviewer', 14, 'add_reviewer'),
-(54, 'Can change reviewer', 14, 'change_reviewer'),
-(55, 'Can delete reviewer', 14, 'delete_reviewer'),
-(56, 'Can view reviewer', 14, 'view_reviewer'),
-(57, 'Can add publish_ papers_ info', 15, 'add_publish_papers_info'),
-(58, 'Can change publish_ papers_ info', 15, 'change_publish_papers_info'),
-(59, 'Can delete publish_ papers_ info', 15, 'delete_publish_papers_info'),
-(60, 'Can view publish_ papers_ info', 15, 'view_publish_papers_info'),
-(61, 'Can add submit_ papers_ info', 16, 'add_submit_papers_info'),
-(62, 'Can change submit_ papers_ info', 16, 'change_submit_papers_info'),
-(63, 'Can delete submit_ papers_ info', 16, 'delete_submit_papers_info'),
-(64, 'Can view submit_ papers_ info', 16, 'view_submit_papers_info'),
-(65, 'Can add update_ history', 17, 'add_update_history'),
-(66, 'Can change update_ history', 17, 'change_update_history'),
-(67, 'Can delete update_ history', 17, 'delete_update_history'),
-(68, 'Can view update_ history', 17, 'view_update_history'),
-(69, 'Can add paper_ update_ history', 17, 'add_paper_update_history'),
-(70, 'Can change paper_ update_ history', 17, 'change_paper_update_history'),
-(71, 'Can delete paper_ update_ history', 17, 'delete_paper_update_history'),
-(72, 'Can view paper_ update_ history', 17, 'view_paper_update_history'),
-(73, 'Can add paper_uploads', 18, 'add_paper_uploads'),
-(74, 'Can change paper_uploads', 18, 'change_paper_uploads'),
-(75, 'Can delete paper_uploads', 18, 'delete_paper_uploads'),
-(76, 'Can view paper_uploads', 18, 'view_paper_uploads'),
-(77, 'Can add paper_ reviewers', 19, 'add_paper_reviewers'),
-(78, 'Can change paper_ reviewers', 19, 'change_paper_reviewers'),
-(79, 'Can delete paper_ reviewers', 19, 'delete_paper_reviewers'),
-(80, 'Can view paper_ reviewers', 19, 'view_paper_reviewers'),
-(81, 'Can add paper_ editors', 20, 'add_paper_editors'),
-(82, 'Can change paper_ editors', 20, 'change_paper_editors'),
-(83, 'Can delete paper_ editors', 20, 'delete_paper_editors'),
-(84, 'Can view paper_ editors', 20, 'view_paper_editors'),
-(85, 'Can add link counter', 21, 'add_linkcounter'),
-(86, 'Can change link counter', 21, 'change_linkcounter'),
-(87, 'Can delete link counter', 21, 'delete_linkcounter'),
-(88, 'Can view link counter', 21, 'view_linkcounter'),
-(89, 'Can add paper_ comments', 22, 'add_paper_comments'),
-(90, 'Can change paper_ comments', 22, 'change_paper_comments'),
-(91, 'Can delete paper_ comments', 22, 'delete_paper_comments'),
-(92, 'Can view paper_ comments', 22, 'view_paper_comments'),
-(93, 'Can add d main editor', 23, 'add_dmaineditor'),
-(94, 'Can change d main editor', 23, 'change_dmaineditor'),
-(95, 'Can delete d main editor', 23, 'delete_dmaineditor'),
-(96, 'Can view d main editor', 23, 'view_dmaineditor'),
-(97, 'Can add d associate editor', 24, 'add_dassociateeditor'),
-(98, 'Can change d associate editor', 24, 'change_dassociateeditor'),
-(99, 'Can delete d associate editor', 24, 'delete_dassociateeditor'),
-(100, 'Can view d associate editor', 24, 'view_dassociateeditor'),
-(101, 'Can add editor', 25, 'add_editor'),
-(102, 'Can change editor', 25, 'change_editor'),
-(103, 'Can delete editor', 25, 'delete_editor'),
-(104, 'Can view editor', 25, 'view_editor');
+(1, 'Can add log entry', 1, 'add_logentry'),
+(2, 'Can change log entry', 1, 'change_logentry'),
+(3, 'Can delete log entry', 1, 'delete_logentry'),
+(4, 'Can view log entry', 1, 'view_logentry'),
+(5, 'Can add permission', 2, 'add_permission'),
+(6, 'Can change permission', 2, 'change_permission'),
+(7, 'Can delete permission', 2, 'delete_permission'),
+(8, 'Can view permission', 2, 'view_permission'),
+(9, 'Can add group', 3, 'add_group'),
+(10, 'Can change group', 3, 'change_group'),
+(11, 'Can delete group', 3, 'delete_group'),
+(12, 'Can view group', 3, 'view_group'),
+(13, 'Can add content type', 4, 'add_contenttype'),
+(14, 'Can change content type', 4, 'change_contenttype'),
+(15, 'Can delete content type', 4, 'delete_contenttype'),
+(16, 'Can view content type', 4, 'view_contenttype'),
+(17, 'Can add session', 5, 'add_session'),
+(18, 'Can change session', 5, 'change_session'),
+(19, 'Can delete session', 5, 'delete_session'),
+(20, 'Can view session', 5, 'view_session'),
+(21, 'Can add user', 6, 'add_user'),
+(22, 'Can change user', 6, 'change_user'),
+(23, 'Can delete user', 6, 'delete_user'),
+(24, 'Can view user', 6, 'view_user'),
+(25, 'Can add relate', 7, 'add_relate'),
+(26, 'Can change relate', 7, 'change_relate'),
+(27, 'Can delete relate', 7, 'delete_relate'),
+(28, 'Can view relate', 7, 'view_relate'),
+(29, 'Can add editor', 8, 'add_editor'),
+(30, 'Can change editor', 8, 'change_editor'),
+(31, 'Can delete editor', 8, 'delete_editor'),
+(32, 'Can view editor', 8, 'view_editor'),
+(33, 'Can add reviewer', 9, 'add_reviewer'),
+(34, 'Can change reviewer', 9, 'change_reviewer'),
+(35, 'Can delete reviewer', 9, 'delete_reviewer'),
+(36, 'Can view reviewer', 9, 'view_reviewer'),
+(37, 'Can add author', 10, 'add_author'),
+(38, 'Can change author', 10, 'change_author'),
+(39, 'Can delete author', 10, 'delete_author'),
+(40, 'Can view author', 10, 'view_author'),
+(41, 'Can add paper_ reviewers', 11, 'add_paper_reviewers'),
+(42, 'Can change paper_ reviewers', 11, 'change_paper_reviewers'),
+(43, 'Can delete paper_ reviewers', 11, 'delete_paper_reviewers'),
+(44, 'Can view paper_ reviewers', 11, 'view_paper_reviewers'),
+(45, 'Can add paper_ comments', 12, 'add_paper_comments'),
+(46, 'Can change paper_ comments', 12, 'change_paper_comments'),
+(47, 'Can delete paper_ comments', 12, 'delete_paper_comments'),
+(48, 'Can view paper_ comments', 12, 'view_paper_comments'),
+(49, 'Can add articles_ papers_ info', 13, 'add_articles_papers_info'),
+(50, 'Can change articles_ papers_ info', 13, 'change_articles_papers_info'),
+(51, 'Can delete articles_ papers_ info', 13, 'delete_articles_papers_info'),
+(52, 'Can view articles_ papers_ info', 13, 'view_articles_papers_info'),
+(53, 'Can add paper_ editors', 14, 'add_paper_editors'),
+(54, 'Can change paper_ editors', 14, 'change_paper_editors'),
+(55, 'Can delete paper_ editors', 14, 'delete_paper_editors'),
+(56, 'Can view paper_ editors', 14, 'view_paper_editors'),
+(57, 'Can add submit_ papers_ info', 15, 'add_submit_papers_info'),
+(58, 'Can change submit_ papers_ info', 15, 'change_submit_papers_info'),
+(59, 'Can delete submit_ papers_ info', 15, 'delete_submit_papers_info'),
+(60, 'Can view submit_ papers_ info', 15, 'view_submit_papers_info'),
+(61, 'Can add publish_ papers_ info', 16, 'add_publish_papers_info'),
+(62, 'Can change publish_ papers_ info', 16, 'change_publish_papers_info'),
+(63, 'Can delete publish_ papers_ info', 16, 'delete_publish_papers_info'),
+(64, 'Can view publish_ papers_ info', 16, 'view_publish_papers_info'),
+(65, 'Can add paper_ update_ history', 17, 'add_paper_update_history'),
+(66, 'Can change paper_ update_ history', 17, 'change_paper_update_history'),
+(67, 'Can delete paper_ update_ history', 17, 'delete_paper_update_history'),
+(68, 'Can view paper_ update_ history', 17, 'view_paper_update_history'),
+(69, 'Can add link counter', 18, 'add_linkcounter'),
+(70, 'Can change link counter', 18, 'change_linkcounter'),
+(71, 'Can delete link counter', 18, 'delete_linkcounter'),
+(72, 'Can view link counter', 18, 'view_linkcounter');
 
 -- --------------------------------------------------------
 
@@ -253,19 +221,6 @@ CREATE TABLE `django_admin_log` (
   `user_id` bigint(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `django_admin_log`
---
-
-INSERT INTO `django_admin_log` (`id`, `action_time`, `object_id`, `object_repr`, `action_flag`, `change_message`, `content_type_id`, `user_id`) VALUES
-(1, '2023-05-27 19:38:34.027949', '12', 'asmeessb@gmail.com', 3, '', 7, 13),
-(2, '2023-05-30 13:33:27.099048', '14', 'asmeessb@gmail.com', 2, '[{\"changed\": {\"fields\": [\"Last login\", \"Verified\", \"Gender\"]}}]', 7, 13),
-(3, '2023-05-30 13:33:39.305235', '14', 'asmeessb@gmail.com', 2, '[{\"changed\": {\"fields\": [\"Is active\"]}}]', 7, 13),
-(4, '2023-05-30 13:36:46.186526', '14', 'asmeessb@gmail.com', 2, '[{\"changed\": {\"fields\": [\"Is active\"]}}]', 7, 13),
-(5, '2023-05-30 13:37:32.879739', '14', 'asmeessb@gmail.com', 2, '[{\"changed\": {\"fields\": [\"Is active\"]}}]', 7, 13),
-(6, '2023-05-30 13:40:04.944513', '14', 'asmeessb@gmail.com', 2, '[{\"changed\": {\"fields\": [\"Is active\"]}}]', 7, 13),
-(7, '2023-05-30 13:41:03.643946', '14', 'asmeessb@gmail.com', 2, '[{\"changed\": {\"fields\": [\"Is email verified\", \"Gender\"]}}]', 7, 13);
-
 -- --------------------------------------------------------
 
 --
@@ -283,31 +238,24 @@ CREATE TABLE `django_content_type` (
 --
 
 INSERT INTO `django_content_type` (`id`, `app_label`, `model`) VALUES
-(2, 'admin', 'logentry'),
-(1, 'admin_interface', 'theme'),
-(4, 'auth', 'group'),
-(3, 'auth', 'permission'),
-(5, 'contenttypes', 'contenttype'),
-(8, 'Journals', 'articles_papers_info'),
-(9, 'Journals', 'papers_info'),
-(22, 'Journals', 'paper_comments'),
-(20, 'Journals', 'paper_editors'),
-(19, 'Journals', 'paper_reviewers'),
-(17, 'Journals', 'paper_update_history'),
-(18, 'Journals', 'paper_uploads'),
-(15, 'Journals', 'publish_papers_info'),
-(16, 'Journals', 'submit_papers_info'),
-(11, 'Main', 'associateeditor'),
-(12, 'Main', 'author'),
-(24, 'Main', 'dassociateeditor'),
-(23, 'Main', 'dmaineditor'),
-(25, 'Main', 'editor'),
-(13, 'Main', 'maineditor'),
-(10, 'Main', 'relate'),
-(14, 'Main', 'reviewer'),
-(7, 'Main', 'user'),
-(6, 'sessions', 'session'),
-(21, 'verify_email', 'linkcounter');
+(1, 'admin', 'logentry'),
+(3, 'auth', 'group'),
+(2, 'auth', 'permission'),
+(4, 'contenttypes', 'contenttype'),
+(13, 'journals', 'articles_papers_info'),
+(12, 'journals', 'paper_comments'),
+(14, 'journals', 'paper_editors'),
+(11, 'journals', 'paper_reviewers'),
+(17, 'journals', 'paper_update_history'),
+(16, 'journals', 'publish_papers_info'),
+(15, 'journals', 'submit_papers_info'),
+(10, 'main', 'author'),
+(8, 'main', 'editor'),
+(7, 'main', 'relate'),
+(9, 'main', 'reviewer'),
+(6, 'main', 'user'),
+(5, 'sessions', 'session'),
+(18, 'verify_email', 'linkcounter');
 
 -- --------------------------------------------------------
 
@@ -327,118 +275,28 @@ CREATE TABLE `django_migrations` (
 --
 
 INSERT INTO `django_migrations` (`id`, `app`, `name`, `applied`) VALUES
-(1, 'Journals', '0001_initial', '2022-12-12 14:22:27.461032'),
-(2, 'contenttypes', '0001_initial', '2022-12-12 14:22:28.169806'),
-(3, 'contenttypes', '0002_remove_content_type_name', '2022-12-12 14:22:30.169054'),
-(4, 'auth', '0001_initial', '2022-12-12 14:22:35.903677'),
-(5, 'auth', '0002_alter_permission_name_max_length', '2022-12-12 14:22:38.090982'),
-(6, 'auth', '0003_alter_user_email_max_length', '2022-12-12 14:22:38.146752'),
-(7, 'auth', '0004_alter_user_username_opts', '2022-12-12 14:22:38.250738'),
-(8, 'auth', '0005_alter_user_last_login_null', '2022-12-12 14:22:38.288691'),
-(9, 'auth', '0006_require_contenttypes_0002', '2022-12-12 14:22:38.336684'),
-(10, 'auth', '0007_alter_validators_add_error_messages', '2022-12-12 14:22:38.381030'),
-(11, 'auth', '0008_alter_user_username_max_length', '2022-12-12 14:22:38.429031'),
-(12, 'auth', '0009_alter_user_last_name_max_length', '2022-12-12 14:22:38.493028'),
-(13, 'auth', '0010_alter_group_name_max_length', '2022-12-12 14:22:38.779425'),
-(14, 'auth', '0011_update_proxy_permissions', '2022-12-12 14:22:38.938759'),
-(15, 'auth', '0012_alter_user_first_name_max_length', '2022-12-12 14:22:39.282766'),
-(16, 'Main', '0001_initial', '2022-12-12 14:22:45.927479'),
-(17, 'admin', '0001_initial', '2022-12-12 14:22:48.863623'),
-(18, 'admin', '0002_logentry_remove_auto_add', '2022-12-12 14:22:48.945614'),
-(19, 'admin', '0003_logentry_add_action_flag_choices', '2022-12-12 14:22:49.038847'),
-(20, 'admin_interface', '0001_initial', '2022-12-12 14:22:49.843459'),
-(21, 'admin_interface', '0002_add_related_modal', '2022-12-12 14:22:50.901528'),
-(22, 'admin_interface', '0003_add_logo_color', '2022-12-12 14:22:51.212431'),
-(23, 'admin_interface', '0004_rename_title_color', '2022-12-12 14:22:51.476145'),
-(24, 'admin_interface', '0005_add_recent_actions_visible', '2022-12-12 14:22:51.791505'),
-(25, 'admin_interface', '0006_bytes_to_str', '2022-12-12 14:22:52.084586'),
-(26, 'admin_interface', '0007_add_favicon', '2022-12-12 14:22:52.348596'),
-(27, 'admin_interface', '0008_change_related_modal_background_opacity_type', '2022-12-12 14:22:52.826654'),
-(28, 'admin_interface', '0009_add_enviroment', '2022-12-12 14:22:53.569645'),
-(29, 'admin_interface', '0010_add_localization', '2022-12-12 14:22:53.740470'),
-(30, 'admin_interface', '0011_add_environment_options', '2022-12-12 14:22:54.422696'),
-(31, 'admin_interface', '0012_update_verbose_names', '2022-12-12 14:22:54.494325'),
-(32, 'admin_interface', '0013_add_related_modal_close_button', '2022-12-12 14:22:54.666141'),
-(33, 'admin_interface', '0014_name_unique', '2022-12-12 14:22:55.028908'),
-(34, 'admin_interface', '0015_add_language_chooser_active', '2022-12-12 14:22:55.307805'),
-(35, 'admin_interface', '0016_add_language_chooser_display', '2022-12-12 14:22:55.491832'),
-(36, 'admin_interface', '0017_change_list_filter_dropdown', '2022-12-12 14:22:55.543873'),
-(37, 'admin_interface', '0018_theme_list_filter_sticky', '2022-12-12 14:22:55.728345'),
-(38, 'admin_interface', '0019_add_form_sticky', '2022-12-12 14:22:56.076108'),
-(39, 'admin_interface', '0020_module_selected_colors', '2022-12-12 14:22:57.404617'),
-(40, 'admin_interface', '0021_file_extension_validator', '2022-12-12 14:22:57.540654'),
-(41, 'admin_interface', '0022_add_logo_max_width_and_height', '2022-12-12 14:22:58.120206'),
-(42, 'admin_interface', '0023_theme_foldable_apps', '2022-12-12 14:22:58.857298'),
-(43, 'admin_interface', '0024_remove_theme_css', '2022-12-12 14:22:59.150664'),
-(44, 'admin_interface', '0025_theme_language_chooser_control', '2022-12-12 14:22:59.521651'),
-(45, 'admin_interface', '0026_theme_list_filter_highlight', '2022-12-12 14:22:59.848881'),
-(46, 'admin_interface', '0027_theme_list_filter_removal_links', '2022-12-12 14:23:00.083389'),
-(47, 'admin_interface', '0028_theme_show_fieldsets_as_tabs_and_more', '2022-12-12 14:23:00.580633'),
-(48, 'sessions', '0001_initial', '2022-12-12 14:23:01.340685'),
-(49, 'Journals', '0002_articles_papers_info_user_papers_info_user', '2022-12-12 14:25:16.250790'),
-(50, 'Main', '0002_relate_rename_gender_user_gender_user_created_and_more', '2022-12-12 15:21:14.681759'),
-(51, 'Main', '0003_rename_university_relate_institution_and_more', '2022-12-12 15:26:26.427051'),
-(52, 'Journals', '0003_publish_papers_info_submit_papers_info_and_more', '2022-12-12 16:56:24.364313'),
-(53, 'Journals', '0004_rename_update_history_paper_update_history_and_more', '2022-12-15 23:47:25.113669'),
-(54, 'Journals', '0005_alter_submit_papers_info_paper_type', '2022-12-15 23:49:26.406775'),
-(55, 'Main', '0004_remove_user_date_of_birth_remove_user_other_name_and_more', '2022-12-20 14:05:11.625294'),
-(56, 'verify_email', '0001_initial', '2022-12-20 14:26:35.553882'),
-(57, 'Main', '0005_alter_user_username', '2022-12-20 14:57:00.178022'),
-(58, 'Main', '0006_alter_user_verified', '2022-12-20 15:47:08.155762'),
-(59, 'Journals', '0006_submit_papers_info_cover_letter_pdf_and_more', '2022-12-23 22:41:54.841051'),
-(60, 'Journals', '0007_alter_submit_papers_info_manuscript_pdf_and_more', '2022-12-23 22:57:44.202363'),
-(61, 'Journals', '0008_alter_submit_papers_info_user', '2022-12-23 23:01:30.106900'),
-(62, 'Journals', '0009_alter_submit_papers_info_status', '2022-12-24 05:27:31.627895'),
-(63, 'Journals', '0010_alter_submit_papers_info_manuscript_pdf_and_more', '2022-12-24 06:34:09.301975'),
-(64, 'Journals', '0011_alter_submit_papers_info_manuscript_pdf_and_more', '2022-12-24 14:20:05.103386'),
-(65, 'Journals', '0012_alter_submit_papers_info_status', '2022-12-25 16:11:09.404928'),
-(66, 'Journals', '0013_remove_paper_update_history_created', '2022-12-25 16:18:19.644851'),
-(67, 'Journals', '0014_paper_update_history_abstract_and_more', '2022-12-25 16:28:14.460602'),
-(68, 'Journals', '0015_remove_paper_update_history_comment', '2022-12-25 16:30:30.742296'),
-(69, 'Journals', '0016_paper_comments_paper_update_history_version_and_more', '2022-12-25 16:37:45.435646'),
-(70, 'Journals', '0017_submit_papers_info_version', '2022-12-25 18:50:26.899044'),
-(71, 'Journals', '0018_paper_reviewers_review_status', '2022-12-26 22:18:16.939176'),
-(72, 'Main', '0007_remove_relate_is_ass_editor_remove_relate_is_author_and_more', '2022-12-26 22:18:25.086339'),
-(73, 'Main', '0008_relate_address_relate_city_relate_mobile_and_more', '2022-12-26 22:25:02.388351'),
-(74, 'Main', '0009_alter_relate_mobile', '2022-12-26 22:26:24.845619'),
-(75, 'Main', '0010_remove_associateeditor_is_ass_editor_and_more', '2022-12-26 22:43:49.015265'),
-(76, 'Main', '0011_alter_relate_designation', '2022-12-26 23:03:06.142164'),
-(77, 'Main', '0012_alter_relate_designation', '2022-12-26 23:24:23.086481'),
-(78, 'Main', '0013_alter_relate_designation', '2022-12-26 23:25:17.833365'),
-(79, 'Journals', '0019_alter_submit_papers_info_user', '2022-12-27 00:05:14.556473'),
-(80, 'Journals', '0020_alter_publish_papers_info_pubmed_id_and_more', '2022-12-27 23:52:58.029906'),
-(81, 'Main', '0014_remove_relate_accepted_and_more', '2022-12-27 23:53:01.497463'),
-(82, 'Journals', '0021_delete_paper_editors', '2022-12-28 11:32:04.540553'),
-(83, 'Main', '0015_editor_remove_associateeditor_relate_ptr_and_more', '2022-12-28 11:40:02.650828'),
-(84, 'Main', '0015_dassociateeditor_dmaineditor', '2022-12-28 11:45:31.930891'),
-(85, 'Main', '0016_remove_dassociateeditor_relate_ptr_and_more', '2022-12-28 11:52:40.753043'),
-(86, 'Main', '0015_associateeditor_maineditor', '2022-12-28 11:56:02.836790'),
-(87, 'Main', '0016_remove_associateeditor_relate_ptr_and_more', '2022-12-28 11:56:06.744855'),
-(88, 'Main', '0017_editor', '2022-12-28 11:56:27.229749'),
-(89, 'Journals', '0022_paper_editors', '2022-12-28 11:57:49.973302'),
-(90, 'Journals', '0023_alter_submit_papers_info_domain', '2022-12-28 13:11:16.893540'),
-(91, 'Journals', '0024_alter_articles_papers_info_domain_and_more', '2022-12-28 13:44:49.219568'),
-(92, 'Journals', '0025_alter_articles_papers_info_subdomain_and_more', '2022-12-28 13:53:08.686528'),
-(93, 'Journals', '0026_paper_update_history_domain', '2022-12-28 14:10:49.208029'),
-(94, 'Journals', '0027_paper_reviewers_accepted_and_more', '2022-12-29 09:05:21.884902'),
-(95, 'Journals', '0028_paper_reviewers_user_and_more', '2022-12-29 09:35:42.949454'),
-(96, 'Journals', '0029_alter_paper_reviewers_user', '2022-12-29 09:45:03.618939'),
-(97, 'Journals', '0030_remove_paper_reviewers_user_paper_reviewers_editor', '2022-12-30 14:18:41.525047'),
-(98, 'Journals', '0031_alter_paper_editors_editor_and_more', '2022-12-30 14:27:39.401831'),
-(99, 'Journals', '0032_remove_paper_reviewers_editor_paper_reviewers_user_and_more', '2022-12-30 14:29:37.602717'),
-(100, 'Journals', '0033_remove_paper_reviewers_user_paper_reviewers_editor', '2022-12-30 14:30:32.960088'),
-(101, 'Main', '0018_editor_domain_editor_subdomain_reviewer_domain_and_more', '2022-12-30 20:49:05.348514'),
-(102, 'Main', '0019_editor_area_reviewer_area_alter_editor_subdomain_and_more', '2022-12-30 21:07:09.989664'),
-(103, 'Journals', '0034_alter_paper_reviewers_editor_and_more', '2022-12-31 00:06:33.048491'),
-(104, 'Journals', '0035_alter_paper_editors_editor_alter_paper_editors_paper_and_more', '2022-12-31 00:13:02.494407'),
-(105, 'Journals', '0036_alter_paper_reviewers_editor_and_more', '2022-12-31 00:57:51.193763'),
-(106, 'Journals', '0037_alter_paper_reviewers_reviewer', '2022-12-31 00:59:10.847444'),
-(107, 'Journals', '0038_remove_paper_reviewers_accepted', '2022-12-31 05:52:45.275236'),
-(108, 'Journals', '0039_paper_comments_reviewer_and_more', '2022-12-31 06:18:12.120251'),
-(109, 'Journals', '0040_alter_paper_comments_comment', '2022-12-31 06:36:15.717991'),
-(110, 'Journals', '0041_submit_papers_info_payment_and_more', '2023-01-27 21:22:24.785175'),
-(111, 'Journals', '0042_alter_submit_papers_info_payment', '2023-01-27 21:28:46.177384'),
-(112, 'Journals', '0043_submit_papers_info_reference_url', '2023-01-27 21:43:06.799055');
+(1, 'contenttypes', '0001_initial', '2023-05-30 18:20:37.124554'),
+(2, 'contenttypes', '0002_remove_content_type_name', '2023-05-30 18:20:38.544122'),
+(3, 'auth', '0001_initial', '2023-05-30 18:20:48.027518'),
+(4, 'auth', '0002_alter_permission_name_max_length', '2023-05-30 18:20:51.445504'),
+(5, 'auth', '0003_alter_user_email_max_length', '2023-05-30 18:20:51.581720'),
+(6, 'auth', '0004_alter_user_username_opts', '2023-05-30 18:20:51.794801'),
+(7, 'auth', '0005_alter_user_last_login_null', '2023-05-30 18:20:51.915725'),
+(8, 'auth', '0006_require_contenttypes_0002', '2023-05-30 18:20:51.978689'),
+(9, 'auth', '0007_alter_validators_add_error_messages', '2023-05-30 18:20:52.102611'),
+(10, 'auth', '0008_alter_user_username_max_length', '2023-05-30 18:20:52.169568'),
+(11, 'auth', '0009_alter_user_last_name_max_length', '2023-05-30 18:20:52.223535'),
+(12, 'auth', '0010_alter_group_name_max_length', '2023-05-30 18:20:52.455392'),
+(13, 'auth', '0011_update_proxy_permissions', '2023-05-30 18:20:52.528090'),
+(14, 'auth', '0012_alter_user_first_name_max_length', '2023-05-30 18:20:52.687989'),
+(15, 'auth', '0013_auto_20230220_0210', '2023-05-30 18:20:52.767940'),
+(16, 'main', '0001_initial', '2023-05-30 18:21:06.274628'),
+(17, 'admin', '0001_initial', '2023-05-30 18:21:10.350298'),
+(18, 'sessions', '0001_initial', '2023-05-30 18:21:11.266766'),
+(19, 'main', '0002_user_verified_user_created_user_gender_and_more', '2023-05-30 18:22:05.661099'),
+(20, 'journals', '0001_initial', '2023-05-30 18:26:16.888512'),
+(21, 'main', '0003_relate_author_editor_reviewer', '2023-05-30 18:26:27.856722'),
+(22, 'verify_email', '0001_initial', '2023-05-30 18:26:31.841372');
 
 -- --------------------------------------------------------
 
@@ -531,10 +389,10 @@ CREATE TABLE `journals_paper_reviewers` (
   `created` datetime(6) NOT NULL,
   `updated` datetime(6) NOT NULL,
   `id` bigint(20) NOT NULL,
-  `paper_id` bigint(20) NOT NULL,
-  `reviewer_id` bigint(20) NOT NULL,
   `review_status` varchar(100) NOT NULL,
-  `editor_id` bigint(20) NOT NULL
+  `editor_id` bigint(20) NOT NULL,
+  `paper_id` bigint(20) NOT NULL,
+  `reviewer_id` bigint(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -544,55 +402,22 @@ CREATE TABLE `journals_paper_reviewers` (
 --
 
 CREATE TABLE `journals_paper_update_history` (
+  `created` datetime(6) NOT NULL,
   `id` bigint(20) NOT NULL,
-  `paper_id` bigint(20) NOT NULL,
+  `title` varchar(600) NOT NULL,
   `abstract` varchar(4200) NOT NULL,
+  `keywords` varchar(4200) NOT NULL,
   `authors_name` varchar(3105) NOT NULL,
   `corres_emails` varchar(300) DEFAULT NULL,
-  `cover_letter_pdf` varchar(100) DEFAULT NULL,
-  `created` datetime(6) NOT NULL,
-  `keywords` varchar(4200) NOT NULL,
-  `manuscript_pdf` varchar(100) DEFAULT NULL,
-  `paper_type` int(11) NOT NULL,
-  `subdomain` varchar(200) DEFAULT NULL,
-  `supplimentary_file` varchar(100) DEFAULT NULL,
-  `title` varchar(600) NOT NULL,
   `version` int(11) NOT NULL,
-  `domain` varchar(200) NOT NULL
+  `paper_type` int(11) NOT NULL,
+  `manuscript_pdf` varchar(100) DEFAULT NULL,
+  `cover_letter_pdf` varchar(100) DEFAULT NULL,
+  `supplimentary_file` varchar(100) DEFAULT NULL,
+  `domain` varchar(200) NOT NULL,
+  `subdomain` varchar(200) DEFAULT NULL,
+  `paper_id` bigint(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `journals_paper_update_history`
---
-
-INSERT INTO `journals_paper_update_history` (`id`, `paper_id`, `abstract`, `authors_name`, `corres_emails`, `cover_letter_pdf`, `created`, `keywords`, `manuscript_pdf`, `paper_type`, `subdomain`, `supplimentary_file`, `title`, `version`, `domain`) VALUES
-(1, 5, 'The aim of the paper is to analyse the possibilities of using IT tools supporting education for customer relationship management on the example of IPMA-Student Portal. The tool was created to support partner universities and their students in the development of competencies and certification in project management; however, by way of putting it to use, collecting information about users, and communicating with them, the tool can be treated as a means of strengthening and improving relationships with universities and students. The IPMA-Student Portal is a basic communication tool, adapted to the needs of lecturers and students, bringing benefits both to the IPMA Poland Association and the academic community.', 'Joanna Rzempała, Rafał Szymańskib', 'joannarzem@uos.edu.po', '', '2022-12-25 17:04:28.316556', 'client relationships, marketing, development of competencies, education', '', 1, 'UNKNOWN', '', 'Using CRM Tools for Learning Development – The IPMA-Student Portal Example', 1, 'Select'),
-(2, 5, 'The aim of the paper is to analyse the possibilities of using IT tools supporting education for customer relationship management on the example of IPMA-Student Portal. The tool was created to support partner universities and their students in the development of competencies and certification in project management; however, by way of putting it to use, collecting information about users, and communicating with them, the tool can be treated as a means of strengthening and improving relationships with universities and students. The IPMA-Student Portal is a basic communication tool, adapted to the needs of lecturers and students, bringing benefits both to the IPMA Poland Association and the academic community.', 'Joanna Rzempała, Rafał Szymańskib', 'joannarzem@uos.edu.po', '', '2022-12-25 18:18:31.655680', 'client relationships, marketing, development of competencies, education', 'papers_file/COVID.DATA.LIC.AGMT_ql8Cd4I.pdf', 1, 'UNKNOWN', '', 'Using CRM Tools for Learning Development – The IPMA-Student Portal Example', 2, 'Select'),
-(3, 5, 'The aim of the paper is to analyse the possibilities of using IT tools supporting education for customer relationship management on the example of IPMA-Student Portal. The tool was created to support partner universities and their students in the development of competencies and certification in project management; however, by way of putting it to use, collecting information about users, and communicating with them, the tool can be treated as a means of strengthening and improving relationships with universities and students. The IPMA-Student Portal is a basic communication tool, adapted to the needs of lecturers and students, bringing benefits both to the IPMA Poland Association and the academic community.', 'Joanna Rzempała, Rafał Szymańskib', 'joannarzem@uos.edu.po', '', '2022-12-25 18:22:17.613181', 'client relationships, marketing, development of competencies, education', '', 1, 'UNKNOWN', '', 'Using CRM Tools for Learning Development – The IPMA-Student Portal Example', 3, 'Select'),
-(4, 5, 'The aim of the paper is to analyse the possibilities of using IT tools supporting education for customer relationship management on the example of IPMA-Student Portal. The tool was created to support partner universities and their students in the development of competencies and certification in project management; however, by way of putting it to use, collecting information about users, and communicating with them, the tool can be treated as a means of strengthening and improving relationships with universities and students. The IPMA-Student Portal is a basic communication tool, adapted to the needs of lecturers and students, bringing benefits both to the IPMA Poland Association and the academic community.', 'Joanna Rzempała, Rafał Szymańskib', 'joannarzem@uos.edu.po', '', '2022-12-25 18:23:30.725539', 'client relationships, marketing, development of competencies, education', '', 1, 'UNKNOWN', '', 'Using CRM Tools for Learning Development – The IPMA-Student Portal Example', 4, 'Select'),
-(5, 5, 'The aim of the paper is to analyse the possibilities of using IT tools supporting education for customer relationship management on the example of IPMA-Student Portal. The tool was created to support partner universities and their students in the development of competencies and certification in project management; however, by way of putting it to use, collecting information about users, and communicating with them, the tool can be treated as a means of strengthening and improving relationships with universities and students. The IPMA-Student Portal is a basic communication tool, adapted to the needs of lecturers and students, bringing benefits both to the IPMA Poland Association and the academic community.', 'Joanna Rzempała, Rafał Szymańskib', 'joannarzem@uos.edu.po', '', '2022-12-25 18:28:50.155269', 'client relationships, marketing, development of competencies, education', '', 1, 'UNKNOWN', '', 'Using CRM Tools for Learning Development – The IPMA-Student Portal Example', 5, 'Select'),
-(6, 5, 'The aim of the paper is to analyse the possibilities of using IT tools supporting education for customer relationship management on the example of IPMA-Student Portal. The tool was created to support partner universities and their students in the development of competencies and certification in project management; however, by way of putting it to use, collecting information about users, and communicating with them, the tool can be treated as a means of strengthening and improving relationships with universities and students. The IPMA-Student Portal is a basic communication tool, adapted to the needs of lecturers and students, bringing benefits both to the IPMA Poland Association and the academic community.', 'Joanna Rzempała, Rafał Szymańskib', 'joannarzem@uos.edu.po', '', '2022-12-25 20:59:29.439388', 'client relationships, marketing, development of competencies, education', '', 1, 'UNKNOWN', '', 'Using CRM Tools for Learning Development – The IPMA-Student Portal Example', 6, 'Select'),
-(7, 5, 'The aim of the paper is to analyse the possibilities of using IT tools supporting education for customer relationship management on the example of IPMA-Student Portal. The tool was created to support partner universities and their students in the development of competencies and certification in project management; however, by way of putting it to use, collecting information about users, and communicating with them, the tool can be treated as a means of strengthening and improving relationships with universities and students. The IPMA-Student Portal is a basic communication tool, adapted to the needs of lecturers and students, bringing benefits both to the IPMA Poland Association and the academic community.', 'Joanna Rzempała, Rafał Szymańskib', 'joannarzem@uos.edu.po', '', '2022-12-25 21:09:18.164692', 'client relationships, marketing, development of competencies, education', '', 1, 'UNKNOWN', '', 'Using CRM Tools for Learning Development – The IPMA-Student Portal Example', 7, 'Select'),
-(8, 4, 'ss', 'a', 'ameersbature17@gmail.com', '', '2022-12-25 21:41:12.920158', 'a', '', 2, 'UNKNOWN', '', 'a', 1, 'Select'),
-(9, 4, 'ss', 'a', 'ameersbature17@gmail.com', '', '2022-12-25 21:47:11.421694', 'a', '', 2, 'UNKNOWN', '', 'a', 2, 'Select'),
-(10, 4, 'ss', 'a', 'ameersbature17@gmail.com', '', '2022-12-25 21:48:07.790176', 'a', '', 2, 'UNKNOWN', '', 'a', 3, 'Select'),
-(11, 6, 'A web-based information system for management of scientific electronic journals is presented in the paper. Journal management requires exchange of information between many participants in the publishing process, including authors, reviewers, editors, and lectors. Each participant in the process plays a different role, and cooperates with other participants. The web system is implemented using open source solutions on the Linux platform. Three-tiered information system architecture\r\nhas been used. Object oriented PHP (PHP hypertext preprocessor) is used as a server side scripting language to implement the business logic. Database management system is provided by PostgreSQL, although database connection abstraction is utilized. Apache web server is used together with SSL encryption mechanism to provide HTML content to end-user. The system is currently in use for editorial support of an international scientific journal and the initial results have been encouraging.', 'Hrvoje Bogunović, Edgar Pek, Sven Lončarić, Vedran Mornar', 'hrvoje.bogunovic@fer.hr', '', '2022-12-25 21:54:27.449320', 'Journal management, PHP, web applications, web content management', 'papers_file/An_electronic_journal_management_system_Mz1mHZN.pdf', 1, 'UNKNOWN', 'papers_file/An_electronic_journal_management_system_l3ATZaL.pdf', 'An Electronic Journal Management System', 1, 'Select'),
-(12, 6, 'A web-based information system for management of scientific electronic journals is presented in the paper. Journal management requires exchange of information between many participants in the publishing process, including authors, reviewers, editors, and lectors. Each participant in the process plays a different role, and cooperates with other participants. The web system is implemented using open source solutions on the Linux platform. Three-tiered information system architecture\r\nhas been used. Object oriented PHP (PHP hypertext preprocessor) is used as a server side scripting language to implement the business logic. Database management system is provided by PostgreSQL, although database connection abstraction is utilized. Apache web server is used together with SSL encryption mechanism to provide HTML content to end-user. The system is currently in use for editorial support of an international scientific journal and the initial results have been encouraging.', 'Hrvoje Bogunović, Edgar Pek, Sven Lončarić, Vedran Mornar', 'hrvoje.bogunovic@fer.hr', '', '2022-12-25 21:58:02.227830', 'Journal management, PHP, web applications, web content management', '', 1, 'UNKNOWN', '', 'An Electronic Journal Management System', 2, 'Select'),
-(13, 6, 'A web-based information system for management of scientific electronic journals is presented in the paper. Journal management requires exchange of information between many participants in the publishing process, including authors, reviewers, editors, and lectors. Each participant in the process plays a different role, and cooperates with other participants. The web system is implemented using open source solutions on the Linux platform. Three-tiered information system architecture\r\nhas been used. Object oriented PHP (PHP hypertext preprocessor) is used as a server side scripting language to implement the business logic. Database management system is provided by PostgreSQL, although database connection abstraction is utilized. Apache web server is used together with SSL encryption mechanism to provide HTML content to end-user. The system is currently in use for editorial support of an international scientific journal and the initial results have been encouraging.', 'Hrvoje Bogunović, Edgar Pek, Sven Lončarić, Vedran Mornar', 'hrvoje.bogunovic@fer.hr', '', '2022-12-25 22:07:25.881783', 'Journal management, PHP, web applications, web content management', '', 2, 'UNKNOWN', '', 'An Electronic Journal Management System', 3, 'Select'),
-(14, 5, 'The aim of the paper is to analyse the possibilities of using IT tools supporting education for customer relationship management on the example of IPMA-Student Portal. The tool was created to support partner universities and their students in the development of competencies and certification in project management; however, by way of putting it to use, collecting information about users, and communicating with them, the tool can be treated as a means of strengthening and improving relationships with universities and students. The IPMA-Student Portal is a basic communication tool, adapted to the needs of lecturers and students, bringing benefits both to the IPMA Poland Association and the academic community.', 'Joanna Rzempała, Rafał Szymańskib', 'joannarzem@uos.edu.po', '', '2022-12-28 14:42:49.853345', 'client relationships, marketing, development of competencies, education', '', 1, 'Computer Science', '', 'Using CRM Tools for Learning Development – The IPMA-Student Portal Example', 8, 'Physical sciences and engineering'),
-(15, 5, 'The aim of the paper is to analyse the possibilities of using IT tools supporting education for customer relationship management on the example of IPMA-Student Portal. The tool was created to support partner universities and their students in the development of competencies and certification in project management; however, by way of putting it to use, collecting information about users, and communicating with them, the tool can be treated as a means of strengthening and improving relationships with universities and students. The IPMA-Student Portal is a basic communication tool, adapted to the needs of lecturers and students, bringing benefits both to the IPMA Poland Association and the academic community.', 'Joanna Rzempała, Rafał Szymańskib', 'joannarzem@uos.edu.po', '', '2022-12-28 14:43:32.847311', 'client relationships, marketing, development of competencies, education', '', 1, 'Computer Science', '', 'Using CRM Tools for Learning Development – The IPMA-Student Portal Example', 9, 'Physical sciences and engineering'),
-(16, 6, 'A web-based information system for management of scientific electronic journals is presented in the paper. Journal management requires exchange of information between many participants in the publishing process, including authors, reviewers, editors, and lectors. Each participant in the process plays a different role, and cooperates with other participants. The web system is implemented using open source solutions on the Linux platform. Three-tiered information system architecture\r\nhas been used. Object oriented PHP (PHP hypertext preprocessor) is used as a server side scripting language to implement the business logic. Database management system is provided by PostgreSQL, although database connection abstraction is utilized. Apache web server is used together with SSL encryption mechanism to provide HTML content to end-user. The system is currently in use for editorial support of an international scientific journal and the initial results have been encouraging.', 'Hrvoje Bogunović, Edgar Pek, Sven Lončarić, Vedran Mornar', 'hrvoje.bogunovic@fer.hr', '', '2022-12-28 14:52:13.030513', 'Journal management, PHP, web applications, web content management', '', 1, 'Computer Science', '', 'An Electronic Journal Management System', 4, 'Physical sciences and engineering'),
-(17, 6, 'A web-based information system for management of scientific electronic journals is presented in the paper. Journal management requires exchange of information between many participants in the publishing process, including authors, reviewers, editors, and lectors. Each participant in the process plays a different role, and cooperates with other participants. The web system is implemented using open source solutions on the Linux platform. Three-tiered information system architecture\r\nhas been used. Object oriented PHP (PHP hypertext preprocessor) is used as a server side scripting language to implement the business logic. Database management system is provided by PostgreSQL, although database connection abstraction is utilized. Apache web server is used together with SSL encryption mechanism to provide HTML content to end-user. The system is currently in use for editorial support of an international scientific journal and the initial results have been encouraging.', 'Hrvoje Bogunović, Edgar Pek, Sven Lončarić, Vedran Mornar', 'hrvoje.bogunovic@fer.hr', '', '2022-12-28 14:53:24.072593', 'Journal management, PHP, web applications, web content management', '', 1, 'Computer Science', '', 'An Electronic Journal Management System', 5, 'Physical sciences and engineering'),
-(18, 6, 'A web-based information system for management of scientific electronic journals is presented in the paper. Journal management requires exchange of information between many participants in the publishing process, including authors, reviewers, editors, and lectors. Each participant in the process plays a different role, and cooperates with other participants. The web system is implemented using open source solutions on the Linux platform. Three-tiered information system architecture\r\nhas been used. Object oriented PHP (PHP hypertext preprocessor) is used as a server side scripting language to implement the business logic. Database management system is provided by PostgreSQL, although database connection abstraction is utilized. Apache web server is used together with SSL encryption mechanism to provide HTML content to end-user. The system is currently in use for editorial support of an international scientific journal and the initial results have been encouraging.', 'Hrvoje Bogunović, Edgar Pek, Sven Lončarić, Vedran Mornar', 'hrvoje.bogunovic@fer.hr', '', '2022-12-28 14:54:40.826475', 'Journal management, PHP, web applications, web content management', '', 1, 'Computer Science', '', 'An Electronic Journal Management System', 6, 'Physical sciences and engineering'),
-(19, 6, 'A web-based information system for management of scientific electronic journals is presented in the paper. Journal management requires exchange of information between many participants in the publishing process, including authors, reviewers, editors, and lectors. Each participant in the process plays a different role, and cooperates with other participants. The web system is implemented using open source solutions on the Linux platform. Three-tiered information system architecture\r\nhas been used. Object oriented PHP (PHP hypertext preprocessor) is used as a server side scripting language to implement the business logic. Database management system is provided by PostgreSQL, although database connection abstraction is utilized. Apache web server is used together with SSL encryption mechanism to provide HTML content to end-user. The system is currently in use for editorial support of an international scientific journal and the initial results have been encouraging.', 'Hrvoje Bogunović, Edgar Pek, Sven Lončarić, Vedran Mornar', 'hrvoje.bogunovic@fer.hr', '', '2022-12-28 14:56:39.702913', 'Journal management, PHP, web applications, web content management', '', 1, 'Computer Science', '', 'An Electronic Journal Management System', 7, 'Physical sciences and engineering'),
-(20, 6, 'A web-based information system for management of scientific electronic journals is presented in the paper. Journal management requires exchange of information between many participants in the publishing process, including authors, reviewers, editors, and lectors. Each participant in the process plays a different role, and cooperates with other participants. The web system is implemented using open source solutions on the Linux platform. Three-tiered information system architecture\r\nhas been used. Object oriented PHP (PHP hypertext preprocessor) is used as a server side scripting language to implement the business logic. Database management system is provided by PostgreSQL, although database connection abstraction is utilized. Apache web server is used together with SSL encryption mechanism to provide HTML content to end-user. The system is currently in use for editorial support of an international scientific journal and the initial results have been encouraging.', 'Hrvoje Bogunović, Edgar Pek, Sven Lončarić, Vedran Mornar', 'hrvoje.bogunovic@fer.hr', '', '2022-12-28 14:57:42.901415', 'Journal management, PHP, web applications, web content management', '', 1, 'Computer Science', '', 'An Electronic Journal Management System', 8, 'Physical sciences and engineering'),
-(21, 4, 'ss', 'a', 'ameersbature17@gmail.com', '', '2022-12-29 07:43:26.368862', 'a', '', 0, 'Unknown', '', 'a', 4, 'Unknown'),
-(22, 7, 'abstract here', 'Joanna Rzempała, Rafał Szymańskib', 'ameersbature17@gmail.com', '', '2022-12-30 13:41:08.383747', 'Journal management, PHP, web applications, web content management', 'papers_file/04Nfm04de12.pdf_sequence4_8G0mFBc.pdf', 1, 'Biologyy', 'papers_file/04Nfm04de12.pdf_sequence4_L3ef4lP.pdf', 'A paper', 1, 'Life sciences'),
-(23, 4, 'A web-based information system for management of scientific electronic journals is presented in the paper. Journal management requires exchange of information between many participants in the publishing process, including authors, reviewers, editors, and lectors. Each participant in the process plays a different role, and cooperates with other participants. The web system is implemented using open source solutions on the Linux platform. Three-tiered information system architecture has been used. Object oriented PHP (PHP hypertext preprocessor) is used as a server side scripting language to implement the business logic. Database management system is provided by PostgreSQL, although database connection abstraction is utilized. Apache web server is used together with SSL encryption mechanism to provide HTML content to end-user. The system is currently in use for editorial support of an international scientific journal and the initial results have been encouraging.', 'Hrvoje Bogunović, Edgar Pek, Sven Lončarić and Vedran Mornar', 'ameersbature17@gmail.com', '', '2022-12-31 00:40:03.312282', 'Journal management, PHP, web applications, web content management', 'papers_file/An_electronic_journal_management_system_1_HNPDIXF.pdf', 1, 'Computer Science', 'papers_file/An_electronic_journal_management_system_1_y2EnLlF.pdf', 'An Electronic Journal Management System', 5, 'Physical sciences and engineering'),
-(24, 4, 'A web-based information system for management of scientific electronic journals is presented in the paper. Journal management requires exchange of information between many participants in the publishing process, including authors, reviewers, editors, and lectors. Each participant in the process plays a different role, and cooperates with other participants. The web system is implemented using open source solutions on the Linux platform. Three-tiered information system architecture has been used. Object oriented PHP (PHP hypertext preprocessor) is used as a server side scripting language to implement the business logic. Database management system is provided by PostgreSQL, although database connection abstraction is utilized. Apache web server is used together with SSL encryption mechanism to provide HTML content to end-user. The system is currently in use for editorial support of an international scientific journal and the initial results have been encouraging.', 'Hrvoje Bogunović, Edgar Pek, Sven Lončarić and Vedran Mornar', 'ameersbature17@gmail.com', '', '2023-01-28 06:18:08.012089', 'Journal management, PHP, web applications, web content management', '', 1, 'Computer Science', '', 'An Electronic Journal Management System', 6, 'Physical sciences and engineering'),
-(25, 5, 'The aim of the paper is to analyse the possibilities of using IT tools supporting education for customer relationship management on the example of IPMA-Student Portal. The tool was created to support partner universities and their students in the development of competencies and certification in project management; however, by way of putting it to use, collecting information about users, and communicating with them, the tool can be treated as a means of strengthening and improving relationships with universities and students. The IPMA-Student Portal is a basic communication tool, adapted to the needs of lecturers and students, bringing benefits both to the IPMA Poland Association and the academic community.', 'Joanna Rzempała, Rafał Szymańskib', 'joannarzem@uos.edu.po', '', '2023-01-28 06:29:56.407955', 'client relationships, marketing, development of competencies, education', '', 1, 'Computer Science', '', 'Using CRM Tools for Learning Development – The IPMA-Student Portal Example', 10, 'Physical sciences and engineering'),
-(26, 5, 'The aim of the paper is to analyse the possibilities of using IT tools supporting education for customer relationship management on the example of IPMA-Student Portal. The tool was created to support partner universities and their students in the development of competencies and certification in project management; however, by way of putting it to use, collecting information about users, and communicating with them, the tool can be treated as a means of strengthening and improving relationships with universities and students. The IPMA-Student Portal is a basic communication tool, adapted to the needs of lecturers and students, bringing benefits both to the IPMA Poland Association and the academic community.', 'Joanna Rzempała, Rafał Szymańskib', 'ameersbature17@gmail.com', '', '2023-01-28 06:43:27.552239', 'client relationships, marketing, development of competencies, education', '', 1, 'Computer Science', '', 'Using CRM Tools for Learning Development – The IPMA-Student Portal Example', 11, 'Physical sciences and engineering'),
-(27, 4, 'A web-based information system for management of scientific electronic journals is presented in the paper. Journal management requires exchange of information between many participants in the publishing process, including authors, reviewers, editors, and lectors. Each participant in the process plays a different role, and cooperates with other participants. The web system is implemented using open source solutions on the Linux platform. Three-tiered information system architecture has been used. Object oriented PHP (PHP hypertext preprocessor) is used as a server side scripting language to implement the business logic. Database management system is provided by PostgreSQL, although database connection abstraction is utilized. Apache web server is used together with SSL encryption mechanism to provide HTML content to end-user. The system is currently in use for editorial support of an international scientific journal and the initial results have been encouraging.', 'Hrvoje Bogunović, Edgar Pek, Sven Lončarić and Vedran Mornar', 'sanisbature17@gmail.com', '', '2023-01-28 06:44:11.307004', 'Journal management, PHP, web applications, web content management', '', 1, 'Computer Science', '', 'An Electronic Journal Management System', 7, 'Physical sciences and engineering');
 
 -- --------------------------------------------------------
 
@@ -630,38 +455,38 @@ CREATE TABLE `journals_publish_papers_info` (
 
 CREATE TABLE `journals_submit_papers_info` (
   `created` datetime(6) NOT NULL,
+  `updated` datetime(6) NOT NULL,
   `id` bigint(20) NOT NULL,
   `title` varchar(600) NOT NULL,
   `abstract` varchar(4200) NOT NULL,
-  `authors_name` varchar(3105) NOT NULL,
-  `views` int(11) NOT NULL,
-  `download` int(11) NOT NULL,
-  `domain` varchar(200) NOT NULL,
-  `subdomain` varchar(200) DEFAULT NULL,
-  `user_id` bigint(20) NOT NULL,
-  `corres_emails` varchar(300) DEFAULT NULL,
-  `is_submitted` tinyint(1) NOT NULL,
   `keywords` varchar(4200) NOT NULL,
-  `paper_type` int(11) NOT NULL,
-  `status` varchar(50) NOT NULL,
-  `updated` datetime(6) NOT NULL,
-  `cover_letter_pdf` varchar(100) DEFAULT NULL,
-  `manuscript_pdf` varchar(100) DEFAULT NULL,
-  `supplimentary_file` varchar(100) DEFAULT NULL,
+  `authors_name` varchar(3105) NOT NULL,
+  `corres_emails` varchar(300) DEFAULT NULL,
   `version` int(11) NOT NULL,
+  `status` varchar(50) NOT NULL,
   `payment` varchar(10) NOT NULL,
   `reference_number` varchar(30) NOT NULL,
-  `reference_url` varchar(255) NOT NULL
+  `reference_url` varchar(255) NOT NULL,
+  `views` int(11) NOT NULL,
+  `download` int(11) NOT NULL,
+  `is_submitted` tinyint(1) NOT NULL,
+  `paper_type` int(11) NOT NULL,
+  `manuscript_pdf` varchar(100) DEFAULT NULL,
+  `cover_letter_pdf` varchar(100) DEFAULT NULL,
+  `supplimentary_file` varchar(100) DEFAULT NULL,
+  `domain` varchar(200) NOT NULL,
+  `subdomain` varchar(200) DEFAULT NULL,
+  `user_id` bigint(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `journals_submit_papers_info`
 --
 
-INSERT INTO `journals_submit_papers_info` (`created`, `id`, `title`, `abstract`, `authors_name`, `views`, `download`, `domain`, `subdomain`, `user_id`, `corres_emails`, `is_submitted`, `keywords`, `paper_type`, `status`, `updated`, `cover_letter_pdf`, `manuscript_pdf`, `supplimentary_file`, `version`, `payment`, `reference_number`, `reference_url`) VALUES
-('2022-12-24 06:35:23.395370', 4, 'An Electronic Journal Management System', 'A web-based information system for management of scientific electronic journals is presented in the paper. Journal management requires exchange of information between many participants in the publishing process, including authors, reviewers, editors, and lectors. Each participant in the process plays a different role, and cooperates with other participants. The web system is implemented using open source solutions on the Linux platform. Three-tiered information system architecture has been used. Object oriented PHP (PHP hypertext preprocessor) is used as a server side scripting language to implement the business logic. Database management system is provided by PostgreSQL, although database connection abstraction is utilized. Apache web server is used together with SSL encryption mechanism to provide HTML content to end-user. The system is currently in use for editorial support of an international scientific journal and the initial results have been encouraging.', 'Hrvoje Bogunović, Edgar Pek, Sven Lončarić and Vedran Mornar', 0, 0, 'Physical sciences and engineering', 'Computer Science', 8, 'sanisbature17@gmail.com', 0, 'Journal management, PHP, web applications, web content management', 1, 'Submitted', '2023-05-27 19:24:59.247245', '', 'papers_file/An_electronic_journal_management_system_1.pdf', 'papers_file/An_electronic_journal_management_system_1_ieOcLoS.pdf', 7, 'Unpaid', '68phx96dr2', 'https://checkout.paystack.com/slzegdwix2kr9d1'),
-('2022-12-24 20:51:21.980413', 5, 'Using CRM Tools for Learning Development – The IPMA-Student Portal Example', 'The aim of the paper is to analyse the possibilities of using IT tools supporting education for customer relationship management on the example of IPMA-Student Portal. The tool was created to support partner universities and their students in the development of competencies and certification in project management; however, by way of putting it to use, collecting information about users, and communicating with them, the tool can be treated as a means of strengthening and improving relationships with universities and students. The IPMA-Student Portal is a basic communication tool, adapted to the needs of lecturers and students, bringing benefits both to the IPMA Poland Association and the academic community.', 'Joanna Rzempała, Rafał Szymańskib', 0, 0, 'Physical sciences and engineering', 'Computer Science', 8, 'ameersbature17@gmail.com', 0, 'client relationships, marketing, development of competencies, education', 1, 'Submitted', '2023-05-27 19:24:59.132340', '', 'papers_file/COVID.DATA.LIC.AGMT_2iXSL3N.pdf', 'papers_file/1-s2.0-S1877050921020172-main_R9kRzKw.pdf', 11, 'Unpaid', 'dzwnxeipsb', 'https://checkout.paystack.com/341ajjsg23t6mxd'),
-('2022-12-30 13:41:07.685588', 7, 'A paper', 'abstract here', 'Joanna Rzempała, Rafał Szymańskib', 0, 0, 'Life sciences', 'Biologyy', 11, 'ameersbature17@gmail.com', 0, 'Journal management, PHP, web applications, web content management', 1, 'Submitted', '2022-12-30 13:41:07.685588', '', 'papers_file/04Nfm04de12.pdf_sequence4.pdf', 'papers_file/04Nfm04de12.pdf_sequence4_FITjgRu.pdf', 1, 'Unpaid', '', '');
+INSERT INTO `journals_submit_papers_info` (`created`, `updated`, `id`, `title`, `abstract`, `keywords`, `authors_name`, `corres_emails`, `version`, `status`, `payment`, `reference_number`, `reference_url`, `views`, `download`, `is_submitted`, `paper_type`, `manuscript_pdf`, `cover_letter_pdf`, `supplimentary_file`, `domain`, `subdomain`, `user_id`) VALUES
+('2022-12-24 06:35:23.395370', '2023-05-27 19:24:59.247245', 4, 'An Electronic Journal Management System', 'A web-based information system for management of scientific electronic journals is presented in the paper. Journal management requires exchange of information between many participants in the publishing process, including authors, reviewers, editors, and lectors. Each participant in the process plays a different role, and cooperates with other participants. The web system is implemented using open source solutions on the Linux platform. Three-tiered information system architecture has been used. Object oriented PHP (PHP hypertext preprocessor) is used as a server side scripting language to implement the business logic. Database management system is provided by PostgreSQL, although database connection abstraction is utilized. Apache web server is used together with SSL encryption mechanism to provide HTML content to end-user. The system is currently in use for editorial support of an international scientific journal and the initial results have been encouraging.', 'Journal management, PHP, web applications, web content management', 'Hrvoje Bogunović, Edgar Pek, Sven Lončarić and Vedran Mornar', 'sanisbature17@gmail.com', 7, 'Submitted', 'Unpaid', '68phx96dr2', 'https://checkout.paystack.com/slzegdwix2kr9d1', 0, 0, 0, 1, 'papers_file/An_electronic_journal_management_system_1.pdf', '', 'papers_file/An_electronic_journal_management_system_1_ieOcLoS.pdf', 'Physical sciences and engineering', 'Computer Science', 8),
+('2022-12-24 20:51:21.980413', '2023-05-27 19:24:59.132340', 5, 'Using CRM Tools for Learning Development – The IPMA-Student Portal Example', 'The aim of the paper is to analyse the possibilities of using IT tools supporting education for customer relationship management on the example of IPMA-Student Portal. The tool was created to support partner universities and their students in the development of competencies and certification in project management; however, by way of putting it to use, collecting information about users, and communicating with them, the tool can be treated as a means of strengthening and improving relationships with universities and students. The IPMA-Student Portal is a basic communication tool, adapted to the needs of lecturers and students, bringing benefits both to the IPMA Poland Association and the academic community.', 'client relationships, marketing, development of competencies, education', 'Joanna Rzempała, Rafał Szymańskib', 'ameersbature17@gmail.com', 11, 'Submitted', 'Unpaid', 'dzwnxeipsb', 'https://checkout.paystack.com/341ajjsg23t6mxd', 0, 0, 0, 1, 'papers_file/COVID.DATA.LIC.AGMT_2iXSL3N.pdf', '', 'papers_file/1-s2.0-S1877050921020172-main_R9kRzKw.pdf', 'Physical sciences and engineering', 'Computer Science', 8),
+('2022-12-30 13:41:07.685588', '2022-12-30 13:41:07.685588', 7, 'A paper', 'abstract here', 'Journal management, PHP, web applications, web content management', 'Joanna Rzempała, Rafał Szymańskib', 'ameersbature17@gmail.com', 1, 'Submitted', 'Unpaid', '', '', 0, 0, 0, 1, 'papers_file/04Nfm04de12.pdf_sequence4.pdf', '', 'papers_file/04Nfm04de12.pdf_sequence4_FITjgRu.pdf', 'Life sciences', 'Biologyy', 11);
 
 -- --------------------------------------------------------
 
@@ -712,25 +537,25 @@ INSERT INTO `main_editor` (`relate_ptr_id`, `is_associate_editor_accepted`, `is_
 --
 
 CREATE TABLE `main_relate` (
+  `created` datetime(6) NOT NULL,
   `user_id` bigint(20) NOT NULL,
   `designation` varchar(25) NOT NULL,
   `institution` varchar(300) NOT NULL,
   `country` varchar(200) NOT NULL,
-  `created` datetime(6) NOT NULL,
   `address` longtext NOT NULL,
+  `state` varchar(200) NOT NULL,
   `city` varchar(200) NOT NULL,
-  `mobile` varchar(20) NOT NULL,
-  `state` varchar(200) NOT NULL
+  `mobile` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `main_relate`
 --
 
-INSERT INTO `main_relate` (`user_id`, `designation`, `institution`, `country`, `created`, `address`, `city`, `mobile`, `state`) VALUES
-(8, 'Professor', 'Yusuf Maitama Sule University, Kano', 'Nigeria', '0000-00-00 00:00:00.000000', 'No. 356 Yamadawa Dorayi Babba, Gwale LG, Kano State', 'KANO', '+234-7088890573', 'KANO'),
-(11, 'Student', 'Yusuf Maitama Sule University, Kano', 'Nigeria', '2022-12-30 13:27:53.389125', 'No. 356 Yamadawa Dorayi Babba, Gwale LG, Kano State', 'KANO', '+234-7088890573', 'KANO'),
-(14, 'Select', 'Yusuf Maitama Sule University, Kano', 'Nigeria', '0000-00-00 00:00:00.000000', '356 Yamadawa Dorayi', 'Gwale', '+234-7065697733', 'Kano');
+INSERT INTO `main_relate` (`created`, `user_id`, `designation`, `institution`, `country`, `address`, `state`, `city`, `mobile`) VALUES
+('0000-00-00 00:00:00.000000', 8, 'Professor', 'Yusuf Maitama Sule University, Kano', 'Nigeria', 'No. 356 Yamadawa Dorayi Babba, Gwale LG, Kano State', 'KANO', 'KANO', '+234-7088890573'),
+('2022-12-30 13:27:53.389125', 11, 'Student', 'Yusuf Maitama Sule University, Kano', 'Nigeria', 'No. 356 Yamadawa Dorayi Babba, Gwale LG, Kano State', 'KANO', 'KANO', '+234-7088890573'),
+('0000-00-00 00:00:00.000000', 14, 'Select', 'Yusuf Maitama Sule University, Kano', 'Nigeria', '356 Yamadawa Dorayi', 'Kano', 'Gwale', '+234-7065697733');
 
 -- --------------------------------------------------------
 
@@ -767,15 +592,15 @@ CREATE TABLE `main_user` (
   `is_superuser` tinyint(1) NOT NULL,
   `username` varchar(30) NOT NULL,
   `is_staff` tinyint(1) NOT NULL,
+  `is_active` tinyint(1) NOT NULL,
   `date_joined` datetime(6) NOT NULL,
   `first_name` varchar(50) NOT NULL,
   `last_name` varchar(50) NOT NULL,
   `email` varchar(254) NOT NULL,
-  `is_active` tinyint(1) NOT NULL,
   `Verified` tinyint(1) NOT NULL,
-  `is_email_verified` tinyint(1) NOT NULL,
-  `gender` varchar(20) NOT NULL,
   `created` datetime(6) NOT NULL,
+  `gender` varchar(20) NOT NULL,
+  `is_email_verified` tinyint(1) NOT NULL,
   `updated` datetime(6) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -783,11 +608,11 @@ CREATE TABLE `main_user` (
 -- Dumping data for table `main_user`
 --
 
-INSERT INTO `main_user` (`id`, `password`, `last_login`, `is_superuser`, `username`, `is_staff`, `date_joined`, `first_name`, `last_name`, `email`, `is_active`, `Verified`, `is_email_verified`, `gender`, `created`, `updated`) VALUES
-(8, 'pbkdf2_sha256$390000$WJxljFzJagwIRMu6sOkRQT$Hdj1uFFst9jVObV0eXGUc/XAn3nTAg2IV4861PJ96xk=', '2023-05-27 19:27:39.538187', 0, '', 0, '2022-12-20 15:44:49.104948', 'Sani', 'Bature', 'sanisbature17@gmail.com', 1, 1, 1, 'Select', '2022-12-20 15:44:49.775068', '2022-12-27 17:05:10.740525'),
-(11, 'pbkdf2_sha256$390000$PMES1rGKX9RTZrZEv5ZyDK$g9SjiYdKIotViRmBPuNt+h3BKYFPhDqx9lrTR3qaUeA=', '2022-12-30 20:48:27.295096', 0, '', 0, '2022-12-30 12:54:17.563292', 'Ameer', 'Bature', 'ameersbature17@gmail.com', 1, 1, 1, 'Select', '2022-12-30 12:54:18.078332', '2022-12-30 12:54:18.078332'),
-(13, 'pbkdf2_sha256$390000$yj6QpRGbmvYZOQy14hsuCm$GZz+cXMegCXxs6e4ETufiNJUKwRi8xVbzJrYflNDiXM=', '2023-05-27 19:31:12.924412', 1, 'admin1', 1, '2023-05-27 19:30:55.566017', 'admin', 'admin', 'admin@journal.edu.ng', 1, 1, 0, 'Select', '2023-05-27 19:30:55.956136', '2023-05-27 19:30:55.956136'),
-(14, 'pbkdf2_sha256$390000$qOeVDO6nJxq28dU0EzKsJk$Z389FAffO2c4zy0U44hBskwANYN1QWo1AKqZcxtdvkY=', '2023-05-30 13:46:49.855750', 0, '', 0, '2023-05-27 19:42:14.000000', 'Asmau', 'bature', 'asmeessb@gmail.com', 1, 0, 1, 'MALE', '2023-05-27 19:42:15.289844', '2023-05-30 13:41:03.587949');
+INSERT INTO `main_user` (`id`, `password`, `last_login`, `is_superuser`, `username`, `is_staff`, `is_active`, `date_joined`, `first_name`, `last_name`, `email`, `Verified`, `created`, `gender`, `is_email_verified`, `updated`) VALUES
+(8, 'pbkdf2_sha256$390000$WJxljFzJagwIRMu6sOkRQT$Hdj1uFFst9jVObV0eXGUc/XAn3nTAg2IV4861PJ96xk=', '2023-05-27 19:27:39.538187', 0, '', 0, 1, '2022-12-20 15:44:49.104948', 'Sani', 'Bature', 'sanisbature17@gmail.com', 1, '2022-12-20 15:44:49.775068', 'Select', 1, '2022-12-27 17:05:10.740525'),
+(11, 'pbkdf2_sha256$390000$PMES1rGKX9RTZrZEv5ZyDK$g9SjiYdKIotViRmBPuNt+h3BKYFPhDqx9lrTR3qaUeA=', '2022-12-30 20:48:27.295096', 0, '', 0, 1, '2022-12-30 12:54:17.563292', 'Ameer', 'Bature', 'ameersbature17@gmail.com', 1, '2022-12-30 12:54:18.078332', 'Select', 1, '2022-12-30 12:54:18.078332'),
+(13, 'pbkdf2_sha256$390000$yj6QpRGbmvYZOQy14hsuCm$GZz+cXMegCXxs6e4ETufiNJUKwRi8xVbzJrYflNDiXM=', '2023-05-27 19:31:12.924412', 1, 'admin1', 1, 1, '2023-05-27 19:30:55.566017', 'admin', 'admin', 'admin@journal.edu.ng', 1, '2023-05-27 19:30:55.956136', 'Select', 0, '2023-05-27 19:30:55.956136'),
+(14, 'pbkdf2_sha256$390000$qOeVDO6nJxq28dU0EzKsJk$Z389FAffO2c4zy0U44hBskwANYN1QWo1AKqZcxtdvkY=', '2023-05-30 13:46:49.855750', 0, '', 0, 1, '2023-05-27 19:42:14.000000', 'Asmau', 'bature', 'asmeessb@gmail.com', 0, '2023-05-27 19:42:15.289844', 'MALE', 1, '2023-05-30 13:41:03.587949');
 
 -- --------------------------------------------------------
 
@@ -874,7 +699,7 @@ ALTER TABLE `auth_permission`
 ALTER TABLE `django_admin_log`
   ADD PRIMARY KEY (`id`),
   ADD KEY `django_admin_log_content_type_id_c4bce8eb_fk_django_co` (`content_type_id`),
-  ADD KEY `django_admin_log_user_id_c564eba6_fk_Main_user_id` (`user_id`);
+  ADD KEY `django_admin_log_user_id_c564eba6_fk_main_user_id` (`user_id`);
 
 --
 -- Indexes for table `django_content_type`
@@ -901,53 +726,53 @@ ALTER TABLE `django_session`
 --
 ALTER TABLE `journals_articles_papers_info`
   ADD PRIMARY KEY (`uid`),
-  ADD KEY `Journals_articles_papers_info_user_id_7e0e0013_fk_Main_user_id` (`user_id`);
+  ADD KEY `journals_articles_papers_info_user_id_004359da_fk_main_user_id` (`user_id`);
 
 --
 -- Indexes for table `journals_paper_comments`
 --
 ALTER TABLE `journals_paper_comments`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `Journals_paper_comme_paper_id_0e869824_fk_Journals_` (`paper_id`),
-  ADD KEY `Journals_paper_comments_reviewer_id_0ec97e83_fk_Main_user_id` (`reviewer_id`);
+  ADD KEY `journals_paper_comme_paper_id_be52bc91_fk_journals_` (`paper_id`),
+  ADD KEY `journals_paper_comments_reviewer_id_48362dba_fk_main_user_id` (`reviewer_id`);
 
 --
 -- Indexes for table `journals_paper_editors`
 --
 ALTER TABLE `journals_paper_editors`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `Journals_paper_edito_paper_id_6db0ea6c_fk_Journals_` (`paper_id`),
-  ADD KEY `Journals_paper_editors_editor_id_4b46273c_fk_Main_user_id` (`editor_id`);
+  ADD KEY `journals_paper_editors_editor_id_932450a0_fk_main_user_id` (`editor_id`),
+  ADD KEY `journals_paper_edito_paper_id_86bef7b0_fk_journals_` (`paper_id`);
 
 --
 -- Indexes for table `journals_paper_reviewers`
 --
 ALTER TABLE `journals_paper_reviewers`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `Journals_paper_revie_paper_id_736eaa2a_fk_Journals_` (`paper_id`),
-  ADD KEY `Journals_paper_reviewers_editor_id_e71919bb_fk_Main_user_id` (`editor_id`),
-  ADD KEY `Journals_paper_reviewers_reviewer_id_7a45fff6_fk_Main_user_id` (`reviewer_id`);
+  ADD KEY `journals_paper_reviewers_editor_id_14c0efb1_fk_main_user_id` (`editor_id`),
+  ADD KEY `journals_paper_revie_paper_id_589071d3_fk_journals_` (`paper_id`),
+  ADD KEY `journals_paper_reviewers_reviewer_id_fab37c22_fk_main_user_id` (`reviewer_id`);
 
 --
 -- Indexes for table `journals_paper_update_history`
 --
 ALTER TABLE `journals_paper_update_history`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `Journals_update_hist_paper_id_39dca0ce_fk_Journals_` (`paper_id`);
+  ADD KEY `journals_paper_updat_paper_id_52518b64_fk_journals_` (`paper_id`);
 
 --
 -- Indexes for table `journals_publish_papers_info`
 --
 ALTER TABLE `journals_publish_papers_info`
   ADD PRIMARY KEY (`uid`),
-  ADD KEY `Journals_publish_papers_info_user_id_fceb3782_fk_Main_user_id` (`user_id`);
+  ADD KEY `journals_publish_papers_info_user_id_92e0028f_fk_main_user_id` (`user_id`);
 
 --
 -- Indexes for table `journals_submit_papers_info`
 --
 ALTER TABLE `journals_submit_papers_info`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `Journals_submit_papers_info_user_id_a3cd151c_fk_Main_user_id` (`user_id`);
+  ADD KEY `journals_submit_papers_info_user_id_42e2508d_fk_main_user_id` (`user_id`);
 
 --
 -- Indexes for table `main_author`
@@ -985,16 +810,16 @@ ALTER TABLE `main_user`
 --
 ALTER TABLE `main_user_groups`
   ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `Main_user_groups_user_id_group_id_024af15f_uniq` (`user_id`,`group_id`),
-  ADD KEY `Main_user_groups_group_id_24467e8d_fk_auth_group_id` (`group_id`);
+  ADD UNIQUE KEY `main_user_groups_user_id_group_id_ae195797_uniq` (`user_id`,`group_id`),
+  ADD KEY `main_user_groups_group_id_a337ba62_fk_auth_group_id` (`group_id`);
 
 --
 -- Indexes for table `main_user_user_permissions`
 --
 ALTER TABLE `main_user_user_permissions`
   ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `Main_user_user_permissions_user_id_permission_id_c8fbd33f_uniq` (`user_id`,`permission_id`),
-  ADD KEY `Main_user_user_permi_permission_id_c8036713_fk_auth_perm` (`permission_id`);
+  ADD UNIQUE KEY `main_user_user_permissions_user_id_permission_id_96b9fadf_uniq` (`user_id`,`permission_id`),
+  ADD KEY `main_user_user_permi_permission_id_cd2b56a3_fk_auth_perm` (`permission_id`);
 
 --
 -- Indexes for table `verify_email_linkcounter`
@@ -1125,85 +950,97 @@ ALTER TABLE `auth_permission`
 --
 ALTER TABLE `django_admin_log`
   ADD CONSTRAINT `django_admin_log_content_type_id_c4bce8eb_fk_django_co` FOREIGN KEY (`content_type_id`) REFERENCES `django_content_type` (`id`),
-  ADD CONSTRAINT `django_admin_log_user_id_c564eba6_fk_Main_user_id` FOREIGN KEY (`user_id`) REFERENCES `main_user` (`id`);
+  ADD CONSTRAINT `django_admin_log_user_id_c564eba6_fk_main_user_id` FOREIGN KEY (`user_id`) REFERENCES `main_user` (`id`);
 
 --
 -- Constraints for table `journals_articles_papers_info`
 --
 ALTER TABLE `journals_articles_papers_info`
-  ADD CONSTRAINT `Journals_articles_papers_info_user_id_7e0e0013_fk_Main_user_id` FOREIGN KEY (`user_id`) REFERENCES `main_user` (`id`);
+  ADD CONSTRAINT `journals_articles_papers_info_user_id_004359da_fk_main_user_id` FOREIGN KEY (`user_id`) REFERENCES `main_user` (`id`);
 
 --
 -- Constraints for table `journals_paper_comments`
 --
 ALTER TABLE `journals_paper_comments`
-  ADD CONSTRAINT `Journals_paper_comme_paper_id_0e869824_fk_Journals_` FOREIGN KEY (`paper_id`) REFERENCES `journals_submit_papers_info` (`id`),
-  ADD CONSTRAINT `Journals_paper_comments_reviewer_id_0ec97e83_fk_Main_user_id` FOREIGN KEY (`reviewer_id`) REFERENCES `main_user` (`id`);
+  ADD CONSTRAINT `journals_paper_comme_paper_id_be52bc91_fk_journals_` FOREIGN KEY (`paper_id`) REFERENCES `journals_submit_papers_info` (`id`),
+  ADD CONSTRAINT `journals_paper_comments_reviewer_id_48362dba_fk_main_user_id` FOREIGN KEY (`reviewer_id`) REFERENCES `main_user` (`id`);
 
 --
 -- Constraints for table `journals_paper_editors`
 --
 ALTER TABLE `journals_paper_editors`
-  ADD CONSTRAINT `Journals_paper_edito_paper_id_6db0ea6c_fk_Journals_` FOREIGN KEY (`paper_id`) REFERENCES `journals_submit_papers_info` (`id`),
-  ADD CONSTRAINT `Journals_paper_editors_editor_id_4b46273c_fk_Main_user_id` FOREIGN KEY (`editor_id`) REFERENCES `main_user` (`id`);
+  ADD CONSTRAINT `journals_paper_edito_paper_id_86bef7b0_fk_journals_` FOREIGN KEY (`paper_id`) REFERENCES `journals_submit_papers_info` (`id`),
+  ADD CONSTRAINT `journals_paper_editors_editor_id_932450a0_fk_main_user_id` FOREIGN KEY (`editor_id`) REFERENCES `main_user` (`id`);
 
 --
 -- Constraints for table `journals_paper_reviewers`
 --
 ALTER TABLE `journals_paper_reviewers`
-  ADD CONSTRAINT `Journals_paper_revie_paper_id_736eaa2a_fk_Journals_` FOREIGN KEY (`paper_id`) REFERENCES `journals_submit_papers_info` (`id`),
-  ADD CONSTRAINT `Journals_paper_reviewers_editor_id_e71919bb_fk_Main_user_id` FOREIGN KEY (`editor_id`) REFERENCES `main_user` (`id`),
-  ADD CONSTRAINT `Journals_paper_reviewers_reviewer_id_7a45fff6_fk_Main_user_id` FOREIGN KEY (`reviewer_id`) REFERENCES `main_user` (`id`);
+  ADD CONSTRAINT `journals_paper_revie_paper_id_589071d3_fk_journals_` FOREIGN KEY (`paper_id`) REFERENCES `journals_submit_papers_info` (`id`),
+  ADD CONSTRAINT `journals_paper_reviewers_editor_id_14c0efb1_fk_main_user_id` FOREIGN KEY (`editor_id`) REFERENCES `main_user` (`id`),
+  ADD CONSTRAINT `journals_paper_reviewers_reviewer_id_fab37c22_fk_main_user_id` FOREIGN KEY (`reviewer_id`) REFERENCES `main_user` (`id`);
 
 --
 -- Constraints for table `journals_paper_update_history`
 --
 ALTER TABLE `journals_paper_update_history`
-  ADD CONSTRAINT `Journals_update_hist_paper_id_39dca0ce_fk_Journals_` FOREIGN KEY (`paper_id`) REFERENCES `journals_submit_papers_info` (`id`);
+  ADD CONSTRAINT `journals_paper_updat_paper_id_52518b64_fk_journals_` FOREIGN KEY (`paper_id`) REFERENCES `journals_submit_papers_info` (`id`);
 
 --
 -- Constraints for table `journals_publish_papers_info`
 --
 ALTER TABLE `journals_publish_papers_info`
-  ADD CONSTRAINT `Journals_publish_papers_info_user_id_fceb3782_fk_Main_user_id` FOREIGN KEY (`user_id`) REFERENCES `main_user` (`id`);
+  ADD CONSTRAINT `journals_publish_papers_info_user_id_92e0028f_fk_main_user_id` FOREIGN KEY (`user_id`) REFERENCES `main_user` (`id`);
+
+--
+-- Constraints for table `journals_submit_papers_info`
+--
+ALTER TABLE `journals_submit_papers_info`
+  ADD CONSTRAINT `journals_submit_papers_info_user_id_42e2508d_fk_main_user_id` FOREIGN KEY (`user_id`) REFERENCES `main_user` (`id`);
+
+--
+-- Constraints for table `main_author`
+--
+ALTER TABLE `main_author`
+  ADD CONSTRAINT `main_author_relate_ptr_id_d81b3ef4_fk_main_relate_user_id` FOREIGN KEY (`relate_ptr_id`) REFERENCES `main_relate` (`user_id`);
 
 --
 -- Constraints for table `main_editor`
 --
 ALTER TABLE `main_editor`
-  ADD CONSTRAINT `Main_editor_relate_ptr_id_4c9da506_fk_Main_relate_user_id` FOREIGN KEY (`relate_ptr_id`) REFERENCES `main_relate` (`user_id`);
+  ADD CONSTRAINT `main_editor_relate_ptr_id_4c3fe94d_fk_main_relate_user_id` FOREIGN KEY (`relate_ptr_id`) REFERENCES `main_relate` (`user_id`);
 
 --
 -- Constraints for table `main_relate`
 --
 ALTER TABLE `main_relate`
-  ADD CONSTRAINT `Main_relate_user_id_330c3935_fk_Main_user_id` FOREIGN KEY (`user_id`) REFERENCES `main_user` (`id`);
+  ADD CONSTRAINT `main_relate_user_id_4bae14e4_fk_main_user_id` FOREIGN KEY (`user_id`) REFERENCES `main_user` (`id`);
 
 --
 -- Constraints for table `main_reviewer`
 --
 ALTER TABLE `main_reviewer`
-  ADD CONSTRAINT `Main_reviewer_relate_ptr_id_1ec84d7f_fk_Main_relate_user_id` FOREIGN KEY (`relate_ptr_id`) REFERENCES `main_relate` (`user_id`);
+  ADD CONSTRAINT `main_reviewer_relate_ptr_id_fb25d80b_fk_main_relate_user_id` FOREIGN KEY (`relate_ptr_id`) REFERENCES `main_relate` (`user_id`);
 
 --
 -- Constraints for table `main_user_groups`
 --
 ALTER TABLE `main_user_groups`
-  ADD CONSTRAINT `Main_user_groups_group_id_24467e8d_fk_auth_group_id` FOREIGN KEY (`group_id`) REFERENCES `auth_group` (`id`),
-  ADD CONSTRAINT `Main_user_groups_user_id_06b98f59_fk_Main_user_id` FOREIGN KEY (`user_id`) REFERENCES `main_user` (`id`);
+  ADD CONSTRAINT `main_user_groups_group_id_a337ba62_fk_auth_group_id` FOREIGN KEY (`group_id`) REFERENCES `auth_group` (`id`),
+  ADD CONSTRAINT `main_user_groups_user_id_df502602_fk_main_user_id` FOREIGN KEY (`user_id`) REFERENCES `main_user` (`id`);
 
 --
 -- Constraints for table `main_user_user_permissions`
 --
 ALTER TABLE `main_user_user_permissions`
-  ADD CONSTRAINT `Main_user_user_permi_permission_id_c8036713_fk_auth_perm` FOREIGN KEY (`permission_id`) REFERENCES `auth_permission` (`id`),
-  ADD CONSTRAINT `Main_user_user_permissions_user_id_cb7a0d50_fk_Main_user_id` FOREIGN KEY (`user_id`) REFERENCES `main_user` (`id`);
+  ADD CONSTRAINT `main_user_user_permi_permission_id_cd2b56a3_fk_auth_perm` FOREIGN KEY (`permission_id`) REFERENCES `auth_permission` (`id`),
+  ADD CONSTRAINT `main_user_user_permissions_user_id_451ce57f_fk_main_user_id` FOREIGN KEY (`user_id`) REFERENCES `main_user` (`id`);
 
 --
 -- Constraints for table `verify_email_linkcounter`
 --
 ALTER TABLE `verify_email_linkcounter`
-  ADD CONSTRAINT `verify_email_linkcounter_requester_id_b6bf2934_fk_Main_user_id` FOREIGN KEY (`requester_id`) REFERENCES `main_user` (`id`);
+  ADD CONSTRAINT `verify_email_linkcounter_requester_id_b6bf2934_fk_main_user_id` FOREIGN KEY (`requester_id`) REFERENCES `main_user` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

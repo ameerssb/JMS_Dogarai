@@ -1,7 +1,7 @@
 from django.db import models
 from django.conf import settings
 from datetime import datetime
-from Main.models import User,Reviewer,Author,Editor
+from main.models import User,Reviewer,Author,Editor
 # Create your models here.
 
 

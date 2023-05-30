@@ -9,7 +9,7 @@ class Home(View):
 
         context = {}
 
-        return render(request, 'Journals/index.html', context)
+        return render(request, 'journals/index.html', context)
 
 
 def Sort(papers,year):
@@ -77,7 +77,7 @@ class Search(View):
 
         context = {'papers':papers, 'display': display,'keyword':keyword,'by':by, 'count': count, 'y':year}
 
-        return render(request, 'Journals/search.html', context)
+        return render(request, 'journals/search.html', context)
 
 
 class Signin(View):
@@ -85,7 +85,7 @@ class Signin(View):
 
         context = {}
 
-        return render(request, 'Journals/signin.html', context)
+        return render(request, 'journals/signin.html', context)
 
     def post(self,request):
 
@@ -101,7 +101,7 @@ class More(View):
 
         context = {'paper':paper}
 
-        return render(request, 'Journals/expand.html', context)
+        return render(request, 'journals/expand.html', context)
 
 class Browse(View):
     def get(self,request):

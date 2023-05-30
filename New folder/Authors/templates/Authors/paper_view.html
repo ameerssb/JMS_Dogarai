@@ -1,0 +1,81 @@
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block content %}
+{% include 'header.html' %}
+
+    <main class="py-3">
+      <div class="border-top border-dark" style="border-width: 3px !important; padding-top: 10px;">
+        <div class="container col-lg-9">
+          <a class="text-dark text-decoration-none fs-5" href="{% url 'Author_Dashboard' %}">Dashboard</a>
+          <div class="pt-2 d-flex justify-content-between">
+            <a class="btn btn-success rounded-0" target="_blank" href="/media/{{paper.supplimentary_file}}">View Paper</a>
+            {% if request.user.pk == paper.user.pk %}
+            <a class="btn btn-danger rounded-0" href="{% url 'Update' pk=paper.id %}">Update Paper</a>
+            {% endif %}
+            <a href="{% url 'History' pk=paper.id %}" class="btn btn-outline-success rounded-0">Paper Changes</a>
+          </div>
+
+        </div>
+      </div>
+      <hr>
+      <div class="container-fluid px-5 pb-2 mb-3">
+        <div class="row">
+          <div class="px-5 col-lg-8">
+            <div><h3 class="text-primary">{{paper.title}}</h3></div>
+            <h5 class="fw-normal">{{paper.authors_name}}</h5>
+            {% if paper.paper_type == 1 %}
+            <h5 class="fw-normal">Research</h5>
+            {% elif paper.paper_type == 2 %}            
+            <h5 class="fw-normal">Review</h5>
+            {% endif %}            
+            <h6 class="fw-bold">Abstract</h6>
+            <span>{{paper.abstract}}</span>
+            <!-- <p class="fw-bold pt-1">ManuScript</p>
+            <div>
+              <object
+                data='127.0.0.1:8000/media/papers_file/1-s2.0-S1877050921020172-main_R9kRzKw.pdf'
+                type="application/pdf"
+                width="500"
+                height="300"
+              >        
+              </object>
+            </div> -->
+            <div class="d-flex justify-content-evenly pt-4">
+              <a href="/media/{{paper.manuscript_pdf}}" target="_blank" class="btn btn-success rounded-0">View Manuscript</a>
+              <a href="/media/{{paper.supplimentary_file}}" target="_blank" class="btn btn-success rounded-0">View Paper</a>
+            </div>
+            <div class="container pt-2">
+              {% if comments.count > 0 %}
+                <h4 class="pt-4 fw-normal">Comments of Paper</h4>
+                {% for comment in comments %}
+                <div class="px-3 py-2"><span class="fs-6"><span class="text-success">Paper Version: </span>{{comment.paper.version}}</span></div>
+                <div class="px-3 py-2"><span class="fs-6"><span class="text-success">by: </span>{{comment.reviewer.first_name}}</span></div>                
+                <div class="px-3 py-2"><span class="fs-6"><span class="text-success">Comment: </span>{{comment.comment}}</span></div>
+                  {% if comment.supplimentary_file %}
+                  <div class="d-flex justify-content-evenly pt-4">
+                    <a href="/media/{{comment.supplimentary_file}}" target="_blank" class="btn btn-success rounded-0">Paper Corrections</a>
+                  </div>
+                  {% endif %}
+                {% endfor %}
+                {% endif %}
+            </div>
+          </div>
+          <div class="px-3 col-lg-4">
+                <div class="pb-2"><span class="fs-5">Domain: </span><span class="text-success fs-5">{{paper.domain}}</span></div>
+                <div class="pb-2"><span class="fs-5">Sub-Domain: </span><span class="text-success fs-5">{{paper.subdomain}}</span></div>
+                <div class="pb-2"><span class="fs-5">Status: </span><span class="text-success fs-5">{{paper.status}}</span></div>
+                <div class="pb-2"><span class="fs-5">Version: </span><span class="text-success fs-5">{{paper.version}}</span></div>
+                <div class="pb-2"><span class="fs-5">Processing Fee: </span><span class="text-success fs-5">{{paper.payment}}</span></div>                
+                {% if paper.payment == 'Unpaid' %}                
+                  <a href="{{paper.reference_url}}" target="_blank" class="btn btn-success">Pay Now</a>
+                {% endif %}
+            </div>
+        </div>
+      </div>            
+    </main>
+
+    {% include 'footer.html' %}    
+
+    {% endblock %}

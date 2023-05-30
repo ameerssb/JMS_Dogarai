@@ -2,8 +2,8 @@
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-from Main import urls as mn
-from Journals import urls as js
+from main import urls as mn
+from journals import urls as js
 from Authors import urls as au
 from Editors import urls as ed
 from Reviewers import urls as re

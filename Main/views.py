@@ -31,7 +31,7 @@ class Home(View):
         return redirect('JournalHome')
         # context = {}
 
-        # return render(request, 'Main/index.html', context)
+        # return render(request, 'main/index.html', context)
 
 @method_decorator(sigin_reg_deco, name='get')
 @method_decorator(sigin_reg_deco, name='post')
@@ -41,7 +41,7 @@ class Signin(View):
 
         context = {}
 
-        return render(request, 'Main/signin.html', context)
+        return render(request, 'main/signin.html', context)
 
     def post(self,request):
         if request.user.is_authenticated:
@@ -86,7 +86,7 @@ class Register(View):
         
         context = {}
 
-        return render(request, 'Main/register.html', context)
+        return render(request, 'main/register.html', context)
 
     def post(self,request):
 
@@ -111,7 +111,7 @@ class Register(View):
 class password_reset_request(View):
     def get(self,request):
         password_reset_form = PasswordResetForm()
-        return render(request=request, template_name="Main/password_reset.html", context={"password_reset_form":password_reset_form})        
+        return render(request=request, template_name="main/password_reset.html", context={"password_reset_form":password_reset_form})        
 
     def post(self,request):
         password_reset_form = PasswordResetForm(request.POST)
@@ -121,7 +121,7 @@ class password_reset_request(View):
             if associated_users.exists():
                 for user in associated_users:
                     subject = "Password Reset Requested"
-                    email_template_name = "Main/password_reset_email.txt"
+                    email_template_name = "main/password_reset_email.txt"
                     c = {
                     "email":user.email,
                     'domain':'127.0.0.1:8000',
