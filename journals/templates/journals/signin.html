@@ -1,0 +1,33 @@
+{% extends 'main.html' %}
+
+{% load static %}
+{% block content %}
+
+    
+    <!-- Custom styles for this template -->
+    <link href="{% static 'assets/css/signin.css' %}" rel="stylesheet">
+  </head>
+  <body class="text-center">
+    <div class="container">
+      <main class="form-signin bg-light">
+        <form method="post" action="">
+          {% csrf_token %}          
+          <img class="mb-4" src="{% static 'assets/brand/bootstrap-logo.svg' %}" alt="" width="72" height="57">
+          <h4 class="mb-3 fw-normal">Sign-in with University Details</h4>
+
+          <div class="form-floating mb-4">
+            <input type="email" class="form-control" id="Email" name="Email" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating mb-5">
+            <input type="password" class="form-control" id="Password" name="Password" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+          </div>
+
+      <button class="w-100 btn btn-lg btn-success" type="submit">Sign in</button>
+          <p class="mt-5 mb-3 text-muted">&copy; Bature Journals 2022</p>
+        </form>
+      </main>
+    </div>
+
+{% endblock %}

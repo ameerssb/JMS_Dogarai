@@ -1,0 +1,245 @@
+{% extends 'main.html' %}
+
+{% load static %}
+{% load tags %}
+{% block content %}
+
+    <style>
+        body {
+            padding-top: 4.5rem;
+    }
+    </style>
+
+    </head>
+  <body class="bg-white">
+
+{% include 'header.html'%}
+
+<main class="p-4">
+    <div class="row p-2 bg-light">
+        <div class="col-lg-3">
+        </div>
+        <div class="col-lg-9">
+            <div class="row mt-2">
+                <div class="col-lg-7">
+                    <div id="normal">
+                        <form action="" method="get">                                
+                            <span class="lead">Find articles with these terms</span>
+                            <input class="form-control" type="search" name="keyword" id="keyword" placeholder="Enter Your Search Keyword" value="{{keyword}}" required>
+                            <div class="d-flex justify-content-between align-item-center pt-2">
+                                <a onclick="remove()" class="text-decoration-none" type="button">
+                                        <span class="text-primary fs-4">&laquo;</span><span class="text-dark fs-6"> Advanced Search</span>
+                                </a>                                                    
+                                    <button type="submit" class="btn btn-success">Search</button>
+                            </div>
+                        </form>
+                    </div>    
+
+                    <div id="advanced" style="display: none;">
+                        <form action="" method="get">
+                            <span class="lead">Journal or Book title</span>
+                            <input class="form-control" type="search" name="title" id="title">
+                            <div class="row pb-4 pt-4">
+                                <div class="col-lg-8">
+                                    <small>In this Journal or Book title</small>
+                                    <input type="text" class="form-control" id="jbtitle" name="jbtitle">                        
+                                </div>
+                                <div class="col-lg-4">
+                                    <small>Year(s)</small>
+                                    <input type="text" class="form-control" id="year" name="year">
+                                </div>
+                            </div>
+                            <div class="row pb-4">
+                                <div class="col-lg-8">
+                                    <small>Author(s)</small>                            
+                                    <input type="text" class="form-control" id="author" name="author">                        
+                                </div>
+                                <div class="col-lg-4">
+                                    <small>Author(s) affiliation</small>
+                                    <input type="text" class="form-control" id="author_a" name="author_a">
+                                </div>
+                            </div>                        
+                            <div class="row pb-4">
+                                <div class="col-lg-4">
+                                    <small>Volume(s)</small>                            
+                                    <input type="text" class="form-control" id="volume" name="volume">                        
+                                </div>
+                                <div class="col-lg-4">
+                                    <small>Issue(s)</small>                            
+                                    <input type="text" class="form-control" id="issue" name="issue">                        
+                                </div>
+                                <div class="col-lg-4">
+                                    <small>Page(s)</small>                            
+                                    <input type="text" class="form-control" id="page" name="page">
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-item-center pt-2">
+                                <a  onclick="add()" class="text-decoration-none" type="button">
+                                        <span class="text-primary fs-4">&laquo;</span><span class="text-dark fs-6"> Advanced Search</span>
+                                </a>                                                    
+                                    <button type="submit" class="btn btn-success">Search</button>
+                            </div>
+                        </form>    
+                    </div>
+                </div>        
+            </div>                        
+        </div>                  
+    </div>
+
+    <div class="row pb-4">
+        <div class="col-lg-3 pt-2">
+            <div class="container">
+                <p class="pb-2 fs-4">{{count}} results</p>
+                <p>Refine by:</p>
+                <span>Years</span>
+                <div class="form-check">
+                    {% if y == '2009' %}
+                    <input class="form-check-input" type="checkbox" onclick="location = this.value;" value="?keyword={{keyword}}&by={{by}}&display={{display}}&page={{papers.number}}" checked>
+                    <label class="form-check-label" for="2009">2009</label>                    
+                    {% else %}
+                    <input class="form-check-input" type="checkbox" onclick="location = this.value;" value="?keyword={{keyword}}&by={{by}}&display={{display}}&page={{papers.number}}&year=2009" name="2009">
+                    <label class="form-check-label" for="2009">2009</label>                    
+                    {% endif %}
+                </div>
+                <div class="form-check">
+                    {% if y == '2008' %}
+                    <input class="form-check-input" type="checkbox" onclick="location = this.value;" value="?keyword={{keyword}}&by={{by}}&display={{display}}&page={{papers.number}}" checked>
+                    <label class="form-check-label" for="2008">2008</label>                    
+                    {% else %}
+                    <input class="form-check-input" type="checkbox" onclick="location = this.value;" value="?keyword={{keyword}}&by={{by}}&display={{display}}&page={{papers.number}}&year=2008" name="2008">
+                    <label class="form-check-label" for="2008">2008</label>                    
+                    {% endif %}
+                </div>
+                <div class="form-check">
+                    {% if y == '2007' %}
+                    <input class="form-check-input" type="checkbox" onclick="location = this.value;" value="?keyword={{keyword}}&by={{by}}&display={{display}}&page={{papers.number}}" checked>
+                    <label class="form-check-label" for="2007">2007</label>                    
+                    {% else %}
+                    <input class="form-check-input" type="checkbox" onclick="location = this.value;" value="?keyword={{keyword}}&by={{by}}&display={{display}}&page={{papers.number}}&year=2007" name="2007">
+                    <label class="form-check-label" for="2007">2007</label>                    
+                    {% endif %}
+                </div>
+                <p><a class="text-decoration-none text-dark" href="">Show more</a><a class="text-decoration-none" href=""> ></a></p>
+
+                <span>Article type</span>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="review" id="review">
+                    <label class="form-check-label" for="review">Review articles (counts)</label>                    
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="research" id="research">
+                    <label class="form-check-label" for="research">Research articles (counts)</label>                    
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="enc" id="enc">
+                    <label class="form-check-label" for="enc">Encyclopedia (counts)</label>                    
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-9">
+            {% if count == 0 %}
+            <h5 class="text-center mt-5 pt-5">No Result Found for this Keyword or is too short(atleast 3 letters)</h5>
+            <p class="text-center"> for more information on reult search see <a href="#"></a>here</p>
+            {% else %}
+                <div class="d-flex justify-content-end">
+                    <span><a class="text-dark text-decoration-none" href="?keyword={{keyword}}&by=relevance&display={{display}}&page={{papers.number}}">sorted by relevance</a> |
+                    <a class="text-dark text-decoration-none" href="?keyword={{keyword}}&by=date&display={{display}}&page={{papers.number}}">date</a></span>    
+                </div>
+                <hr>
+                {% for obj in papers %}
+    <!--            <div><small>{{obj.categores}}</small></div> -->
+                <div><span class="fs-5"><a href="https://www.doi.org/{{obj.doi}}" target="_blank" class="text-decoration-none text-success">{{obj.title|highlight_search:keyword}}</a></span></div>
+                <div><small>{{obj.authors|truncatewords:3|highlight_search:keyword}}</small></div>
+                <div><small>{{obj.journal|highlight_search:keyword}}</small></div>
+                <div><small>{{obj.publish_time|date:'Y'}}</small></div>
+                <div class="pb-4 text-muted"><small>{{obj.abstract|truncatewords:35|highlight_search:keyword}}</small></div>
+
+                {% endfor %}
+                <div class="row">
+                    <div class="col-lg-6">
+                        <span class="text-start">Dispay:</span>
+                        {% if display == 5 %}
+                        <a href="?keyword={{keyword}}&by={{by}}&display=5&page={{papers.number}}" class="text-decoration-underline text-dark">5</a>
+                        {% else %}
+                        <a href="?keyword={{keyword}}&by={{by}}&display=5&page={{papers.number}}" class="text-decoration-none">5</a>
+                        {% endif%}
+                        <span class="text-dark"> |</span>
+                        {% if display == 10 %}
+                        <a href="?keyword={{keyword}}&by={{by}}&display=10&page={{papers.number}}" class="text-decoration-underline text-dark">10</a>
+                        {% else %}
+                        <a href="?keyword={{keyword}}&by={{by}}&display=10&page={{papers.number}}" class="text-decoration-none">10</a>
+                        {% endif%}
+                        <span class="text-dark"> |</span>
+                        {% if display == 25 %}
+                        <a href="?keyword={{keyword}}&by={{by}}&display=25&page={{papers.number}}" class="text-decoration-underline text-dark">25</a>
+                        {% else %}
+                        <a href="?keyword={{keyword}}&by={{by}}&display=25&page={{papers.number}}" class="text-decoration-none">25</a>
+                        {% endif%}
+                        <span class="text-dark"> |</span>
+                        {% if display == 50%}
+                        <a href="?keyword={{keyword}}&by={{by}}&display=50&page={{papers.number}}" class="text-decoration-underline text-dark">50</a>
+                        {% else %}
+                        <a href="?keyword={{keyword}}&by={{by}}&display=50&page={{papers.number}}" class="text-decoration-none">50</a>
+                        {% endif%}
+                        <span class="text-dark"> |</span>
+                        {% if display == 100%}
+                        <a href="?keyword={{keyword}}&by={{by}}&display=100&page={{papers.number}}" class="text-decoration-underline text-dark">100</a>
+                        {% else %}
+                        <a href="?keyword={{keyword}}&by={{by}}&display=100&page={{papers.number}}" class="text-decoration-none">100</a>
+                        {% endif %}
+                    </div>
+                    <div class="col-lg-6 text-end">
+                        {% if papers.has_previous %}
+                        <a href="?keyword={{keyword}}&by={{by}}&display={{display}}&page={{papers.previous_page_number}}" class="text-decoration-none">Previous</a>
+                        <span class="text-dark"> |</span>                            
+                        {% endif %}
+                        <span class="fs-6"><a href="" class="text-decoration-none text-dark"> {{ papers.number }} of {{ papers.paginator.num_pages }}</span>
+                        {% if papers.has_next%}
+                        <span class="text-dark"> |</span>                            
+                        <a href="?keyword={{keyword}}&by={{by}}&display={{display}}&page={{papers.next_page_number}}" class="text-decoration-none">Next</a>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+    <hr class="text-danger">
+    <div class="container">
+        <div class="row pt-3">
+            <div class="col-lg-3">
+                <h4>Browse by Publication Title:</h4>
+            </div>
+            <div class="col-lg-9">
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=A">A</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=B">B</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=C">C</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=D">D</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=E">E</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=F">F</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=G">G</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=H">H</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=I">I</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=J">J</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=K">K</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=L">L</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=M">M</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=N">N</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=O">O</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=P">P</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=Q">Q</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=R">R</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=S">S</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=T">T</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=U">U</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=V">V</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=W">W</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=X">X</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=Y">Y</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=Z">Z</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=0-9">0-9</a>
+            </div>
+        </div>    
+    </div>
+</main>    
+{% include 'footer.html' %}
+{% endblock%}

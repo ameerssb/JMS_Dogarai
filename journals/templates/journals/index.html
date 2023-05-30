@@ -1,0 +1,289 @@
+{% extends 'main.html' %}
+
+{% load static %}
+{% block content %}
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'assets/css/navbar-fixed.css' %}" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+
+{% include 'header.html'%}
+
+<main class="text-left bg-light pt-5">
+    {% if messages %}
+    <div class="messages text-center text-danger pb-2">
+        {% for message in messages %}
+        <span {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{message}}</span>
+        {% endfor %}
+    </div> 
+    {% endif %}                
+    <h5 class="pb-2 text-success text-center">Search for University Published Journal Articles and Books Chapters</h5>
+    <div class="container-fluid">
+    <div class="col-lg-3"></div>
+    <form action="{% url 'Search'%}" method="get">
+        <div class="col-lg-6 container pt-2">
+            <div class="d-flex justify-content-center">
+                <input  class="form-control me-4" type="search" name="keyword" id="keyword" placeholder="Enter Search Keyword" required>
+                <button type="submit" class="btn btn-primary">Search</button>                
+            </div>
+        </div>
+    </form>
+    <div class="col-lg-3"></div>
+    </div>
+
+    <img class="pt-3" src="{% static 'assets/images/post-landscape-5.jpg' %}" width="100%" height="400px" alt="">
+
+    <div class="container pt-4">
+            <h3 class="pb-3">Explore Scientific, technical, and medical research on Bature Journals</h3>
+            <a class="text-dark me-5" style="border: 0px; text-decoration: none;" href="">Physical Sciences and Engineering</a>
+            <a class="text-dark me-5" style="border: 0px; text-decoration: none;" href="">Life Sciences</a>
+            <a class="text-dark me-5" style="border: 0px; text-decoration: none;" href="">Health Sciences</a>
+            <a class="text-dark me-5" style="border: 0px; text-decoration: none;" href="">Social Sciences and Humanities</a>
+            <hr>
+        <h4 class="pt-3">Physical Sciences and Engineering</h4>
+        <div class="row mb-5">
+            <div class="col-lg-4">
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a style="border: 0px; text-decoration: none;" href="">Chemical Engineering</a></li>
+                    <li class="mb-2"><a style="border: 0px; text-decoration: none;" href="">Chemistry</a></li>
+                    <li class="mb-2"><a style="border: 0px; text-decoration: none;" href="">Computer Science</a></li>
+                    <li class="mb-2"><a style="border: 0px; text-decoration: none;" href="">Earth and Planetary Sciences</a></li>        
+                    <li class="mb-2"><a style="border: 0px; text-decoration: none;" href="">Energy</a></li>
+                    <li class="mb-2"><a style="border: 0px; text-decoration: none;" href="">Engineering</a></li>
+                    <li class="mb-2"><a style="border: 0px; text-decoration: none;" href="">Material Science</a></li>
+                    <li class="mb-2"><a style="border: 0px; text-decoration: none;" href="">Mathematics</a></li>
+                    <li class="mb-2"><a style="border: 0px; text-decoration: none;" href="">Physics and Astronomy</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-8">
+                <div class="row">
+                    <p>From the following</p>
+                    <div class="col-lg-6 pb-3 pt-3">
+                        <h4>Popular Articles</h4>
+                        <div class="mb-3">
+                            <h5><a href="">title</a></h5>
+                            <small>journal name,volume 11,issue</small>    
+                        </div>
+                        <div class="mb-3">
+                            <h5><a href="">title</a></h5>
+                            <small>journal name,volume 11,issue</small>    
+                        </div>
+                        <div class="mb-3">
+                            <h5><a href="">title</a></h5>
+                            <small>journal name,volume 11,issue</small>    
+                        </div>
+                    </div>
+                    <div class="col-lg-6 pb-3 pt-3">
+                        <h4>Recent Publications</h4>
+                        <div class="mb-3">
+                            <h5><a href="">title</a></h5>
+                            <small>journal name,volume 11,issue</small>    
+                        </div>
+                        <div class="mb-3">
+                            <h5><a href="">title</a></h5>
+                            <small>journal name,volume 11,issue</small>    
+                        </div>
+                        <div class="mb-3">
+                            <h5><a href="">title</a></h5>
+                            <small>journal name,volume 11,issue</small>    
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="btn btn-primary">></a>
+                <a href="" class="text-dark" style="text-decoration: none;">Register now to view university articles based on your Research field</a>                
+            </div>
+        </div>
+        <hr>                
+        <h4 class="pt-3">Life Sciences</h4>
+        <div class="row mb-5">
+            <div class="col-lg-4">
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a style="border: 0px; text-decoration: none;" href="">Agricultural and Bilogical Sciences</a></li>
+                    <li class="mb-2"><a style="border: 0px; text-decoration: none;" href="">Biochemistry, Genetics and Molecular Biology</a></li>
+                    <li class="mb-2"><a style="border: 0px; text-decoration: none;" href="">Environmental Sciences</a></li>
+                    <li class="mb-2"><a style="border: 0px; text-decoration: none;" href="">Immunology</a></li>        
+                    <li class="mb-2"><a style="border: 0px; text-decoration: none;" href="">Neuroscience</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-8">
+                <div class="row">
+                    <p>From the following</p>
+                    <div class="col-lg-6 pb-3 pt-3">
+                        <h4>Popular Articles</h4>
+                        <div class="mb-3">
+                            <h5><a href="">title</a></h5>
+                            <small>journal name,volume 11,issue</small>    
+                        </div>
+                        <div class="mb-3">
+                            <h5><a href="">title</a></h5>
+                            <small>journal name,volume 11,issue</small>    
+                        </div>
+                        <div class="mb-3">
+                            <h5><a href="">title</a></h5>
+                            <small>journal name,volume 11,issue</small>    
+                        </div>
+                    </div>
+                    <div class="col-lg-6 pb-3 pt-3">
+                        <h4>Recent Publications</h4>
+                        <div class="mb-3">
+                            <h5><a href="">title</a></h5>
+                            <small>journal name,volume 11,issue</small>    
+                        </div>
+                        <div class="mb-3">
+                            <h5><a href="">title</a></h5>
+                            <small>journal name,volume 11,issue</small>    
+                        </div>
+                        <div class="mb-3">
+                            <h5><a href="">title</a></h5>
+                            <small>journal name,volume 11,issue</small>    
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="btn btn-primary">></a>
+                <a href="" class="text-dark" style="text-decoration: none;">Register now to view university articles based on your Research field</a>                
+            </div>
+        </div>
+        <hr>
+        <h4 class="pt-3">Health Sciences</h4>
+        <div class="row mb-5">
+            <div class="col-lg-4">
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a style="border: 0px; text-decoration: none;" href="">Medicine and Dentistry</a></li>
+                    <li class="mb-2"><a style="border: 0px; text-decoration: none;" href="">Nursing and Health Professions</a></li>
+                    <li class="mb-2"><a style="border: 0px; text-decoration: none;" href="">Pharmacology, Toxicology and Pharmaceutical Science</a></li>
+                    <li class="mb-2"><a style="border: 0px; text-decoration: none;" href="">Veterinary Science and Veterinary Medicine</a></li>        
+                </ul>
+            </div>
+            <div class="col-lg-8">
+                <div class="row">
+                    <p>From the following</p>
+                    <div class="col-lg-6 pb-3 pt-3">
+                        <h4>Popular Articles</h4>
+                        <div class="mb-3">
+                            <h5><a href="">title</a></h5>
+                            <small>journal name,volume 11,issue</small>    
+                        </div>
+                        <div class="mb-3">
+                            <h5><a href="">title</a></h5>
+                            <small>journal name,volume 11,issue</small>    
+                        </div>
+                        <div class="mb-3">
+                            <h5><a href="">title</a></h5>
+                            <small>journal name,volume 11,issue</small>    
+                        </div>
+                    </div>
+                    <div class="col-lg-6 pb-3 pt-3">
+                        <h4>Recent Publications</h4>
+                        <div class="mb-3">
+                            <h5><a href="">title</a></h5>
+                            <small>journal name,volume 11,issue</small>    
+                        </div>
+                        <div class="mb-3">
+                            <h5><a href="">title</a></h5>
+                            <small>journal name,volume 11,issue</small>    
+                        </div>
+                        <div class="mb-3">
+                            <h5><a href="">title</a></h5>
+                            <small>journal name,volume 11,issue</small>    
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="btn btn-primary">></a>
+                <a href="" class="text-dark" style="text-decoration: none;">Register now to view university articles based on your Research field</a>                
+            </div>
+        </div>
+        <hr>
+        <h4 class="pt-3">Social Sciences and Humanities</h4>
+        <div class="row mb-5">
+            <div class="col-lg-4">
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a style="border: 0px; text-decoration: none;" href="">Arts and Humanities</a></li>
+                    <li class="mb-2"><a style="border: 0px; text-decoration: none;" href="">Business, Management and Accounting</a></li>
+                    <li class="mb-2"><a style="border: 0px; text-decoration: none;" href="">Decision Sciences</a></li>
+                    <li class="mb-2"><a style="border: 0px; text-decoration: none;" href="">Economics, Econometrics and Finance</a></li>        
+                    <li class="mb-2"><a style="border: 0px; text-decoration: none;" href="">Psychology</a></li>
+                    <li class="mb-2"><a style="border: 0px; text-decoration: none;" href="">Social Sciences</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-8">
+                <div class="row">
+                    <p>From the following</p>
+                    <div class="col-lg-6 pb-3 pt-3">
+                        <h4>Popular Articles</h4>
+                        <div class="mb-3">
+                            <h5><a href="">title</a></h5>
+                            <small>journal name,volume 11,issue</small>    
+                        </div>
+                        <div class="mb-3">
+                            <h5><a href="">title</a></h5>
+                            <small>journal name,volume 11,issue</small>    
+                        </div>
+                        <div class="mb-3">
+                            <h5><a href="">title</a></h5>
+                            <small>journal name,volume 11,issue</small>    
+                        </div>
+                    </div>
+                    <div class="col-lg-6 pb-3 pt-3">
+                        <h4>Recent Publications</h4>
+                        <div class="mb-3">
+                            <h5><a href="">title</a></h5>
+                            <small>journal name,volume 11,issue</small>    
+                        </div>
+                        <div class="mb-3">
+                            <h5><a href="">title</a></h5>
+                            <small>journal name,volume 11,issue</small>    
+                        </div>
+                        <div class="mb-3">
+                            <h5><a href="">title</a></h5>
+                            <small>journal name,volume 11,issue</small>    
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="btn btn-primary">></a>
+                <a href="" class="text-dark" style="text-decoration: none;">Register now to view university articles based on your Research field</a>                
+            </div>
+        </div>
+    </div>
+    <hr>    
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-lg-3">
+                <h4>Browse by Publication Title:</h4>
+            </div>
+            <div class="col-lg-9">
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=A">A</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=B">B</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=C">C</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=D">D</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=E">E</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=F">F</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=G">G</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=H">H</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=I">I</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=J">J</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=K">K</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=L">L</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=M">M</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=N">N</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=O">O</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=P">P</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=Q">Q</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=R">R</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=S">S</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=T">T</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=U">U</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=V">V</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=W">W</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=X">X</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=Y">Y</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=Z">Z</a>
+                <a class="me-3 text-decoration-none fs-4" href="{% url 'Browse'%}?by-letter=0-9">0-9</a>
+            </div>
+        </div>                
+    </div>
+
+</main>
+
+{% include 'footer.html' %}
+{% endblock %}
