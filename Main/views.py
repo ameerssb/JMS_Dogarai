@@ -8,11 +8,12 @@ from django.contrib.auth.decorators import login_required
 from django.views.decorators.csrf import csrf_protect
 from django.utils.decorators import method_decorator
 from django.contrib.auth import authenticate, login, logout
-from .decorators import email_verification_required,active_verification_required,user_sigin,is_reviewer_accepted_required
+from .decorators import email_verification_required,active_verification_required,user_sigin_main,is_reviewer_accepted_required
 from django.contrib import messages
 from django.core.mail import send_mail, BadHeaderError
 from django.http import HttpResponse
 from django.contrib.auth.forms import PasswordResetForm
+from django.contrib.auth.hashers import make_password
 from .models import User
 from django.template.loader import render_to_string
 from django.db.models.query_utils import Q
@@ -22,17 +23,15 @@ from django.utils.encoding import force_bytes
 # Create your views here.
 
 signout_deco = [login_required]
-sigin_reg_deco = [user_sigin('Home')]
+sigin_reg_deco = [user_sigin_main('Home')]
 
 class Home(View):
     def get(self,request):
 
-        context = {}
+        return redirect('JournalHome')
+        # context = {}
 
-        return render(request, 'Main/index.html', context)
-
-    def post(self,request):
-        return render(request, 'Main/index.html')
+        # return render(request, 'Main/index.html', context)
 
 @method_decorator(sigin_reg_deco, name='get')
 @method_decorator(sigin_reg_deco, name='post')
@@ -52,18 +51,18 @@ class Signin(View):
                 email = request.POST['email']
                 password = request.POST['password']
                 user = authenticate(email=email, password=password)
-                u = User.objects.get(email=email)
                 if user is not None:
+                    u = User.objects.get(email=email)                    
                     if user.is_active:
-#                        if u.is_email_verified:
-                        login(request, user)
-                        if request.GET.get('next'):
-                            return redirect(request.GET.get('next'))
-                        else:  
-                            return redirect('Home')
-#                        else:
-#                            messages.error(request,"Your email is not verified, Please verify before Signing in")
-#                            return redirect('Signin')                    
+                        if u.is_email_verified:
+                            login(request, user)
+                            if request.GET.get('next'):
+                                return redirect(request.GET.get('next'))
+                            else:  
+                                return redirect('Home')
+                        else:
+                            messages.error(request,"Your email is not verified, Please verify before Signing in")
+                            return redirect('Signin')                    
                     else:
                         messages.error(request,"Your account is disabled, Contact Us via Suppport Team")
                         return redirect('Signin')                    
@@ -94,8 +93,11 @@ class Register(View):
         form = UserForm(request.POST)
         if form.is_valid():
             try:
-                send_verification_email(request, form)
-                messages.success(request, "Account created. check your email inbox to verify your account")
+                data = form.save(commit=False)
+                data.password = make_password(data.password)
+                data.save()
+                # send_verification_email(request, form)
+                messages.success(request, "Account created. You can login now")
                 return redirect('Signin')
             except:
                 messages.error(request, "an error occured while sending verification to your email, can't create your account at this time")
@@ -123,7 +125,7 @@ class password_reset_request(View):
                     c = {
                     "email":user.email,
                     'domain':'127.0.0.1:8000',
-                    'site_name': 'Yumsuk Journals',
+                    'site_name': 'Bature Journals',
                     "uid": urlsafe_base64_encode(force_bytes(user.pk)),
                     "user": user,
                     'token': default_token_generator.make_token(user),

@@ -6,7 +6,7 @@ from django.urls import reverse
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from Journals.models import Submit_Papers_Info,Paper_Update_History,Paper_Reviewers,Paper_Comments
 from django.contrib import messages
-from Main.models import Reviewer
+from Main.models import Reviewer,Relate
 from .forms import ReviewerForm,CommentsForm,Paper_Reviewers_Form
 from django.utils.decorators import method_decorator
 from django.contrib.auth.decorators import login_required
@@ -168,8 +168,13 @@ class History(View):
 @method_decorator(reg_deco, name='post')
 class Register(View):
     def get(self,request):
-
-        context = {}
+        data = Relate.objects.filter(user=request.user).first()
+        if data:
+            form = data
+        else:
+            form = None
+        
+        context = {'form':form}
 
         return render(request, 'Reviewers/register.html', context)
 

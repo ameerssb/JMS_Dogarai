@@ -25,7 +25,7 @@ class User(AbstractUser):
 	created = models.DateTimeField(auto_now_add=True,auto_created=True)
 	updated = models.DateTimeField(auto_now=True,auto_created=True)
 	USERNAME_FIELD = 'email'
-	REQUIRED_FIELDS = ['first_name','last_name']
+	REQUIRED_FIELDS = ['first_name','last_name','username']
 
 class Relate(models.Model):
 	user = models.OneToOneField(User,on_delete=models.CASCADE,primary_key=True)

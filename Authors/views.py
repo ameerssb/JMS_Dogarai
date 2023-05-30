@@ -3,7 +3,7 @@ from django.views import View
 from django.urls import reverse
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from Journals.models import Submit_Papers_Info,Paper_Update_History,Paper_Comments
-from Main.models import Author
+from Main.models import Author,Relate
 from .forms import NewForm,HistoryForm,AuthorForm
 from django.contrib import messages
 from django.utils.decorators import method_decorator
@@ -233,8 +233,13 @@ class PaperHistory(View):
 @method_decorator(reg_deco, name='post')
 class Register(View):
     def get(self,request):
-
-        context = {}
+        data = Relate.objects.filter(user=request.user).first()
+        if data:
+            form = data
+        else:
+            form = None
+        
+        context = {'form':form}
 
         return render(request, 'Authors/register.html', context)
 

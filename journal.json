@@ -1,0 +1,407 @@
+[
+{"type":"header","version":"5.1.3","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"journal"},
+{"type":"table","name":"admin_interface_theme","database":"journal","data":
+[
+{"id":"1","name":"Django","active":"1","title":"Django administration","title_visible":"1","logo":"","logo_visible":"1","css_header_background_color":"#0C4B33","title_color":"#F5DD5D","css_header_text_color":"#44B78B","css_header_link_color":"#FFFFFF","css_header_link_hover_color":"#C9F0DD","css_module_background_color":"#44B78B","css_module_text_color":"#FFFFFF","css_module_link_color":"#FFFFFF","css_module_link_hover_color":"#C9F0DD","css_module_rounded_corners":"1","css_generic_link_color":"#0C3C26","css_generic_link_hover_color":"#156641","css_save_button_background_color":"#0C4B33","css_save_button_background_hover_color":"#0C3C26","css_save_button_text_color":"#FFFFFF","css_delete_button_background_color":"#BA2121","css_delete_button_background_hover_color":"#A41515","css_delete_button_text_color":"#FFFFFF","list_filter_dropdown":"1","related_modal_active":"1","related_modal_background_color":"#000000","related_modal_rounded_corners":"1","logo_color":"#FFFFFF","recent_actions_visible":"1","favicon":"","related_modal_background_opacity":"0.3","env_name":"","env_visible_in_header":"1","env_color":"#E74C3C","env_visible_in_favicon":"1","related_modal_close_button_visible":"1","language_chooser_active":"1","language_chooser_display":"code","list_filter_sticky":"1","form_pagination_sticky":"0","form_submit_sticky":"0","css_module_background_selected_color":"#FFFFCC","css_module_link_selected_color":"#FFFFFF","logo_max_height":"100","logo_max_width":"400","foldable_apps":"1","language_chooser_control":"default-select","list_filter_highlight":"1","list_filter_removal_links":"0","show_fieldsets_as_tabs":"0","show_inlines_as_tabs":"0"}
+]
+}
+,{"type":"table","name":"auth_group","database":"journal","data":
+[
+
+]
+}
+,{"type":"table","name":"auth_group_permissions","database":"journal","data":
+[
+
+]
+}
+,{"type":"table","name":"auth_permission","database":"journal","data":
+[
+{"id":"1","name":"Can add Theme","content_type_id":"1","codename":"add_theme"},
+{"id":"2","name":"Can change Theme","content_type_id":"1","codename":"change_theme"},
+{"id":"3","name":"Can delete Theme","content_type_id":"1","codename":"delete_theme"},
+{"id":"4","name":"Can view Theme","content_type_id":"1","codename":"view_theme"},
+{"id":"5","name":"Can add log entry","content_type_id":"2","codename":"add_logentry"},
+{"id":"6","name":"Can change log entry","content_type_id":"2","codename":"change_logentry"},
+{"id":"7","name":"Can delete log entry","content_type_id":"2","codename":"delete_logentry"},
+{"id":"8","name":"Can view log entry","content_type_id":"2","codename":"view_logentry"},
+{"id":"9","name":"Can add permission","content_type_id":"3","codename":"add_permission"},
+{"id":"10","name":"Can change permission","content_type_id":"3","codename":"change_permission"},
+{"id":"11","name":"Can delete permission","content_type_id":"3","codename":"delete_permission"},
+{"id":"12","name":"Can view permission","content_type_id":"3","codename":"view_permission"},
+{"id":"13","name":"Can add group","content_type_id":"4","codename":"add_group"},
+{"id":"14","name":"Can change group","content_type_id":"4","codename":"change_group"},
+{"id":"15","name":"Can delete group","content_type_id":"4","codename":"delete_group"},
+{"id":"16","name":"Can view group","content_type_id":"4","codename":"view_group"},
+{"id":"17","name":"Can add content type","content_type_id":"5","codename":"add_contenttype"},
+{"id":"18","name":"Can change content type","content_type_id":"5","codename":"change_contenttype"},
+{"id":"19","name":"Can delete content type","content_type_id":"5","codename":"delete_contenttype"},
+{"id":"20","name":"Can view content type","content_type_id":"5","codename":"view_contenttype"},
+{"id":"21","name":"Can add session","content_type_id":"6","codename":"add_session"},
+{"id":"22","name":"Can change session","content_type_id":"6","codename":"change_session"},
+{"id":"23","name":"Can delete session","content_type_id":"6","codename":"delete_session"},
+{"id":"24","name":"Can view session","content_type_id":"6","codename":"view_session"},
+{"id":"25","name":"Can add user","content_type_id":"7","codename":"add_user"},
+{"id":"26","name":"Can change user","content_type_id":"7","codename":"change_user"},
+{"id":"27","name":"Can delete user","content_type_id":"7","codename":"delete_user"},
+{"id":"28","name":"Can view user","content_type_id":"7","codename":"view_user"},
+{"id":"29","name":"Can add articles_papers_info","content_type_id":"8","codename":"add_articles_papers_info"},
+{"id":"30","name":"Can change articles_papers_info","content_type_id":"8","codename":"change_articles_papers_info"},
+{"id":"31","name":"Can delete articles_papers_info","content_type_id":"8","codename":"delete_articles_papers_info"},
+{"id":"32","name":"Can view articles_papers_info","content_type_id":"8","codename":"view_articles_papers_info"},
+{"id":"33","name":"Can add papers_info","content_type_id":"9","codename":"add_papers_info"},
+{"id":"34","name":"Can change papers_info","content_type_id":"9","codename":"change_papers_info"},
+{"id":"35","name":"Can delete papers_info","content_type_id":"9","codename":"delete_papers_info"},
+{"id":"36","name":"Can view papers_info","content_type_id":"9","codename":"view_papers_info"},
+{"id":"37","name":"Can add relate","content_type_id":"10","codename":"add_relate"},
+{"id":"38","name":"Can change relate","content_type_id":"10","codename":"change_relate"},
+{"id":"39","name":"Can delete relate","content_type_id":"10","codename":"delete_relate"},
+{"id":"40","name":"Can view relate","content_type_id":"10","codename":"view_relate"},
+{"id":"41","name":"Can add associate editor","content_type_id":"11","codename":"add_associateeditor"},
+{"id":"42","name":"Can change associate editor","content_type_id":"11","codename":"change_associateeditor"},
+{"id":"43","name":"Can delete associate editor","content_type_id":"11","codename":"delete_associateeditor"},
+{"id":"44","name":"Can view associate editor","content_type_id":"11","codename":"view_associateeditor"},
+{"id":"45","name":"Can add author","content_type_id":"12","codename":"add_author"},
+{"id":"46","name":"Can change author","content_type_id":"12","codename":"change_author"},
+{"id":"47","name":"Can delete author","content_type_id":"12","codename":"delete_author"},
+{"id":"48","name":"Can view author","content_type_id":"12","codename":"view_author"},
+{"id":"49","name":"Can add main editor","content_type_id":"13","codename":"add_maineditor"},
+{"id":"50","name":"Can change main editor","content_type_id":"13","codename":"change_maineditor"},
+{"id":"51","name":"Can delete main editor","content_type_id":"13","codename":"delete_maineditor"},
+{"id":"52","name":"Can view main editor","content_type_id":"13","codename":"view_maineditor"},
+{"id":"53","name":"Can add reviewer","content_type_id":"14","codename":"add_reviewer"},
+{"id":"54","name":"Can change reviewer","content_type_id":"14","codename":"change_reviewer"},
+{"id":"55","name":"Can delete reviewer","content_type_id":"14","codename":"delete_reviewer"},
+{"id":"56","name":"Can view reviewer","content_type_id":"14","codename":"view_reviewer"},
+{"id":"57","name":"Can add publish_ papers_ info","content_type_id":"15","codename":"add_publish_papers_info"},
+{"id":"58","name":"Can change publish_ papers_ info","content_type_id":"15","codename":"change_publish_papers_info"},
+{"id":"59","name":"Can delete publish_ papers_ info","content_type_id":"15","codename":"delete_publish_papers_info"},
+{"id":"60","name":"Can view publish_ papers_ info","content_type_id":"15","codename":"view_publish_papers_info"},
+{"id":"61","name":"Can add submit_ papers_ info","content_type_id":"16","codename":"add_submit_papers_info"},
+{"id":"62","name":"Can change submit_ papers_ info","content_type_id":"16","codename":"change_submit_papers_info"},
+{"id":"63","name":"Can delete submit_ papers_ info","content_type_id":"16","codename":"delete_submit_papers_info"},
+{"id":"64","name":"Can view submit_ papers_ info","content_type_id":"16","codename":"view_submit_papers_info"},
+{"id":"65","name":"Can add update_ history","content_type_id":"17","codename":"add_update_history"},
+{"id":"66","name":"Can change update_ history","content_type_id":"17","codename":"change_update_history"},
+{"id":"67","name":"Can delete update_ history","content_type_id":"17","codename":"delete_update_history"},
+{"id":"68","name":"Can view update_ history","content_type_id":"17","codename":"view_update_history"},
+{"id":"69","name":"Can add paper_ update_ history","content_type_id":"17","codename":"add_paper_update_history"},
+{"id":"70","name":"Can change paper_ update_ history","content_type_id":"17","codename":"change_paper_update_history"},
+{"id":"71","name":"Can delete paper_ update_ history","content_type_id":"17","codename":"delete_paper_update_history"},
+{"id":"72","name":"Can view paper_ update_ history","content_type_id":"17","codename":"view_paper_update_history"},
+{"id":"73","name":"Can add paper_uploads","content_type_id":"18","codename":"add_paper_uploads"},
+{"id":"74","name":"Can change paper_uploads","content_type_id":"18","codename":"change_paper_uploads"},
+{"id":"75","name":"Can delete paper_uploads","content_type_id":"18","codename":"delete_paper_uploads"},
+{"id":"76","name":"Can view paper_uploads","content_type_id":"18","codename":"view_paper_uploads"},
+{"id":"77","name":"Can add paper_ reviewers","content_type_id":"19","codename":"add_paper_reviewers"},
+{"id":"78","name":"Can change paper_ reviewers","content_type_id":"19","codename":"change_paper_reviewers"},
+{"id":"79","name":"Can delete paper_ reviewers","content_type_id":"19","codename":"delete_paper_reviewers"},
+{"id":"80","name":"Can view paper_ reviewers","content_type_id":"19","codename":"view_paper_reviewers"},
+{"id":"81","name":"Can add paper_ editors","content_type_id":"20","codename":"add_paper_editors"},
+{"id":"82","name":"Can change paper_ editors","content_type_id":"20","codename":"change_paper_editors"},
+{"id":"83","name":"Can delete paper_ editors","content_type_id":"20","codename":"delete_paper_editors"},
+{"id":"84","name":"Can view paper_ editors","content_type_id":"20","codename":"view_paper_editors"},
+{"id":"85","name":"Can add link counter","content_type_id":"21","codename":"add_linkcounter"},
+{"id":"86","name":"Can change link counter","content_type_id":"21","codename":"change_linkcounter"},
+{"id":"87","name":"Can delete link counter","content_type_id":"21","codename":"delete_linkcounter"},
+{"id":"88","name":"Can view link counter","content_type_id":"21","codename":"view_linkcounter"},
+{"id":"89","name":"Can add paper_ comments","content_type_id":"22","codename":"add_paper_comments"},
+{"id":"90","name":"Can change paper_ comments","content_type_id":"22","codename":"change_paper_comments"},
+{"id":"91","name":"Can delete paper_ comments","content_type_id":"22","codename":"delete_paper_comments"},
+{"id":"92","name":"Can view paper_ comments","content_type_id":"22","codename":"view_paper_comments"},
+{"id":"93","name":"Can add d main editor","content_type_id":"23","codename":"add_dmaineditor"},
+{"id":"94","name":"Can change d main editor","content_type_id":"23","codename":"change_dmaineditor"},
+{"id":"95","name":"Can delete d main editor","content_type_id":"23","codename":"delete_dmaineditor"},
+{"id":"96","name":"Can view d main editor","content_type_id":"23","codename":"view_dmaineditor"},
+{"id":"97","name":"Can add d associate editor","content_type_id":"24","codename":"add_dassociateeditor"},
+{"id":"98","name":"Can change d associate editor","content_type_id":"24","codename":"change_dassociateeditor"},
+{"id":"99","name":"Can delete d associate editor","content_type_id":"24","codename":"delete_dassociateeditor"},
+{"id":"100","name":"Can view d associate editor","content_type_id":"24","codename":"view_dassociateeditor"},
+{"id":"101","name":"Can add editor","content_type_id":"25","codename":"add_editor"},
+{"id":"102","name":"Can change editor","content_type_id":"25","codename":"change_editor"},
+{"id":"103","name":"Can delete editor","content_type_id":"25","codename":"delete_editor"},
+{"id":"104","name":"Can view editor","content_type_id":"25","codename":"view_editor"}
+]
+}
+,{"type":"table","name":"django_admin_log","database":"journal","data":
+[
+{"id":"1","action_time":"2023-05-27 19:38:34.027949","object_id":"12","object_repr":"asmeessb@gmail.com","action_flag":"3","change_message":"","content_type_id":"7","user_id":"13"},
+{"id":"2","action_time":"2023-05-30 13:33:27.099048","object_id":"14","object_repr":"asmeessb@gmail.com","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Last login\", \"Verified\", \"Gender\"]}}]","content_type_id":"7","user_id":"13"},
+{"id":"3","action_time":"2023-05-30 13:33:39.305235","object_id":"14","object_repr":"asmeessb@gmail.com","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Is active\"]}}]","content_type_id":"7","user_id":"13"},
+{"id":"4","action_time":"2023-05-30 13:36:46.186526","object_id":"14","object_repr":"asmeessb@gmail.com","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Is active\"]}}]","content_type_id":"7","user_id":"13"},
+{"id":"5","action_time":"2023-05-30 13:37:32.879739","object_id":"14","object_repr":"asmeessb@gmail.com","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Is active\"]}}]","content_type_id":"7","user_id":"13"},
+{"id":"6","action_time":"2023-05-30 13:40:04.944513","object_id":"14","object_repr":"asmeessb@gmail.com","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Is active\"]}}]","content_type_id":"7","user_id":"13"},
+{"id":"7","action_time":"2023-05-30 13:41:03.643946","object_id":"14","object_repr":"asmeessb@gmail.com","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Is email verified\", \"Gender\"]}}]","content_type_id":"7","user_id":"13"}
+]
+}
+,{"type":"table","name":"django_content_type","database":"journal","data":
+[
+{"id":"2","app_label":"admin","model":"logentry"},
+{"id":"1","app_label":"admin_interface","model":"theme"},
+{"id":"4","app_label":"auth","model":"group"},
+{"id":"3","app_label":"auth","model":"permission"},
+{"id":"5","app_label":"contenttypes","model":"contenttype"},
+{"id":"8","app_label":"Journals","model":"articles_papers_info"},
+{"id":"9","app_label":"Journals","model":"papers_info"},
+{"id":"22","app_label":"Journals","model":"paper_comments"},
+{"id":"20","app_label":"Journals","model":"paper_editors"},
+{"id":"19","app_label":"Journals","model":"paper_reviewers"},
+{"id":"17","app_label":"Journals","model":"paper_update_history"},
+{"id":"18","app_label":"Journals","model":"paper_uploads"},
+{"id":"15","app_label":"Journals","model":"publish_papers_info"},
+{"id":"16","app_label":"Journals","model":"submit_papers_info"},
+{"id":"11","app_label":"Main","model":"associateeditor"},
+{"id":"12","app_label":"Main","model":"author"},
+{"id":"24","app_label":"Main","model":"dassociateeditor"},
+{"id":"23","app_label":"Main","model":"dmaineditor"},
+{"id":"25","app_label":"Main","model":"editor"},
+{"id":"13","app_label":"Main","model":"maineditor"},
+{"id":"10","app_label":"Main","model":"relate"},
+{"id":"14","app_label":"Main","model":"reviewer"},
+{"id":"7","app_label":"Main","model":"user"},
+{"id":"6","app_label":"sessions","model":"session"},
+{"id":"21","app_label":"verify_email","model":"linkcounter"}
+]
+}
+,{"type":"table","name":"django_migrations","database":"journal","data":
+[
+{"id":"1","app":"Journals","name":"0001_initial","applied":"2022-12-12 14:22:27.461032"},
+{"id":"2","app":"contenttypes","name":"0001_initial","applied":"2022-12-12 14:22:28.169806"},
+{"id":"3","app":"contenttypes","name":"0002_remove_content_type_name","applied":"2022-12-12 14:22:30.169054"},
+{"id":"4","app":"auth","name":"0001_initial","applied":"2022-12-12 14:22:35.903677"},
+{"id":"5","app":"auth","name":"0002_alter_permission_name_max_length","applied":"2022-12-12 14:22:38.090982"},
+{"id":"6","app":"auth","name":"0003_alter_user_email_max_length","applied":"2022-12-12 14:22:38.146752"},
+{"id":"7","app":"auth","name":"0004_alter_user_username_opts","applied":"2022-12-12 14:22:38.250738"},
+{"id":"8","app":"auth","name":"0005_alter_user_last_login_null","applied":"2022-12-12 14:22:38.288691"},
+{"id":"9","app":"auth","name":"0006_require_contenttypes_0002","applied":"2022-12-12 14:22:38.336684"},
+{"id":"10","app":"auth","name":"0007_alter_validators_add_error_messages","applied":"2022-12-12 14:22:38.381030"},
+{"id":"11","app":"auth","name":"0008_alter_user_username_max_length","applied":"2022-12-12 14:22:38.429031"},
+{"id":"12","app":"auth","name":"0009_alter_user_last_name_max_length","applied":"2022-12-12 14:22:38.493028"},
+{"id":"13","app":"auth","name":"0010_alter_group_name_max_length","applied":"2022-12-12 14:22:38.779425"},
+{"id":"14","app":"auth","name":"0011_update_proxy_permissions","applied":"2022-12-12 14:22:38.938759"},
+{"id":"15","app":"auth","name":"0012_alter_user_first_name_max_length","applied":"2022-12-12 14:22:39.282766"},
+{"id":"16","app":"Main","name":"0001_initial","applied":"2022-12-12 14:22:45.927479"},
+{"id":"17","app":"admin","name":"0001_initial","applied":"2022-12-12 14:22:48.863623"},
+{"id":"18","app":"admin","name":"0002_logentry_remove_auto_add","applied":"2022-12-12 14:22:48.945614"},
+{"id":"19","app":"admin","name":"0003_logentry_add_action_flag_choices","applied":"2022-12-12 14:22:49.038847"},
+{"id":"20","app":"admin_interface","name":"0001_initial","applied":"2022-12-12 14:22:49.843459"},
+{"id":"21","app":"admin_interface","name":"0002_add_related_modal","applied":"2022-12-12 14:22:50.901528"},
+{"id":"22","app":"admin_interface","name":"0003_add_logo_color","applied":"2022-12-12 14:22:51.212431"},
+{"id":"23","app":"admin_interface","name":"0004_rename_title_color","applied":"2022-12-12 14:22:51.476145"},
+{"id":"24","app":"admin_interface","name":"0005_add_recent_actions_visible","applied":"2022-12-12 14:22:51.791505"},
+{"id":"25","app":"admin_interface","name":"0006_bytes_to_str","applied":"2022-12-12 14:22:52.084586"},
+{"id":"26","app":"admin_interface","name":"0007_add_favicon","applied":"2022-12-12 14:22:52.348596"},
+{"id":"27","app":"admin_interface","name":"0008_change_related_modal_background_opacity_type","applied":"2022-12-12 14:22:52.826654"},
+{"id":"28","app":"admin_interface","name":"0009_add_enviroment","applied":"2022-12-12 14:22:53.569645"},
+{"id":"29","app":"admin_interface","name":"0010_add_localization","applied":"2022-12-12 14:22:53.740470"},
+{"id":"30","app":"admin_interface","name":"0011_add_environment_options","applied":"2022-12-12 14:22:54.422696"},
+{"id":"31","app":"admin_interface","name":"0012_update_verbose_names","applied":"2022-12-12 14:22:54.494325"},
+{"id":"32","app":"admin_interface","name":"0013_add_related_modal_close_button","applied":"2022-12-12 14:22:54.666141"},
+{"id":"33","app":"admin_interface","name":"0014_name_unique","applied":"2022-12-12 14:22:55.028908"},
+{"id":"34","app":"admin_interface","name":"0015_add_language_chooser_active","applied":"2022-12-12 14:22:55.307805"},
+{"id":"35","app":"admin_interface","name":"0016_add_language_chooser_display","applied":"2022-12-12 14:22:55.491832"},
+{"id":"36","app":"admin_interface","name":"0017_change_list_filter_dropdown","applied":"2022-12-12 14:22:55.543873"},
+{"id":"37","app":"admin_interface","name":"0018_theme_list_filter_sticky","applied":"2022-12-12 14:22:55.728345"},
+{"id":"38","app":"admin_interface","name":"0019_add_form_sticky","applied":"2022-12-12 14:22:56.076108"},
+{"id":"39","app":"admin_interface","name":"0020_module_selected_colors","applied":"2022-12-12 14:22:57.404617"},
+{"id":"40","app":"admin_interface","name":"0021_file_extension_validator","applied":"2022-12-12 14:22:57.540654"},
+{"id":"41","app":"admin_interface","name":"0022_add_logo_max_width_and_height","applied":"2022-12-12 14:22:58.120206"},
+{"id":"42","app":"admin_interface","name":"0023_theme_foldable_apps","applied":"2022-12-12 14:22:58.857298"},
+{"id":"43","app":"admin_interface","name":"0024_remove_theme_css","applied":"2022-12-12 14:22:59.150664"},
+{"id":"44","app":"admin_interface","name":"0025_theme_language_chooser_control","applied":"2022-12-12 14:22:59.521651"},
+{"id":"45","app":"admin_interface","name":"0026_theme_list_filter_highlight","applied":"2022-12-12 14:22:59.848881"},
+{"id":"46","app":"admin_interface","name":"0027_theme_list_filter_removal_links","applied":"2022-12-12 14:23:00.083389"},
+{"id":"47","app":"admin_interface","name":"0028_theme_show_fieldsets_as_tabs_and_more","applied":"2022-12-12 14:23:00.580633"},
+{"id":"48","app":"sessions","name":"0001_initial","applied":"2022-12-12 14:23:01.340685"},
+{"id":"49","app":"Journals","name":"0002_articles_papers_info_user_papers_info_user","applied":"2022-12-12 14:25:16.250790"},
+{"id":"50","app":"Main","name":"0002_relate_rename_gender_user_gender_user_created_and_more","applied":"2022-12-12 15:21:14.681759"},
+{"id":"51","app":"Main","name":"0003_rename_university_relate_institution_and_more","applied":"2022-12-12 15:26:26.427051"},
+{"id":"52","app":"Journals","name":"0003_publish_papers_info_submit_papers_info_and_more","applied":"2022-12-12 16:56:24.364313"},
+{"id":"53","app":"Journals","name":"0004_rename_update_history_paper_update_history_and_more","applied":"2022-12-15 23:47:25.113669"},
+{"id":"54","app":"Journals","name":"0005_alter_submit_papers_info_paper_type","applied":"2022-12-15 23:49:26.406775"},
+{"id":"55","app":"Main","name":"0004_remove_user_date_of_birth_remove_user_other_name_and_more","applied":"2022-12-20 14:05:11.625294"},
+{"id":"56","app":"verify_email","name":"0001_initial","applied":"2022-12-20 14:26:35.553882"},
+{"id":"57","app":"Main","name":"0005_alter_user_username","applied":"2022-12-20 14:57:00.178022"},
+{"id":"58","app":"Main","name":"0006_alter_user_verified","applied":"2022-12-20 15:47:08.155762"},
+{"id":"59","app":"Journals","name":"0006_submit_papers_info_cover_letter_pdf_and_more","applied":"2022-12-23 22:41:54.841051"},
+{"id":"60","app":"Journals","name":"0007_alter_submit_papers_info_manuscript_pdf_and_more","applied":"2022-12-23 22:57:44.202363"},
+{"id":"61","app":"Journals","name":"0008_alter_submit_papers_info_user","applied":"2022-12-23 23:01:30.106900"},
+{"id":"62","app":"Journals","name":"0009_alter_submit_papers_info_status","applied":"2022-12-24 05:27:31.627895"},
+{"id":"63","app":"Journals","name":"0010_alter_submit_papers_info_manuscript_pdf_and_more","applied":"2022-12-24 06:34:09.301975"},
+{"id":"64","app":"Journals","name":"0011_alter_submit_papers_info_manuscript_pdf_and_more","applied":"2022-12-24 14:20:05.103386"},
+{"id":"65","app":"Journals","name":"0012_alter_submit_papers_info_status","applied":"2022-12-25 16:11:09.404928"},
+{"id":"66","app":"Journals","name":"0013_remove_paper_update_history_created","applied":"2022-12-25 16:18:19.644851"},
+{"id":"67","app":"Journals","name":"0014_paper_update_history_abstract_and_more","applied":"2022-12-25 16:28:14.460602"},
+{"id":"68","app":"Journals","name":"0015_remove_paper_update_history_comment","applied":"2022-12-25 16:30:30.742296"},
+{"id":"69","app":"Journals","name":"0016_paper_comments_paper_update_history_version_and_more","applied":"2022-12-25 16:37:45.435646"},
+{"id":"70","app":"Journals","name":"0017_submit_papers_info_version","applied":"2022-12-25 18:50:26.899044"},
+{"id":"71","app":"Journals","name":"0018_paper_reviewers_review_status","applied":"2022-12-26 22:18:16.939176"},
+{"id":"72","app":"Main","name":"0007_remove_relate_is_ass_editor_remove_relate_is_author_and_more","applied":"2022-12-26 22:18:25.086339"},
+{"id":"73","app":"Main","name":"0008_relate_address_relate_city_relate_mobile_and_more","applied":"2022-12-26 22:25:02.388351"},
+{"id":"74","app":"Main","name":"0009_alter_relate_mobile","applied":"2022-12-26 22:26:24.845619"},
+{"id":"75","app":"Main","name":"0010_remove_associateeditor_is_ass_editor_and_more","applied":"2022-12-26 22:43:49.015265"},
+{"id":"76","app":"Main","name":"0011_alter_relate_designation","applied":"2022-12-26 23:03:06.142164"},
+{"id":"77","app":"Main","name":"0012_alter_relate_designation","applied":"2022-12-26 23:24:23.086481"},
+{"id":"78","app":"Main","name":"0013_alter_relate_designation","applied":"2022-12-26 23:25:17.833365"},
+{"id":"79","app":"Journals","name":"0019_alter_submit_papers_info_user","applied":"2022-12-27 00:05:14.556473"},
+{"id":"80","app":"Journals","name":"0020_alter_publish_papers_info_pubmed_id_and_more","applied":"2022-12-27 23:52:58.029906"},
+{"id":"81","app":"Main","name":"0014_remove_relate_accepted_and_more","applied":"2022-12-27 23:53:01.497463"},
+{"id":"82","app":"Journals","name":"0021_delete_paper_editors","applied":"2022-12-28 11:32:04.540553"},
+{"id":"83","app":"Main","name":"0015_editor_remove_associateeditor_relate_ptr_and_more","applied":"2022-12-28 11:40:02.650828"},
+{"id":"84","app":"Main","name":"0015_dassociateeditor_dmaineditor","applied":"2022-12-28 11:45:31.930891"},
+{"id":"85","app":"Main","name":"0016_remove_dassociateeditor_relate_ptr_and_more","applied":"2022-12-28 11:52:40.753043"},
+{"id":"86","app":"Main","name":"0015_associateeditor_maineditor","applied":"2022-12-28 11:56:02.836790"},
+{"id":"87","app":"Main","name":"0016_remove_associateeditor_relate_ptr_and_more","applied":"2022-12-28 11:56:06.744855"},
+{"id":"88","app":"Main","name":"0017_editor","applied":"2022-12-28 11:56:27.229749"},
+{"id":"89","app":"Journals","name":"0022_paper_editors","applied":"2022-12-28 11:57:49.973302"},
+{"id":"90","app":"Journals","name":"0023_alter_submit_papers_info_domain","applied":"2022-12-28 13:11:16.893540"},
+{"id":"91","app":"Journals","name":"0024_alter_articles_papers_info_domain_and_more","applied":"2022-12-28 13:44:49.219568"},
+{"id":"92","app":"Journals","name":"0025_alter_articles_papers_info_subdomain_and_more","applied":"2022-12-28 13:53:08.686528"},
+{"id":"93","app":"Journals","name":"0026_paper_update_history_domain","applied":"2022-12-28 14:10:49.208029"},
+{"id":"94","app":"Journals","name":"0027_paper_reviewers_accepted_and_more","applied":"2022-12-29 09:05:21.884902"},
+{"id":"95","app":"Journals","name":"0028_paper_reviewers_user_and_more","applied":"2022-12-29 09:35:42.949454"},
+{"id":"96","app":"Journals","name":"0029_alter_paper_reviewers_user","applied":"2022-12-29 09:45:03.618939"},
+{"id":"97","app":"Journals","name":"0030_remove_paper_reviewers_user_paper_reviewers_editor","applied":"2022-12-30 14:18:41.525047"},
+{"id":"98","app":"Journals","name":"0031_alter_paper_editors_editor_and_more","applied":"2022-12-30 14:27:39.401831"},
+{"id":"99","app":"Journals","name":"0032_remove_paper_reviewers_editor_paper_reviewers_user_and_more","applied":"2022-12-30 14:29:37.602717"},
+{"id":"100","app":"Journals","name":"0033_remove_paper_reviewers_user_paper_reviewers_editor","applied":"2022-12-30 14:30:32.960088"},
+{"id":"101","app":"Main","name":"0018_editor_domain_editor_subdomain_reviewer_domain_and_more","applied":"2022-12-30 20:49:05.348514"},
+{"id":"102","app":"Main","name":"0019_editor_area_reviewer_area_alter_editor_subdomain_and_more","applied":"2022-12-30 21:07:09.989664"},
+{"id":"103","app":"Journals","name":"0034_alter_paper_reviewers_editor_and_more","applied":"2022-12-31 00:06:33.048491"},
+{"id":"104","app":"Journals","name":"0035_alter_paper_editors_editor_alter_paper_editors_paper_and_more","applied":"2022-12-31 00:13:02.494407"},
+{"id":"105","app":"Journals","name":"0036_alter_paper_reviewers_editor_and_more","applied":"2022-12-31 00:57:51.193763"},
+{"id":"106","app":"Journals","name":"0037_alter_paper_reviewers_reviewer","applied":"2022-12-31 00:59:10.847444"},
+{"id":"107","app":"Journals","name":"0038_remove_paper_reviewers_accepted","applied":"2022-12-31 05:52:45.275236"},
+{"id":"108","app":"Journals","name":"0039_paper_comments_reviewer_and_more","applied":"2022-12-31 06:18:12.120251"},
+{"id":"109","app":"Journals","name":"0040_alter_paper_comments_comment","applied":"2022-12-31 06:36:15.717991"},
+{"id":"110","app":"Journals","name":"0041_submit_papers_info_payment_and_more","applied":"2023-01-27 21:22:24.785175"},
+{"id":"111","app":"Journals","name":"0042_alter_submit_papers_info_payment","applied":"2023-01-27 21:28:46.177384"},
+{"id":"112","app":"Journals","name":"0043_submit_papers_info_reference_url","applied":"2023-01-27 21:43:06.799055"}
+]
+}
+,{"type":"table","name":"django_session","database":"journal","data":
+[
+{"session_key":"3zsjksrakg3sewsx6pavu2adxs15alrg","session_data":".eJxVjMsOwiAQRf-FtSEwvIpL934DGWCQqoGktCvjv2uTLnR7zzn3xQJuaw3boCXMmZ3ZxE6_W8T0oLaDfMd26zz1ti5z5LvCDzr4tWd6Xg7376DiqN_aFkkuSaE1iaKsi-DRAFkqBr3X2TjnIWpjywSASqpkkyTMUJxGAZ69P9ltN34:1p93mf:7bWgANdmNkDDJ9Q2C1ZPayLHL-xSt9XjuN4hi5onc9I","expire_date":"2023-01-07 12:37:49.537337"},
+{"session_key":"9ninu88pfozevofms8n1r22ckmifffbc","session_data":".eJxVjEEOwiAQRe_C2hBaOwO4dN8zkKHDSNVAUtqV8e7apAvd_vfef6lA25rD1tISZlYX5dTpd4s0PVLZAd-p3KqealmXOepd0QdteqycntfD_TvI1PK3FidgIpIHPzCLcXhmseCYwQEgJUMC0XYe02DQUvSdkEWG2PfJCKn3B_LmOFA:1pU2zy:pLIB37hFRAfIcRgqX0LM_brcnkUaow2xcq1Ry862tFg","expire_date":"2023-03-06 10:02:18.724702"},
+{"session_key":"9w3hvon20s2aflpwwmpapb0bbo1i1v5r","session_data":".eJxVjEEOwiAQRe_C2hBaOwO4dN8zkKHDSNVAUtqV8e7apAvd_vfef6lA25rD1tISZlYX5dTpd4s0PVLZAd-p3KqealmXOepd0QdteqycntfD_TvI1PK3FidgIpIHPzCLcXhmseCYwQEgJUMC0XYe02DQUvSdkEWG2PfJCKn3B_LmOFA:1pZJg6:bM0Wj8d1im9BJfDixS8rVPZiG02me9-jt-mCdE21Gus","expire_date":"2023-03-20 22:51:34.644053"},
+{"session_key":"iwqzd40forrnim5rc1ipqlrk93yxlioa","session_data":".eJxVjEEOwiAQRe_C2hBaOwO4dN8zkKHDSNVAUtqV8e7apAvd_vfef6lA25rD1tISZlYX5dTpd4s0PVLZAd-p3KqealmXOepd0QdteqycntfD_TvI1PK3FidgIpIHPzCLcXhmseCYwQEgJUMC0XYe02DQUvSdkEWG2PfJCKn3B_LmOFA:1pLVgT:jnJNeu8tdMjU1PUV4FzsCPlM2j2vsrBXam3rCKkgYtc","expire_date":"2023-02-10 20:50:53.235988"},
+{"session_key":"o2avw57redm2rkq2vi2wnobhpaqzbc26","session_data":".eJxVjEEOwiAQRe_C2hBaOwO4dN8zkKHDSNVAUtqV8e7apAvd_vfef6lA25rD1tISZlYX5dTpd4s0PVLZAd-p3KqealmXOepd0QdteqycntfD_TvI1PK3FidgIpIHPzCLcXhmseCYwQEgJUMC0XYe02DQUvSdkEWG2PfJCKn3B_LmOFA:1pBMmJ:ffUls38omzt_wEfdFHiPNThODAciXfywRwROY60vLWY","expire_date":"2023-01-13 21:18:59.776022"},
+{"session_key":"qarod7fmjzta1txrpqvemz82hzc080ew","session_data":".eJxVjEsOAiEQBe_C2hCYZhBcup8zkIZuZNRAMp-V8e5KMgvdvqp6LxFw30rYV17CTOIiNIjT7xgxPbh2QnestyZTq9syR9kVedBVTo34eT3cv4OCa-k1oY80KJsxJacs-yErUNmN2ukvSdFYdwYFaAYm8JzAIqAHiiMrk8X7AyCHOIw:1q2zdB:UXlrqepPE96Lx6w-AuP5gwtoZKoaaV8rZiSGaAjPx_M","expire_date":"2023-06-10 19:31:13.020819"}
+]
+}
+,{"type":"table","name":"journals_articles_papers_info","database":"journal","data":
+[
+
+]
+}
+,{"type":"table","name":"journals_paper_comments","database":"journal","data":
+[
+
+]
+}
+,{"type":"table","name":"journals_paper_editors","database":"journal","data":
+[
+
+]
+}
+,{"type":"table","name":"journals_paper_reviewers","database":"journal","data":
+[
+
+]
+}
+,{"type":"table","name":"journals_paper_update_history","database":"journal","data":
+[
+{"id":"1","paper_id":"5","abstract":"The aim of the paper is to analyse the possibilities of using IT tools supporting education for customer relationship management on the example of IPMA-Student Portal. The tool was created to support partner universities and their students in the development of competencies and certification in project management; however, by way of putting it to use, collecting information about users, and communicating with them, the tool can be treated as a means of strengthening and improving relationships with universities and students. The IPMA-Student Portal is a basic communication tool, adapted to the needs of lecturers and students, bringing benefits both to the IPMA Poland Association and the academic community.","authors_name":"Joanna Rzempała, Rafał Szymańskib","corres_emails":"joannarzem@uos.edu.po","cover_letter_pdf":"","created":"2022-12-25 17:04:28.316556","keywords":"client relationships, marketing, development of competencies, education","manuscript_pdf":"","paper_type":"1","subdomain":"UNKNOWN","supplimentary_file":"","title":"Using CRM Tools for Learning Development – The IPMA-Student Portal Example","version":"1","domain":"Select"},
+{"id":"2","paper_id":"5","abstract":"The aim of the paper is to analyse the possibilities of using IT tools supporting education for customer relationship management on the example of IPMA-Student Portal. The tool was created to support partner universities and their students in the development of competencies and certification in project management; however, by way of putting it to use, collecting information about users, and communicating with them, the tool can be treated as a means of strengthening and improving relationships with universities and students. The IPMA-Student Portal is a basic communication tool, adapted to the needs of lecturers and students, bringing benefits both to the IPMA Poland Association and the academic community.","authors_name":"Joanna Rzempała, Rafał Szymańskib","corres_emails":"joannarzem@uos.edu.po","cover_letter_pdf":"","created":"2022-12-25 18:18:31.655680","keywords":"client relationships, marketing, development of competencies, education","manuscript_pdf":"papers_file\/COVID.DATA.LIC.AGMT_ql8Cd4I.pdf","paper_type":"1","subdomain":"UNKNOWN","supplimentary_file":"","title":"Using CRM Tools for Learning Development – The IPMA-Student Portal Example","version":"2","domain":"Select"},
+{"id":"3","paper_id":"5","abstract":"The aim of the paper is to analyse the possibilities of using IT tools supporting education for customer relationship management on the example of IPMA-Student Portal. The tool was created to support partner universities and their students in the development of competencies and certification in project management; however, by way of putting it to use, collecting information about users, and communicating with them, the tool can be treated as a means of strengthening and improving relationships with universities and students. The IPMA-Student Portal is a basic communication tool, adapted to the needs of lecturers and students, bringing benefits both to the IPMA Poland Association and the academic community.","authors_name":"Joanna Rzempała, Rafał Szymańskib","corres_emails":"joannarzem@uos.edu.po","cover_letter_pdf":"","created":"2022-12-25 18:22:17.613181","keywords":"client relationships, marketing, development of competencies, education","manuscript_pdf":"","paper_type":"1","subdomain":"UNKNOWN","supplimentary_file":"","title":"Using CRM Tools for Learning Development – The IPMA-Student Portal Example","version":"3","domain":"Select"},
+{"id":"4","paper_id":"5","abstract":"The aim of the paper is to analyse the possibilities of using IT tools supporting education for customer relationship management on the example of IPMA-Student Portal. The tool was created to support partner universities and their students in the development of competencies and certification in project management; however, by way of putting it to use, collecting information about users, and communicating with them, the tool can be treated as a means of strengthening and improving relationships with universities and students. The IPMA-Student Portal is a basic communication tool, adapted to the needs of lecturers and students, bringing benefits both to the IPMA Poland Association and the academic community.","authors_name":"Joanna Rzempała, Rafał Szymańskib","corres_emails":"joannarzem@uos.edu.po","cover_letter_pdf":"","created":"2022-12-25 18:23:30.725539","keywords":"client relationships, marketing, development of competencies, education","manuscript_pdf":"","paper_type":"1","subdomain":"UNKNOWN","supplimentary_file":"","title":"Using CRM Tools for Learning Development – The IPMA-Student Portal Example","version":"4","domain":"Select"},
+{"id":"5","paper_id":"5","abstract":"The aim of the paper is to analyse the possibilities of using IT tools supporting education for customer relationship management on the example of IPMA-Student Portal. The tool was created to support partner universities and their students in the development of competencies and certification in project management; however, by way of putting it to use, collecting information about users, and communicating with them, the tool can be treated as a means of strengthening and improving relationships with universities and students. The IPMA-Student Portal is a basic communication tool, adapted to the needs of lecturers and students, bringing benefits both to the IPMA Poland Association and the academic community.","authors_name":"Joanna Rzempała, Rafał Szymańskib","corres_emails":"joannarzem@uos.edu.po","cover_letter_pdf":"","created":"2022-12-25 18:28:50.155269","keywords":"client relationships, marketing, development of competencies, education","manuscript_pdf":"","paper_type":"1","subdomain":"UNKNOWN","supplimentary_file":"","title":"Using CRM Tools for Learning Development – The IPMA-Student Portal Example","version":"5","domain":"Select"},
+{"id":"6","paper_id":"5","abstract":"The aim of the paper is to analyse the possibilities of using IT tools supporting education for customer relationship management on the example of IPMA-Student Portal. The tool was created to support partner universities and their students in the development of competencies and certification in project management; however, by way of putting it to use, collecting information about users, and communicating with them, the tool can be treated as a means of strengthening and improving relationships with universities and students. The IPMA-Student Portal is a basic communication tool, adapted to the needs of lecturers and students, bringing benefits both to the IPMA Poland Association and the academic community.","authors_name":"Joanna Rzempała, Rafał Szymańskib","corres_emails":"joannarzem@uos.edu.po","cover_letter_pdf":"","created":"2022-12-25 20:59:29.439388","keywords":"client relationships, marketing, development of competencies, education","manuscript_pdf":"","paper_type":"1","subdomain":"UNKNOWN","supplimentary_file":"","title":"Using CRM Tools for Learning Development – The IPMA-Student Portal Example","version":"6","domain":"Select"},
+{"id":"7","paper_id":"5","abstract":"The aim of the paper is to analyse the possibilities of using IT tools supporting education for customer relationship management on the example of IPMA-Student Portal. The tool was created to support partner universities and their students in the development of competencies and certification in project management; however, by way of putting it to use, collecting information about users, and communicating with them, the tool can be treated as a means of strengthening and improving relationships with universities and students. The IPMA-Student Portal is a basic communication tool, adapted to the needs of lecturers and students, bringing benefits both to the IPMA Poland Association and the academic community.","authors_name":"Joanna Rzempała, Rafał Szymańskib","corres_emails":"joannarzem@uos.edu.po","cover_letter_pdf":"","created":"2022-12-25 21:09:18.164692","keywords":"client relationships, marketing, development of competencies, education","manuscript_pdf":"","paper_type":"1","subdomain":"UNKNOWN","supplimentary_file":"","title":"Using CRM Tools for Learning Development – The IPMA-Student Portal Example","version":"7","domain":"Select"},
+{"id":"8","paper_id":"4","abstract":"ss","authors_name":"a","corres_emails":"ameersbature17@gmail.com","cover_letter_pdf":"","created":"2022-12-25 21:41:12.920158","keywords":"a","manuscript_pdf":"","paper_type":"2","subdomain":"UNKNOWN","supplimentary_file":"","title":"a","version":"1","domain":"Select"},
+{"id":"9","paper_id":"4","abstract":"ss","authors_name":"a","corres_emails":"ameersbature17@gmail.com","cover_letter_pdf":"","created":"2022-12-25 21:47:11.421694","keywords":"a","manuscript_pdf":"","paper_type":"2","subdomain":"UNKNOWN","supplimentary_file":"","title":"a","version":"2","domain":"Select"},
+{"id":"10","paper_id":"4","abstract":"ss","authors_name":"a","corres_emails":"ameersbature17@gmail.com","cover_letter_pdf":"","created":"2022-12-25 21:48:07.790176","keywords":"a","manuscript_pdf":"","paper_type":"2","subdomain":"UNKNOWN","supplimentary_file":"","title":"a","version":"3","domain":"Select"},
+{"id":"11","paper_id":"6","abstract":"A web-based information system for management of scientific electronic journals is presented in the paper. Journal management requires exchange of information between many participants in the publishing process, including authors, reviewers, editors, and lectors. Each participant in the process plays a different role, and cooperates with other participants. The web system is implemented using open source solutions on the Linux platform. Three-tiered information system architecture\r\nhas been used. Object oriented PHP (PHP hypertext preprocessor) is used as a server side scripting language to implement the business logic. Database management system is provided by PostgreSQL, although database connection abstraction is utilized. Apache web server is used together with SSL encryption mechanism to provide HTML content to end-user. The system is currently in use for editorial support of an international scientific journal and the initial results have been encouraging.","authors_name":"Hrvoje Bogunović, Edgar Pek, Sven Lončarić, Vedran Mornar","corres_emails":"hrvoje.bogunovic@fer.hr","cover_letter_pdf":"","created":"2022-12-25 21:54:27.449320","keywords":"Journal management, PHP, web applications, web content management","manuscript_pdf":"papers_file\/An_electronic_journal_management_system_Mz1mHZN.pdf","paper_type":"1","subdomain":"UNKNOWN","supplimentary_file":"papers_file\/An_electronic_journal_management_system_l3ATZaL.pdf","title":"An Electronic Journal Management System","version":"1","domain":"Select"},
+{"id":"12","paper_id":"6","abstract":"A web-based information system for management of scientific electronic journals is presented in the paper. Journal management requires exchange of information between many participants in the publishing process, including authors, reviewers, editors, and lectors. Each participant in the process plays a different role, and cooperates with other participants. The web system is implemented using open source solutions on the Linux platform. Three-tiered information system architecture\r\nhas been used. Object oriented PHP (PHP hypertext preprocessor) is used as a server side scripting language to implement the business logic. Database management system is provided by PostgreSQL, although database connection abstraction is utilized. Apache web server is used together with SSL encryption mechanism to provide HTML content to end-user. The system is currently in use for editorial support of an international scientific journal and the initial results have been encouraging.","authors_name":"Hrvoje Bogunović, Edgar Pek, Sven Lončarić, Vedran Mornar","corres_emails":"hrvoje.bogunovic@fer.hr","cover_letter_pdf":"","created":"2022-12-25 21:58:02.227830","keywords":"Journal management, PHP, web applications, web content management","manuscript_pdf":"","paper_type":"1","subdomain":"UNKNOWN","supplimentary_file":"","title":"An Electronic Journal Management System","version":"2","domain":"Select"},
+{"id":"13","paper_id":"6","abstract":"A web-based information system for management of scientific electronic journals is presented in the paper. Journal management requires exchange of information between many participants in the publishing process, including authors, reviewers, editors, and lectors. Each participant in the process plays a different role, and cooperates with other participants. The web system is implemented using open source solutions on the Linux platform. Three-tiered information system architecture\r\nhas been used. Object oriented PHP (PHP hypertext preprocessor) is used as a server side scripting language to implement the business logic. Database management system is provided by PostgreSQL, although database connection abstraction is utilized. Apache web server is used together with SSL encryption mechanism to provide HTML content to end-user. The system is currently in use for editorial support of an international scientific journal and the initial results have been encouraging.","authors_name":"Hrvoje Bogunović, Edgar Pek, Sven Lončarić, Vedran Mornar","corres_emails":"hrvoje.bogunovic@fer.hr","cover_letter_pdf":"","created":"2022-12-25 22:07:25.881783","keywords":"Journal management, PHP, web applications, web content management","manuscript_pdf":"","paper_type":"2","subdomain":"UNKNOWN","supplimentary_file":"","title":"An Electronic Journal Management System","version":"3","domain":"Select"},
+{"id":"14","paper_id":"5","abstract":"The aim of the paper is to analyse the possibilities of using IT tools supporting education for customer relationship management on the example of IPMA-Student Portal. The tool was created to support partner universities and their students in the development of competencies and certification in project management; however, by way of putting it to use, collecting information about users, and communicating with them, the tool can be treated as a means of strengthening and improving relationships with universities and students. The IPMA-Student Portal is a basic communication tool, adapted to the needs of lecturers and students, bringing benefits both to the IPMA Poland Association and the academic community.","authors_name":"Joanna Rzempała, Rafał Szymańskib","corres_emails":"joannarzem@uos.edu.po","cover_letter_pdf":"","created":"2022-12-28 14:42:49.853345","keywords":"client relationships, marketing, development of competencies, education","manuscript_pdf":"","paper_type":"1","subdomain":"Computer Science","supplimentary_file":"","title":"Using CRM Tools for Learning Development – The IPMA-Student Portal Example","version":"8","domain":"Physical sciences and engineering"},
+{"id":"15","paper_id":"5","abstract":"The aim of the paper is to analyse the possibilities of using IT tools supporting education for customer relationship management on the example of IPMA-Student Portal. The tool was created to support partner universities and their students in the development of competencies and certification in project management; however, by way of putting it to use, collecting information about users, and communicating with them, the tool can be treated as a means of strengthening and improving relationships with universities and students. The IPMA-Student Portal is a basic communication tool, adapted to the needs of lecturers and students, bringing benefits both to the IPMA Poland Association and the academic community.","authors_name":"Joanna Rzempała, Rafał Szymańskib","corres_emails":"joannarzem@uos.edu.po","cover_letter_pdf":"","created":"2022-12-28 14:43:32.847311","keywords":"client relationships, marketing, development of competencies, education","manuscript_pdf":"","paper_type":"1","subdomain":"Computer Science","supplimentary_file":"","title":"Using CRM Tools for Learning Development – The IPMA-Student Portal Example","version":"9","domain":"Physical sciences and engineering"},
+{"id":"16","paper_id":"6","abstract":"A web-based information system for management of scientific electronic journals is presented in the paper. Journal management requires exchange of information between many participants in the publishing process, including authors, reviewers, editors, and lectors. Each participant in the process plays a different role, and cooperates with other participants. The web system is implemented using open source solutions on the Linux platform. Three-tiered information system architecture\r\nhas been used. Object oriented PHP (PHP hypertext preprocessor) is used as a server side scripting language to implement the business logic. Database management system is provided by PostgreSQL, although database connection abstraction is utilized. Apache web server is used together with SSL encryption mechanism to provide HTML content to end-user. The system is currently in use for editorial support of an international scientific journal and the initial results have been encouraging.","authors_name":"Hrvoje Bogunović, Edgar Pek, Sven Lončarić, Vedran Mornar","corres_emails":"hrvoje.bogunovic@fer.hr","cover_letter_pdf":"","created":"2022-12-28 14:52:13.030513","keywords":"Journal management, PHP, web applications, web content management","manuscript_pdf":"","paper_type":"1","subdomain":"Computer Science","supplimentary_file":"","title":"An Electronic Journal Management System","version":"4","domain":"Physical sciences and engineering"},
+{"id":"17","paper_id":"6","abstract":"A web-based information system for management of scientific electronic journals is presented in the paper. Journal management requires exchange of information between many participants in the publishing process, including authors, reviewers, editors, and lectors. Each participant in the process plays a different role, and cooperates with other participants. The web system is implemented using open source solutions on the Linux platform. Three-tiered information system architecture\r\nhas been used. Object oriented PHP (PHP hypertext preprocessor) is used as a server side scripting language to implement the business logic. Database management system is provided by PostgreSQL, although database connection abstraction is utilized. Apache web server is used together with SSL encryption mechanism to provide HTML content to end-user. The system is currently in use for editorial support of an international scientific journal and the initial results have been encouraging.","authors_name":"Hrvoje Bogunović, Edgar Pek, Sven Lončarić, Vedran Mornar","corres_emails":"hrvoje.bogunovic@fer.hr","cover_letter_pdf":"","created":"2022-12-28 14:53:24.072593","keywords":"Journal management, PHP, web applications, web content management","manuscript_pdf":"","paper_type":"1","subdomain":"Computer Science","supplimentary_file":"","title":"An Electronic Journal Management System","version":"5","domain":"Physical sciences and engineering"},
+{"id":"18","paper_id":"6","abstract":"A web-based information system for management of scientific electronic journals is presented in the paper. Journal management requires exchange of information between many participants in the publishing process, including authors, reviewers, editors, and lectors. Each participant in the process plays a different role, and cooperates with other participants. The web system is implemented using open source solutions on the Linux platform. Three-tiered information system architecture\r\nhas been used. Object oriented PHP (PHP hypertext preprocessor) is used as a server side scripting language to implement the business logic. Database management system is provided by PostgreSQL, although database connection abstraction is utilized. Apache web server is used together with SSL encryption mechanism to provide HTML content to end-user. The system is currently in use for editorial support of an international scientific journal and the initial results have been encouraging.","authors_name":"Hrvoje Bogunović, Edgar Pek, Sven Lončarić, Vedran Mornar","corres_emails":"hrvoje.bogunovic@fer.hr","cover_letter_pdf":"","created":"2022-12-28 14:54:40.826475","keywords":"Journal management, PHP, web applications, web content management","manuscript_pdf":"","paper_type":"1","subdomain":"Computer Science","supplimentary_file":"","title":"An Electronic Journal Management System","version":"6","domain":"Physical sciences and engineering"},
+{"id":"19","paper_id":"6","abstract":"A web-based information system for management of scientific electronic journals is presented in the paper. Journal management requires exchange of information between many participants in the publishing process, including authors, reviewers, editors, and lectors. Each participant in the process plays a different role, and cooperates with other participants. The web system is implemented using open source solutions on the Linux platform. Three-tiered information system architecture\r\nhas been used. Object oriented PHP (PHP hypertext preprocessor) is used as a server side scripting language to implement the business logic. Database management system is provided by PostgreSQL, although database connection abstraction is utilized. Apache web server is used together with SSL encryption mechanism to provide HTML content to end-user. The system is currently in use for editorial support of an international scientific journal and the initial results have been encouraging.","authors_name":"Hrvoje Bogunović, Edgar Pek, Sven Lončarić, Vedran Mornar","corres_emails":"hrvoje.bogunovic@fer.hr","cover_letter_pdf":"","created":"2022-12-28 14:56:39.702913","keywords":"Journal management, PHP, web applications, web content management","manuscript_pdf":"","paper_type":"1","subdomain":"Computer Science","supplimentary_file":"","title":"An Electronic Journal Management System","version":"7","domain":"Physical sciences and engineering"},
+{"id":"20","paper_id":"6","abstract":"A web-based information system for management of scientific electronic journals is presented in the paper. Journal management requires exchange of information between many participants in the publishing process, including authors, reviewers, editors, and lectors. Each participant in the process plays a different role, and cooperates with other participants. The web system is implemented using open source solutions on the Linux platform. Three-tiered information system architecture\r\nhas been used. Object oriented PHP (PHP hypertext preprocessor) is used as a server side scripting language to implement the business logic. Database management system is provided by PostgreSQL, although database connection abstraction is utilized. Apache web server is used together with SSL encryption mechanism to provide HTML content to end-user. The system is currently in use for editorial support of an international scientific journal and the initial results have been encouraging.","authors_name":"Hrvoje Bogunović, Edgar Pek, Sven Lončarić, Vedran Mornar","corres_emails":"hrvoje.bogunovic@fer.hr","cover_letter_pdf":"","created":"2022-12-28 14:57:42.901415","keywords":"Journal management, PHP, web applications, web content management","manuscript_pdf":"","paper_type":"1","subdomain":"Computer Science","supplimentary_file":"","title":"An Electronic Journal Management System","version":"8","domain":"Physical sciences and engineering"},
+{"id":"21","paper_id":"4","abstract":"ss","authors_name":"a","corres_emails":"ameersbature17@gmail.com","cover_letter_pdf":"","created":"2022-12-29 07:43:26.368862","keywords":"a","manuscript_pdf":"","paper_type":"0","subdomain":"Unknown","supplimentary_file":"","title":"a","version":"4","domain":"Unknown"},
+{"id":"22","paper_id":"7","abstract":"abstract here","authors_name":"Joanna Rzempała, Rafał Szymańskib","corres_emails":"ameersbature17@gmail.com","cover_letter_pdf":"","created":"2022-12-30 13:41:08.383747","keywords":"Journal management, PHP, web applications, web content management","manuscript_pdf":"papers_file\/04Nfm04de12.pdf_sequence4_8G0mFBc.pdf","paper_type":"1","subdomain":"Biologyy","supplimentary_file":"papers_file\/04Nfm04de12.pdf_sequence4_L3ef4lP.pdf","title":"A paper","version":"1","domain":"Life sciences"},
+{"id":"23","paper_id":"4","abstract":"A web-based information system for management of scientific electronic journals is presented in the paper. Journal management requires exchange of information between many participants in the publishing process, including authors, reviewers, editors, and lectors. Each participant in the process plays a different role, and cooperates with other participants. The web system is implemented using open source solutions on the Linux platform. Three-tiered information system architecture has been used. Object oriented PHP (PHP hypertext preprocessor) is used as a server side scripting language to implement the business logic. Database management system is provided by PostgreSQL, although database connection abstraction is utilized. Apache web server is used together with SSL encryption mechanism to provide HTML content to end-user. The system is currently in use for editorial support of an international scientific journal and the initial results have been encouraging.","authors_name":"Hrvoje Bogunović, Edgar Pek, Sven Lončarić and Vedran Mornar","corres_emails":"ameersbature17@gmail.com","cover_letter_pdf":"","created":"2022-12-31 00:40:03.312282","keywords":"Journal management, PHP, web applications, web content management","manuscript_pdf":"papers_file\/An_electronic_journal_management_system_1_HNPDIXF.pdf","paper_type":"1","subdomain":"Computer Science","supplimentary_file":"papers_file\/An_electronic_journal_management_system_1_y2EnLlF.pdf","title":"An Electronic Journal Management System","version":"5","domain":"Physical sciences and engineering"},
+{"id":"24","paper_id":"4","abstract":"A web-based information system for management of scientific electronic journals is presented in the paper. Journal management requires exchange of information between many participants in the publishing process, including authors, reviewers, editors, and lectors. Each participant in the process plays a different role, and cooperates with other participants. The web system is implemented using open source solutions on the Linux platform. Three-tiered information system architecture has been used. Object oriented PHP (PHP hypertext preprocessor) is used as a server side scripting language to implement the business logic. Database management system is provided by PostgreSQL, although database connection abstraction is utilized. Apache web server is used together with SSL encryption mechanism to provide HTML content to end-user. The system is currently in use for editorial support of an international scientific journal and the initial results have been encouraging.","authors_name":"Hrvoje Bogunović, Edgar Pek, Sven Lončarić and Vedran Mornar","corres_emails":"ameersbature17@gmail.com","cover_letter_pdf":"","created":"2023-01-28 06:18:08.012089","keywords":"Journal management, PHP, web applications, web content management","manuscript_pdf":"","paper_type":"1","subdomain":"Computer Science","supplimentary_file":"","title":"An Electronic Journal Management System","version":"6","domain":"Physical sciences and engineering"},
+{"id":"25","paper_id":"5","abstract":"The aim of the paper is to analyse the possibilities of using IT tools supporting education for customer relationship management on the example of IPMA-Student Portal. The tool was created to support partner universities and their students in the development of competencies and certification in project management; however, by way of putting it to use, collecting information about users, and communicating with them, the tool can be treated as a means of strengthening and improving relationships with universities and students. The IPMA-Student Portal is a basic communication tool, adapted to the needs of lecturers and students, bringing benefits both to the IPMA Poland Association and the academic community.","authors_name":"Joanna Rzempała, Rafał Szymańskib","corres_emails":"joannarzem@uos.edu.po","cover_letter_pdf":"","created":"2023-01-28 06:29:56.407955","keywords":"client relationships, marketing, development of competencies, education","manuscript_pdf":"","paper_type":"1","subdomain":"Computer Science","supplimentary_file":"","title":"Using CRM Tools for Learning Development – The IPMA-Student Portal Example","version":"10","domain":"Physical sciences and engineering"},
+{"id":"26","paper_id":"5","abstract":"The aim of the paper is to analyse the possibilities of using IT tools supporting education for customer relationship management on the example of IPMA-Student Portal. The tool was created to support partner universities and their students in the development of competencies and certification in project management; however, by way of putting it to use, collecting information about users, and communicating with them, the tool can be treated as a means of strengthening and improving relationships with universities and students. The IPMA-Student Portal is a basic communication tool, adapted to the needs of lecturers and students, bringing benefits both to the IPMA Poland Association and the academic community.","authors_name":"Joanna Rzempała, Rafał Szymańskib","corres_emails":"ameersbature17@gmail.com","cover_letter_pdf":"","created":"2023-01-28 06:43:27.552239","keywords":"client relationships, marketing, development of competencies, education","manuscript_pdf":"","paper_type":"1","subdomain":"Computer Science","supplimentary_file":"","title":"Using CRM Tools for Learning Development – The IPMA-Student Portal Example","version":"11","domain":"Physical sciences and engineering"},
+{"id":"27","paper_id":"4","abstract":"A web-based information system for management of scientific electronic journals is presented in the paper. Journal management requires exchange of information between many participants in the publishing process, including authors, reviewers, editors, and lectors. Each participant in the process plays a different role, and cooperates with other participants. The web system is implemented using open source solutions on the Linux platform. Three-tiered information system architecture has been used. Object oriented PHP (PHP hypertext preprocessor) is used as a server side scripting language to implement the business logic. Database management system is provided by PostgreSQL, although database connection abstraction is utilized. Apache web server is used together with SSL encryption mechanism to provide HTML content to end-user. The system is currently in use for editorial support of an international scientific journal and the initial results have been encouraging.","authors_name":"Hrvoje Bogunović, Edgar Pek, Sven Lončarić and Vedran Mornar","corres_emails":"sanisbature17@gmail.com","cover_letter_pdf":"","created":"2023-01-28 06:44:11.307004","keywords":"Journal management, PHP, web applications, web content management","manuscript_pdf":"","paper_type":"1","subdomain":"Computer Science","supplimentary_file":"","title":"An Electronic Journal Management System","version":"7","domain":"Physical sciences and engineering"}
+]
+}
+,{"type":"table","name":"journals_publish_papers_info","database":"journal","data":
+[
+
+]
+}
+,{"type":"table","name":"journals_submit_papers_info","database":"journal","data":
+[
+{"created":"2022-12-24 06:35:23.395370","id":"4","title":"An Electronic Journal Management System","abstract":"A web-based information system for management of scientific electronic journals is presented in the paper. Journal management requires exchange of information between many participants in the publishing process, including authors, reviewers, editors, and lectors. Each participant in the process plays a different role, and cooperates with other participants. The web system is implemented using open source solutions on the Linux platform. Three-tiered information system architecture has been used. Object oriented PHP (PHP hypertext preprocessor) is used as a server side scripting language to implement the business logic. Database management system is provided by PostgreSQL, although database connection abstraction is utilized. Apache web server is used together with SSL encryption mechanism to provide HTML content to end-user. The system is currently in use for editorial support of an international scientific journal and the initial results have been encouraging.","authors_name":"Hrvoje Bogunović, Edgar Pek, Sven Lončarić and Vedran Mornar","views":"0","download":"0","domain":"Physical sciences and engineering","subdomain":"Computer Science","user_id":"8","corres_emails":"sanisbature17@gmail.com","is_submitted":"0","keywords":"Journal management, PHP, web applications, web content management","paper_type":"1","status":"Submitted","updated":"2023-05-27 19:24:59.247245","cover_letter_pdf":"","manuscript_pdf":"papers_file\/An_electronic_journal_management_system_1.pdf","supplimentary_file":"papers_file\/An_electronic_journal_management_system_1_ieOcLoS.pdf","version":"7","payment":"Unpaid","reference_number":"68phx96dr2","reference_url":"https:\/\/checkout.paystack.com\/slzegdwix2kr9d1"},
+{"created":"2022-12-24 20:51:21.980413","id":"5","title":"Using CRM Tools for Learning Development – The IPMA-Student Portal Example","abstract":"The aim of the paper is to analyse the possibilities of using IT tools supporting education for customer relationship management on the example of IPMA-Student Portal. The tool was created to support partner universities and their students in the development of competencies and certification in project management; however, by way of putting it to use, collecting information about users, and communicating with them, the tool can be treated as a means of strengthening and improving relationships with universities and students. The IPMA-Student Portal is a basic communication tool, adapted to the needs of lecturers and students, bringing benefits both to the IPMA Poland Association and the academic community.","authors_name":"Joanna Rzempała, Rafał Szymańskib","views":"0","download":"0","domain":"Physical sciences and engineering","subdomain":"Computer Science","user_id":"8","corres_emails":"ameersbature17@gmail.com","is_submitted":"0","keywords":"client relationships, marketing, development of competencies, education","paper_type":"1","status":"Submitted","updated":"2023-05-27 19:24:59.132340","cover_letter_pdf":"","manuscript_pdf":"papers_file\/COVID.DATA.LIC.AGMT_2iXSL3N.pdf","supplimentary_file":"papers_file\/1-s2.0-S1877050921020172-main_R9kRzKw.pdf","version":"11","payment":"Unpaid","reference_number":"dzwnxeipsb","reference_url":"https:\/\/checkout.paystack.com\/341ajjsg23t6mxd"},
+{"created":"2022-12-30 13:41:07.685588","id":"7","title":"A paper","abstract":"abstract here","authors_name":"Joanna Rzempała, Rafał Szymańskib","views":"0","download":"0","domain":"Life sciences","subdomain":"Biologyy","user_id":"11","corres_emails":"ameersbature17@gmail.com","is_submitted":"0","keywords":"Journal management, PHP, web applications, web content management","paper_type":"1","status":"Submitted","updated":"2022-12-30 13:41:07.685588","cover_letter_pdf":"","manuscript_pdf":"papers_file\/04Nfm04de12.pdf_sequence4.pdf","supplimentary_file":"papers_file\/04Nfm04de12.pdf_sequence4_FITjgRu.pdf","version":"1","payment":"Unpaid","reference_number":"","reference_url":""}
+]
+}
+,{"type":"table","name":"main_author","database":"journal","data":
+[
+{"relate_ptr_id":"8","is_author_accepted":"1"},
+{"relate_ptr_id":"11","is_author_accepted":"1"},
+{"relate_ptr_id":"14","is_author_accepted":"1"}
+]
+}
+,{"type":"table","name":"main_editor","database":"journal","data":
+[
+{"relate_ptr_id":"8","is_associate_editor_accepted":"1","is_main_editor_accepted":"0","domain":"Physical sciences and engineering","subdomain":"computer science","area":""}
+]
+}
+,{"type":"table","name":"main_relate","database":"journal","data":
+[
+{"user_id":"8","designation":"Professor","institution":"Yusuf Maitama Sule University, Kano","country":"Nigeria","created":"0000-00-00 00:00:00.000000","address":"No. 356 Yamadawa Dorayi Babba, Gwale LG, Kano State","city":"KANO","mobile":"+234-7088890573","state":"KANO"},
+{"user_id":"11","designation":"Student","institution":"Yusuf Maitama Sule University, Kano","country":"Nigeria","created":"2022-12-30 13:27:53.389125","address":"No. 356 Yamadawa Dorayi Babba, Gwale LG, Kano State","city":"KANO","mobile":"+234-7088890573","state":"KANO"},
+{"user_id":"14","designation":"Select","institution":"Yusuf Maitama Sule University, Kano","country":"Nigeria","created":"0000-00-00 00:00:00.000000","address":"356 Yamadawa Dorayi","city":"Gwale","mobile":"+234-7065697733","state":"Kano"}
+]
+}
+,{"type":"table","name":"main_reviewer","database":"journal","data":
+[
+{"relate_ptr_id":"8","is_reviewer_accepted":"1","domain":"Physical sciences and engineering","subdomain":"computer science","area":""},
+{"relate_ptr_id":"14","is_reviewer_accepted":"0","domain":"Physical sciences and engineering","subdomain":"mathematics","area":"Calculus, Algebra"}
+]
+}
+,{"type":"table","name":"main_user","database":"journal","data":
+[
+{"id":"8","password":"pbkdf2_sha256$390000$WJxljFzJagwIRMu6sOkRQT$Hdj1uFFst9jVObV0eXGUc\/XAn3nTAg2IV4861PJ96xk=","last_login":"2023-05-27 19:27:39.538187","is_superuser":"0","username":"","is_staff":"0","date_joined":"2022-12-20 15:44:49.104948","first_name":"Sani","last_name":"Bature","email":"sanisbature17@gmail.com","is_active":"1","Verified":"1","is_email_verified":"1","gender":"Select","created":"2022-12-20 15:44:49.775068","updated":"2022-12-27 17:05:10.740525"},
+{"id":"11","password":"pbkdf2_sha256$390000$PMES1rGKX9RTZrZEv5ZyDK$g9SjiYdKIotViRmBPuNt+h3BKYFPhDqx9lrTR3qaUeA=","last_login":"2022-12-30 20:48:27.295096","is_superuser":"0","username":"","is_staff":"0","date_joined":"2022-12-30 12:54:17.563292","first_name":"Ameer","last_name":"Bature","email":"ameersbature17@gmail.com","is_active":"1","Verified":"1","is_email_verified":"1","gender":"Select","created":"2022-12-30 12:54:18.078332","updated":"2022-12-30 12:54:18.078332"},
+{"id":"13","password":"pbkdf2_sha256$390000$yj6QpRGbmvYZOQy14hsuCm$GZz+cXMegCXxs6e4ETufiNJUKwRi8xVbzJrYflNDiXM=","last_login":"2023-05-27 19:31:12.924412","is_superuser":"1","username":"admin1","is_staff":"1","date_joined":"2023-05-27 19:30:55.566017","first_name":"admin","last_name":"admin","email":"admin@journal.edu.ng","is_active":"1","Verified":"1","is_email_verified":"0","gender":"Select","created":"2023-05-27 19:30:55.956136","updated":"2023-05-27 19:30:55.956136"},
+{"id":"14","password":"pbkdf2_sha256$390000$qOeVDO6nJxq28dU0EzKsJk$Z389FAffO2c4zy0U44hBskwANYN1QWo1AKqZcxtdvkY=","last_login":"2023-05-30 13:46:49.855750","is_superuser":"0","username":"","is_staff":"0","date_joined":"2023-05-27 19:42:14.000000","first_name":"Asmau","last_name":"bature","email":"asmeessb@gmail.com","is_active":"1","Verified":"0","is_email_verified":"1","gender":"MALE","created":"2023-05-27 19:42:15.289844","updated":"2023-05-30 13:41:03.587949"}
+]
+}
+,{"type":"table","name":"main_user_groups","database":"journal","data":
+[
+
+]
+}
+,{"type":"table","name":"main_user_user_permissions","database":"journal","data":
+[
+
+]
+}
+,{"type":"table","name":"verify_email_linkcounter","database":"journal","data":
+[
+{"id":"15","sent_count":"1","requester_id":"8"},
+{"id":"18","sent_count":"1","requester_id":"11"},
+{"id":"20","sent_count":"1","requester_id":"13"},
+{"id":"21","sent_count":"1","requester_id":"14"}
+]
+}
+]

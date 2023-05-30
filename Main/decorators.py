@@ -2,7 +2,7 @@ from django.contrib.auth.decorators import user_passes_test
 from django.urls import reverse
 from django.shortcuts import redirect,get_object_or_404
 from django.contrib import messages
-from .models import Author,Reviewer,Editor
+from .models import Author,Reviewer,Editor,User
 
 def verification_requireds(f):
     return user_passes_test(lambda u: u.is_active, login_url='/Signin')(f)
@@ -36,6 +36,18 @@ def user_sigin(Model,redirect_url=None):
             if request.user.is_anonymous:
                 return view_func(request, *args, **kwargs)
             elif not Model.objects.filter(user=request.user).first():
+                return view_func(request, *args, **kwargs)
+            else:
+                return redirect(reverse(redirect_url))
+        return wrap
+    return decorator
+
+def user_sigin_main(redirect_url=None):
+    def decorator(view_func):
+        def wrap(request, *args, **kwargs):
+            if request.user.is_anonymous:
+                return view_func(request, *args, **kwargs)
+            elif not User.objects.filter(email=request.user).first():
                 return view_func(request, *args, **kwargs)
             else:
                 return redirect(reverse(redirect_url))

@@ -27,8 +27,8 @@ if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 
-admin.site.site_title = "Ministry of Science, Technology and Innovation"
+admin.site.site_title = "Bature Journals"
 
-admin.site.index_title = "Ministry of Science, Technology and Innovation"
+admin.site.index_title = "Bature Journals"
 
 # admin.site.unregister(Theme)

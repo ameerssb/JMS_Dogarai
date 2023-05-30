@@ -3,8 +3,8 @@
 
 <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
     <div class="container-fluid m-2">
-      <img class="ms-2" src="{% static 'assets/brand/logo.jpg' %}" alt="" width="72" height="57">      
-      <strong><a class="ms-1 navbar-brand text-success" href="{% url 'Home' %}">Yumsuk Journals</a></strong>
+      <!-- <img class="ms-2" src="{% static 'assets/brand/logo.jpg' %}" alt="" width="72" height="57">       -->
+      <strong><a class="ms-1 navbar-brand text-success" href="{% url 'Home' %}">Bature Journals</a></strong>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -13,6 +13,9 @@
         </ul>
         <div class="d-flex justify-content-end">
           {% if user.is_authenticated %}
+          <a href="{% url 'Author_Dashboard' %}" class="mt-1 nav-link text-success fw-bold">Author</a>
+          <a href="{% url 'Reviewer_Dashboard' %}" class="mt-1 nav-link text-success fw-bold">Reviewer</a>          
+          <a href="{% url 'Editor_Dashboard' %}" class="mt-1 me-4 nav-link text-success fw-bold">Editor</a>          
           <div class="dropdown pe-5">
             <a class="btn  btn-success text-decoration-none fs-2 px-3 py-0 pb-1 rounded-circle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">{{user.first_name|first_char}}</a>
             <div class="dropdown-menu dropdown-menu-sm-end" aria-labelledby="logout">
