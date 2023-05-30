@@ -32,3 +32,22 @@ function year2020(e) {
         console.log("pressed "+document.getElementById("2020"))
     }
 }
+
+(function (){
+    'use strict'
+
+    var forms = document.querySelectorAll('.needs-validatin')
+
+    Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()){
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            },false)
+        
+    })
+})()
