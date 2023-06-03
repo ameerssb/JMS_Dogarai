@@ -34,7 +34,7 @@ Handle system maintenance and backups.
 
 Installation:
 Clone the repository to your local machine.
-git clone https://github.com/your-repository.git
+git clone https://github.com/ameerssb/JMS_Dogarai.git
 
 Install the required dependencies:
 cd JMS_Dogarai
