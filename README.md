@@ -65,7 +65,7 @@ Perform various actions such as searching, adding, editing, and deleting records
 Customize settings, manage users, and generate reports using the Admin Panel.
 Regularly backup the database to prevent data loss.
 Support and Contribution
-For any issues or inquiries, please contact the support team at support@example.com. Contributions to the project are welcome. If you encounter a bug or have a feature request, please submit an issue on the project's GitHub repository.
+For any issues or inquiries, please contact the support team at baturesanisufyan@gmail.com. Contributions to the project are welcome. If you encounter a bug or have a feature request, please submit an issue on the project's GitHub repository.
 
 License
 This project is licensed under the MIT License. Feel free to use and modify the system as per your requirements.
